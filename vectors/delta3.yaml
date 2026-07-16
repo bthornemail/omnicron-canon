@@ -11,9 +11,31 @@
 # Delta position ≠ scope
 # Integrity axis ≠ authority
 # Forward projection ≠ accepted future state
+#
+# Default profile: sliding window (not cyclic ring)
+#   LL' = MM
+#   MM' = NN
+#   NN' = newly projected delta
 
 schema: delta3
 version: "1.0"
+
+profiles:
+  - id: delta-sliding-window
+    description: "Default sliding window profile"
+    cyclic: false
+    advancement:
+      ll_new: MM
+      mm_new: NN
+      nn_new: "newly projected delta"
+
+  - id: delta-cyclic-ring
+    description: "Cyclic ring profile (alternative)"
+    cyclic: true
+    advancement:
+      ll_new: MM
+      mm_new: NN
+      nn_new: LL
 
 vectors:
   positions:
@@ -49,6 +71,7 @@ vectors:
       governing_axes:
         source: LOGOS
         target: NOMOS
+      operational_check: "LOGOS(LL, MM) checks continuity"
       description: "Transition from previous to present delta"
 
     - id: delta-present-to-forward
@@ -58,22 +81,75 @@ vectors:
       governing_axes:
         source: NOMOS
         target: PATHOS
+      operational_check: "PATHOS(MM, NN) checks projection"
       description: "Transition from present to forward delta"
 
-  rings:
-    - id: delta-ring-cycle
-      sequence: [LL, MM, NN]
-      continuation: [MM, NN, LL]
+  windows:
+    - id: delta-window-initial
+      profile: delta-sliding-window
+      window:
+        ll: 0
+        mm: 0
+        nn: 0
       expected:
-        closed_ring: true
-      description: "Delta ring cycle (temporal cycling)"
+        valid: true
+        description: "Initial window with all zeros"
 
-    - id: delta-ring-linear
-      sequence: [LL, MM, NN]
-      continuation: [MM, NN, END]
+    - id: delta-window-advanced
+      profile: delta-sliding-window
+      window:
+        ll: 1
+        mm: 2
+        nn: 3
       expected:
-        closed_ring: false
-      description: "Delta ring linear (append-only timeline)"
+        valid: true
+        description: "Advanced window with distinct values"
+
+    - id: delta-window-cyclic
+      profile: delta-cyclic-ring
+      window:
+        ll: 1
+        mm: 2
+        nn: 3
+      expected:
+        valid: true
+        description: "Cyclic ring window"
+
+  checks:
+    - id: logos-check-continuity
+      function: "LOGOS(LL, MM)"
+      inputs:
+        ll: 1
+        mm: 1
+      expected:
+        result: PASSED
+        description: "Continuity check passes when LL equals MM"
+
+    - id: logos-check-discontinuity
+      function: "LOGOS(LL, MM)"
+      inputs:
+        ll: 1
+        mm: 2
+      expected:
+        result: FAILED
+        description: "Continuity check fails when LL differs from MM"
+
+    - id: nomos-check-admissibility
+      function: "NOMOS(MM)"
+      inputs:
+        mm: 1
+      expected:
+        result: PASSED
+        description: "Admissibility check passes for valid MM"
+
+    - id: pathos-check-projection
+      function: "PATHOS(MM, NN)"
+      inputs:
+        mm: 1
+        nn: 2
+      expected:
+        result: PASSED
+        description: "Projection check passes for valid forward"
 
   combinations:
     - id: delta-scope-combination
@@ -102,6 +178,7 @@ vectors:
         integrity_check: LOGOS
 
 invariants:
+  - "LL-MM-NN is a three-value temporal delta window"
   - "LL/MM/NN are canonical temporal-delta coordinates"
   - "LL/MM/NN do not replace FS/GS/RS/US"
   - "FS/GS/RS/US define epistemic scope"
@@ -113,3 +190,5 @@ invariants:
   - "Delta position ≠ scope"
   - "Integrity axis ≠ authority"
   - "Forward projection ≠ accepted future state"
+  - "Default profile is sliding window, not cyclic ring"
+  - "Window advances: LL'=MM, MM'=NN, NN'=newly projected delta"

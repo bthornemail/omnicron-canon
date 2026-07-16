@@ -1,16 +1,16 @@
 # 06-LL-MM-NN-DELTA-RING
 
-## LL/MM/NN Temporal Delta Coordinates
+## LL/MM/NN Temporal Delta Window
 
 **Status:** Canonical authority
-**Layer:** Omnicron temporal delta ring
+**Layer:** Omnicron temporal delta window
 **Inherits:** 00-EXTENSION-AUTHORITY, 01-COBS-CONS
 
 ---
 
 ## 1. Purpose
 
-This document defines the canonical temporal delta coordinates of the Gnomic Omicron gauge ring.
+This document defines the canonical temporal delta window of the Gnomic Omicron gauge ring.
 
 ```text
 LL = previous delta
@@ -35,9 +35,9 @@ Scope4:
   (FS, GS, RS, US)
   epistemic scope coordinates
 
-Delta3:
+DeltaWindow:
   (LL, MM, NN)
-  previous / present / forward delta positions
+  previous / present / forward delta values
 
 Integrity3:
   (LOGOS, NOMOS, PATHOS)
@@ -48,7 +48,49 @@ These are not competing names for the same fields.
 
 ---
 
-## 3. Temporal Correspondence
+## 3. DeltaPosition vs DeltaWindow
+
+DeltaPosition is an enum selecting which temporal slot is active:
+
+```c
+typedef enum {
+    OMNICRON_DELTA_LL = 0, /* previous */
+    OMNICRON_DELTA_MM = 1, /* present */
+    OMNICRON_DELTA_NN = 2  /* forward */
+} OmnicronDeltaPosition;
+```
+
+DeltaWindow holds all three delta values simultaneously:
+
+```c
+typedef struct {
+    uint8_t ll; /* previous delta */
+    uint8_t mm; /* present delta */
+    uint8_t nn; /* forward delta */
+} OmnicronDeltaWindow;
+```
+
+The active-position enum can remain separate:
+
+```c
+typedef enum {
+    OMNICRON_DELTA_LL = 0,
+    OMNICRON_DELTA_MM = 1,
+    OMNICRON_DELTA_NN = 2
+} OmnicronDeltaPosition;
+```
+
+This distinction matters because:
+
+```text
+LL-MM-NN
+```
+
+describes the relation among previous, present, and forward deltas, not just one selected label.
+
+---
+
+## 4. Temporal Correspondence
 
 Each delta position maps to an integrity axis:
 
@@ -70,7 +112,56 @@ static const OmnicronIntegrityAxis OMNICRON_DELTA_AXIS[3] = {
 
 ---
 
-## 4. Delta Interpretation
+## 5. Operational Integrity Checks
+
+The integrity axes are relational, not static properties:
+
+```c
+LogosResult  logos_check(const DeltaValue* ll, const DeltaValue* mm);
+NomosResult  nomos_check(const DeltaValue* mm);
+PathosResult pathos_check(const DeltaValue* mm, const DeltaValue* nn);
+```
+
+Where:
+
+```text
+LOGOS(LL, MM)
+  continuity proof from previous to present
+
+NOMOS(MM)
+  present admissibility or rule satisfaction
+
+PATHOS(MM, NN)
+  forward projection compatibility
+```
+
+This preserves their role as relational axes.
+
+---
+
+## 6. Sliding Window Semantics
+
+The default profile is sliding window (not cyclic ring):
+
+```text
+LL → MM → NN
+```
+
+After advancement:
+
+```text
+LL' = MM
+MM' = NN
+NN' = newly projected delta
+```
+
+This is a sliding temporal window, not literal causal travel from future back to past.
+
+The window advances without rewriting history.
+
+---
+
+## 7. Delta Window Interpretation
 
 A continuation can be represented as:
 
@@ -94,21 +185,21 @@ NN
 And the three axes constrain the transition:
 
 ```text
-LOGOS
-  checks continuity with the previous delta
+LOGOS(LL, MM)
+  checks continuity from previous to present
 
-NOMOS
+NOMOS(MM)
   checks admissibility at the present delta
 
-PATHOS
-  checks projection toward the forward delta
+PATHOS(MM, NN)
+  checks projection from present to forward
 ```
 
 This gives a clearer reading than treating LOGOS/NOMOS/PATHOS as only static parity names.
 
 ---
 
-## 5. Formal Types
+## 8. Formal Types
 
 ```c
 typedef enum {
@@ -127,16 +218,22 @@ typedef struct {
     uint8_t ll; /* previous delta */
     uint8_t mm; /* present delta */
     uint8_t nn; /* forward delta */
-} OmnicronDelta3;
+} OmnicronDeltaWindow;
+
+typedef enum {
+    OMNICRON_CHECK_FAILED  = -1,
+    OMNICRON_CHECK_PENDING = 0,
+    OMNICRON_CHECK_PASSED  = 1
+} OmnicronCheckState;
 ```
 
 ---
 
-## 6. Delta Position Representation
+## 9. Delta Window Representation
 
-Delta3 may be represented as:
+DeltaWindow may be represented as:
 
-One-hot encoding:
+One-hot encoding for position:
 
 ```text
 LL MM NN
@@ -153,11 +250,11 @@ Or enum value:
 2 = NN
 ```
 
-The canon freezes the enum representation.
+The canon freezes the enum representation for position selection.
 
 ---
 
-## 7. COBS-CONS with the Delta Ring
+## 10. COBS-CONS with the Delta Window
 
 The framed relation becomes:
 
@@ -202,7 +299,7 @@ The concrete octet representation remains a carrier profile; FΔ, LL, MM, and NN
 
 ---
 
-## 8. Relation to Ternary Activation
+## 11. Relation to Ternary Activation
 
 The temporal delta and activation state are distinct:
 
@@ -247,7 +344,7 @@ A state may therefore be:
 
 ---
 
-## 9. Relation to Projection
+## 12. Relation to Projection
 
 FS/GS/RS/US determines what part of a relation is projected.
 
@@ -272,12 +369,12 @@ It still does not validate or receipt the projection.
 
 ---
 
-## 10. Revised Data Model
+## 13. Revised Data Model
 
 ```c
 typedef struct {
     uint8_t scope4;       /* FS GS RS US */
-    uint8_t delta3;       /* LL MM NN */
+    OmnicronDeltaWindow delta_window;  /* LL MM NN */
     uint8_t integrity3;   /* LOGOS NOMOS PATHOS */
     int8_t activation;    /* -1, 0, +1 */
 
@@ -289,17 +386,26 @@ typedef struct {
 
 ---
 
-## 11. Canonical Lock
+## 14. Canonical Lock
 
 ```text
-LL, MM, and NN are the canonical temporal positions
-of the Gnomic Omicron delta ring.
+LL-MM-NN is a three-value temporal delta window.
 
-LL carries the previous delta through LOGOS.
+LL holds the previous delta.
+MM holds the present delta.
+NN holds the forward delta.
 
-MM carries the present delta through NOMOS.
+LOGOS checks continuity from LL to MM.
+NOMOS checks admissibility at MM.
+PATHOS checks projection from MM to NN.
 
-NN carries the forward delta through PATHOS.
+The window advances without rewriting history:
+
+  LL' = MM
+  MM' = NN
+  NN' = newly projected delta
+
+Scope4 remains independent of Delta3.
 
 FS, GS, RS, and US remain the independent
 four-position epistemic scope.
@@ -312,7 +418,7 @@ validation, and receipt remain distinct operations.
 
 ---
 
-## 12. Historical Note
+## 15. Historical Note
 
 Any document saying:
 

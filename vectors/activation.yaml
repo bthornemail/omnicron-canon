@@ -11,6 +11,11 @@
 #   - results require validation + receipt
 #   - omnicron-lisp can execute requests
 #   - omnicron-lisp cannot emit results
+#
+# Check state uses ternary enum:
+#   OMNICRON_CHECK_FAILED  = -1
+#   OMNICRON_CHECK_PENDING = 0
+#   OMNICRON_CHECK_PASSED  = 1
 
 schema: activation
 version: "1.0"
@@ -61,7 +66,7 @@ vectors:
     - id: result-accepted
       description: "Accepted activation result (validated + receipted)"
       validation:
-        passed: true
+        status: passed
       receipt:
         emitted: true
       expected:
@@ -73,7 +78,7 @@ vectors:
     - id: result-rejected
       description: "Rejected activation result (validation failed)"
       validation:
-        passed: false
+        status: failed
       receipt:
         emitted: false
       expected:
@@ -85,8 +90,7 @@ vectors:
     - id: result-pending
       description: "Pending activation result (validation in progress)"
       validation:
-        passed: false
-        pending: true
+        status: pending
       receipt:
         emitted: false
       expected:
@@ -103,3 +107,5 @@ invariants:
   - "requests do not imply acceptance"
   - "results do imply prior validation"
   - "receipts do imply prior acceptance"
+  - "check state is ternary: failed (-1), pending (0), passed (1)"
+  - "pending is not equivalent to failed"

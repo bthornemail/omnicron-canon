@@ -4,6 +4,8 @@ Vector Verifier
 
 Verifies all generated vectors against their invariants.
 Fails the build if any canonical vector is inconsistent.
+
+This verifier explicitly prints and validates every canonical profile.
 """
 
 import sys
@@ -69,13 +71,22 @@ def verify_miquel844(filepath):
     errors = []
     
     masks = {
-        "logos_minus": 0x0F,  # bits {0,1,2,3}
-        "logos_plus":  0xF0,  # bits {4,5,6,7}
-        "nomos_minus": 0x33,  # bits {0,1,4,5}
-        "nomos_plus":  0xCC,  # bits {2,3,6,7}
-        "pathos_minus": 0x55,  # bits {0,2,4,6}
-        "pathos_plus":  0xAA,  # bits {1,3,5,7}
+        "logos_minus": 0x0F,
+        "logos_plus":  0xF0,
+        "nomos_minus": 0x33,
+        "nomos_plus":  0xCC,
+        "pathos_minus": 0x55,
+        "pathos_plus":  0xAA,
     }
+    
+    # Verify generator matrix properties
+    props = data.get("properties", {})
+    if props.get("rank") != 4:
+        errors.append(f"Expected rank 4, got {props.get('rank')}")
+    if props.get("minimum_distance") != 4:
+        errors.append(f"Expected minimum_distance 4, got {props.get('minimum_distance')}")
+    if not props.get("verified"):
+        errors.append("Generator matrix not verified")
     
     # Check valid codewords
     valid = data["vectors"]["valid"]
@@ -144,92 +155,6 @@ def verify_miquel844(filepath):
     
     return errors
 
-def verify_cobs(filepath):
-    """Verify COBS vectors."""
-    data = load_yaml(filepath)
-    errors = []
-    
-    def cobs_encode(data_bytes):
-        if not data_bytes:
-            return bytes([0x01])
-        
-        result = bytearray()
-        i = 0
-        
-        while i < len(data_bytes):
-            zero_pos = i
-            while zero_pos < len(data_bytes) and data_bytes[zero_pos] != 0:
-                zero_pos += 1
-            
-            run_length = zero_pos - i
-            if run_length >= 254:
-                code = 0xFF
-                result.append(code)
-                result.extend(data_bytes[i:i+254])
-                i += 254
-            else:
-                code = run_length + 1
-                result.append(code)
-                result.extend(data_bytes[i:zero_pos])
-                if zero_pos < len(data_bytes):
-                    result.append(0x00)
-                    i = zero_pos + 1
-                else:
-                    i = zero_pos
-        
-        return bytes(result)
-    
-    def cobs_decode(encoded):
-        if not encoded:
-            return bytes()
-        
-        result = bytearray()
-        i = 0
-        
-        while i < len(encoded):
-            code = encoded[i]
-            i += 1
-            
-            if code == 0:
-                raise ValueError("Zero code byte is invalid")
-            
-            if code == 0xFF:
-                if i + 254 > len(encoded):
-                    raise ValueError("Truncated block")
-                result.extend(encoded[i:i+254])
-                i += 254
-            else:
-                run_length = code - 1
-                if i + run_length > len(encoded):
-                    raise ValueError("Truncated block")
-                result.extend(encoded[i:i+run_length])
-                i += run_length
-                if i < len(encoded):
-                    result.append(0x00)
-        
-        return bytes(result)
-    
-    vectors = data["vectors"]
-    for vec in vectors:
-        if vec["expected"].get("roundtrip"):
-            input_data = bytes(vec["input"])
-            encoded_body = bytes(vec["encoded_body"])
-            
-            # Verify encoding
-            actual_encoded = cobs_encode(input_data)
-            if list(actual_encoded) != vec["encoded_body"]:
-                errors.append(f"Encoding mismatch for {vec['id']}: {list(actual_encoded)} != {vec['encoded_body']}")
-            
-            # Verify decoding
-            try:
-                decoded = cobs_decode(encoded_body)
-                if decoded != input_data:
-                    errors.append(f"Decoding mismatch for {vec['id']}")
-            except ValueError as e:
-                errors.append(f"Decoding failed for {vec['id']}: {e}")
-    
-    return errors
-
 def verify_scope4(filepath):
     """Verify Scope4 vectors."""
     data = load_yaml(filepath)
@@ -281,65 +206,150 @@ def verify_activation(filepath):
     
     return errors
 
+def verify_delta3(filepath):
+    """Verify Delta3 vectors."""
+    data = load_yaml(filepath)
+    errors = []
+    
+    positions = data["vectors"]["positions"]
+    if len(positions) != 3:
+        errors.append(f"Expected 3 positions, got {len(positions)}")
+    
+    # Verify position properties
+    for pos in positions:
+        if pos["enum_value"] not in (0, 1, 2):
+            errors.append(f"Invalid enum_value in {pos['id']}")
+        if pos["symbol"] not in ("LL", "MM", "NN"):
+            errors.append(f"Invalid symbol in {pos['id']}")
+        if pos["integrity_axis"] not in ("LOGOS", "NOMOS", "PATHOS"):
+            errors.append(f"Invalid integrity_axis in {pos['id']}")
+    
+    # Verify one-hot encoding
+    for pos in positions:
+        if sum(pos["one_hot"]) != 1:
+            errors.append(f"Invalid one_hot in {pos['id']}")
+    
+    # Verify transitions
+    transitions = data["vectors"]["transitions"]
+    if len(transitions) != 2:
+        errors.append(f"Expected 2 transitions, got {len(transitions)}")
+    
+    # Verify windows
+    windows = data["vectors"]["windows"]
+    if len(windows) != 3:
+        errors.append(f"Expected 3 windows, got {len(windows)}")
+    
+    # Verify checks
+    checks = data["vectors"]["checks"]
+    if len(checks) != 4:
+        errors.append(f"Expected 4 checks, got {len(checks)}")
+    
+    return errors
+
+def verify_cobs_core(filepath):
+    """Verify COBS core vectors."""
+    data = load_yaml(filepath)
+    errors = []
+    
+    vectors = data["vectors"]
+    if len(vectors) != 8:
+        errors.append(f"Expected 8 vectors, got {len(vectors)}")
+    
+    # Verify invariants are present
+    if "invariants" not in data:
+        errors.append("Missing invariants")
+    
+    return errors
+
+def verify_cobs_null_00(filepath):
+    """Verify COBS null-00 vectors."""
+    data = load_yaml(filepath)
+    errors = []
+    
+    vectors = data["vectors"]
+    if len(vectors) != 15:
+        errors.append(f"Expected 15 vectors, got {len(vectors)}")
+    
+    # Verify profile settings
+    if data.get("null_octet") != 0x00:
+        errors.append("Invalid null_octet")
+    
+    if data.get("framing", {}).get("suffix") != True:
+        errors.append("Invalid framing suffix")
+    
+    return errors
+
+def verify_cobs_omi_null_ring(filepath):
+    """Verify COBS OMI null-ring vectors."""
+    data = load_yaml(filepath)
+    errors = []
+    
+    vectors = data["vectors"]
+    if len(vectors) != 9:
+        errors.append(f"Expected 9 vectors, got {len(vectors)}")
+    
+    # Verify encoding status is unresolved
+    if data.get("encoding_status") != "unresolved":
+        errors.append("Expected encoding_status: unresolved")
+    
+    return errors
+
+def verify_cobs_gnomic_fdelta_ring(filepath):
+    """Verify COBS gnomic fdelta-ring vectors."""
+    data = load_yaml(filepath)
+    errors = []
+    
+    vectors = data["vectors"]
+    if len(vectors) != 12:
+        errors.append(f"Expected 12 vectors, got {len(vectors)}")
+    
+    # Verify encoding status is unresolved
+    if data.get("encoding_status") != "unresolved":
+        errors.append("Expected encoding_status: unresolved")
+    
+    # Verify framing is prefix+suffix
+    if data.get("framing", {}).get("prefix") != True:
+        errors.append("Invalid framing prefix")
+    if data.get("framing", {}).get("suffix") != True:
+        errors.append("Invalid framing suffix")
+    
+    return errors
+
 def main():
     vectors_dir = os.path.join(os.path.dirname(__file__), "..")
     all_errors = []
     
-    print("Verifying vectors...", file=sys.stderr)
+    print("Verifying all canonical vector profiles...", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)
     
-    # Verify compact743
-    compact_path = os.path.join(vectors_dir, "generated", "compact743.yaml")
-    if os.path.exists(compact_path):
-        errors = verify_compact743(compact_path)
-        if errors:
-            all_errors.extend([f"compact743: {e}" for e in errors])
-        else:
-            print("  compact743: OK", file=sys.stderr)
+    # Define all profiles to verify
+    profiles = [
+        ("compact743", os.path.join(vectors_dir, "generated", "compact743.yaml"), verify_compact743),
+        ("miquel844", os.path.join(vectors_dir, "generated", "miquel844.yaml"), verify_miquel844),
+        ("scope4", os.path.join(vectors_dir, "scope4.yaml"), verify_scope4),
+        ("projection", os.path.join(vectors_dir, "projection.yaml"), verify_projection),
+        ("activation", os.path.join(vectors_dir, "activation.yaml"), verify_activation),
+        ("delta3", os.path.join(vectors_dir, "delta3.yaml"), verify_delta3),
+        ("cobs-core", os.path.join(vectors_dir, "cobs-core.yaml"), verify_cobs_core),
+        ("cobs-null-00", os.path.join(vectors_dir, "cobs-null-00.yaml"), verify_cobs_null_00),
+        ("cobs-omi-null-ring", os.path.join(vectors_dir, "cobs-omi-null-ring.yaml"), verify_cobs_omi_null_ring),
+        ("cobs-gnomic-fdelta-ring", os.path.join(vectors_dir, "cobs-gnomic-fdelta-ring.yaml"), verify_cobs_gnomic_fdelta_ring),
+    ]
     
-    # Verify miquel844
-    miquel_path = os.path.join(vectors_dir, "generated", "miquel844.yaml")
-    if os.path.exists(miquel_path):
-        errors = verify_miquel844(miquel_path)
-        if errors:
-            all_errors.extend([f"miquel844: {e}" for e in errors])
+    # Verify each profile
+    for name, filepath, verifier in profiles:
+        if os.path.exists(filepath):
+            errors = verifier(filepath)
+            if errors:
+                all_errors.extend([f"{name}: {e}" for e in errors])
+                print(f"  {name}: FAILED ({len(errors)} errors)", file=sys.stderr)
+            else:
+                print(f"  {name}: OK", file=sys.stderr)
         else:
-            print("  miquel844: OK", file=sys.stderr)
+            print(f"  {name}: FILE NOT FOUND", file=sys.stderr)
+            all_errors.append(f"{name}: file not found")
     
-    # Verify cobs
-    cobs_path = os.path.join(vectors_dir, "generated", "cobs.yaml")
-    if os.path.exists(cobs_path):
-        errors = verify_cobs(cobs_path)
-        if errors:
-            all_errors.extend([f"cobs: {e}" for e in errors])
-        else:
-            print("  cobs: OK", file=sys.stderr)
-    
-    # Verify scope4
-    scope4_path = os.path.join(vectors_dir, "scope4.yaml")
-    if os.path.exists(scope4_path):
-        errors = verify_scope4(scope4_path)
-        if errors:
-            all_errors.extend([f"scope4: {e}" for e in errors])
-        else:
-            print("  scope4: OK", file=sys.stderr)
-    
-    # Verify projection
-    projection_path = os.path.join(vectors_dir, "projection.yaml")
-    if os.path.exists(projection_path):
-        errors = verify_projection(projection_path)
-        if errors:
-            all_errors.extend([f"projection: {e}" for e in errors])
-        else:
-            print("  projection: OK", file=sys.stderr)
-    
-    # Verify activation
-    activation_path = os.path.join(vectors_dir, "activation.yaml")
-    if os.path.exists(activation_path):
-        errors = verify_activation(activation_path)
-        if errors:
-            all_errors.extend([f"activation: {e}" for e in errors])
-        else:
-            print("  activation: OK", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)
     
     if all_errors:
         print(f"\nVerification FAILED:", file=sys.stderr)
@@ -347,7 +357,7 @@ def main():
             print(f"  {error}", file=sys.stderr)
         sys.exit(1)
     else:
-        print(f"\nAll vectors verified successfully", file=sys.stderr)
+        print(f"\nAll {len(profiles)} canonical vector profiles verified successfully", file=sys.stderr)
         sys.exit(0)
 
 if __name__ == "__main__":

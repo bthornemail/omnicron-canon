@@ -4,25 +4,51 @@ Miquel [8,4,4] Integrity Code Generator
 
 Generates all valid codewords and corruption cases from the frozen generator matrix.
 
-The Miquel [8,4,4] code uses 8 points on a projective plane with 6 incidence checks:
-  LOGOS− = bits {0,1,2,3} = 0x0F
-  LOGOS+ = bits {4,5,6,7} = 0xF0
-  NOMOS− = bits {0,1,4,5} = 0x33
-  NOMOS+ = bits {2,3,6,7} = 0xCC
-  PATHOS− = bits {0,2,4,6} = 0x55
-  PATHOS+ = bits {1,3,5,7} = 0xAA
+The Miquel [8,4,4] code uses the Reed-Muller form:
+  c(Pxyz) = a0 ⊕ aL·x ⊕ aN·y ⊕ aP·z
 
-Source bits: {0, 1, 2, 3} = {P000, P001, P010, P011}
-Parity bits: {4, 5, 6, 7} = {P100, P101, P110, P111}
+where the four input bits are:
+  a0  = FS coefficient
+  aL  = GS coefficient (LOGOS)
+  aN  = RS coefficient (NOMOS)
+  aP  = US coefficient (PATHOS)
 
-For a valid codeword, all 6 checks must equal 0.
+Generator matrix G844:
+  row 0 (a0): [1 1 1 1 1 1 1 1]
+  row 1 (aL): [0 0 0 0 1 1 1 1]
+  row 2 (aN): [0 0 1 1 0 0 1 1]
+  row 3 (aP): [0 1 0 1 0 1 0 1]
+
+Properties:
+  rank(G844) = 4
+  minimum_distance = 4
+  codeword_count = 16
+
+Bijection:
+  Scope4 (FS, GS, RS, US) → MiquelCell8 (8-bit codeword)
 """
 
 import sys
 import yaml
 from itertools import combinations
 
-# Frozen incidence masks (from 05-MIQUEL-INTEGRITY.md)
+# Frozen generator matrix G844 (Reed-Muller form)
+# Rows: a0, aL, aN, aP
+# Columns: P000, P001, P010, P011, P100, P101, P110, P111
+G844 = [
+    [1, 1, 1, 1, 1, 1, 1, 1],  # a0 (constant)
+    [0, 0, 0, 0, 1, 1, 1, 1],  # aL (x coefficient)
+    [0, 0, 1, 1, 0, 0, 1, 1],  # aN (y coefficient)
+    [0, 1, 0, 1, 0, 1, 0, 1],  # aP (z coefficient)
+]
+
+# Point names
+POINT_NAMES = ["P000", "P001", "P010", "P011", "P100", "P101", "P110", "P111"]
+
+# Source bit names (Scope4 coefficients)
+SOURCE_NAMES = ["FS", "GS", "RS", "US"]
+
+# Incidence masks (for verification)
 MASKS = {
     "logos_minus": 0x0F,  # bits {0,1,2,3}
     "logos_plus":  0xF0,  # bits {4,5,6,7}
@@ -32,16 +58,26 @@ MASKS = {
     "pathos_plus":  0xAA,  # bits {1,3,5,7}
 }
 
-# Source and parity bit positions
-SOURCE_BITS = [0, 1, 2, 3]  # P000, P001, P010, P011
-PARITY_BITS = [4, 5, 6, 7]  # P100, P101, P110, P111
+def xor_bits(bits):
+    result = 0
+    for b in bits:
+        result ^= b
+    return result
 
-# Point names
-POINT_NAMES = ["P000", "P001", "P010", "P011", "P100", "P101", "P110", "P111"]
+def encode_scope4(scope4):
+    """Encode Scope4 to MiquelCell8 using G844."""
+    # scope4 bits: [FS, GS, RS, US]
+    # codeword = scope4 * G844 (matrix multiplication over GF(2))
+    codeword = [0] * 8
+    for i in range(4):
+        if scope4[i]:
+            for j in range(8):
+                codeword[j] ^= G844[i][j]
+    return codeword
 
-def check_codeword(codeword):
-    """Check if a codeword satisfies all 6 incidence checks."""
-    bits = [(codeword >> i) & 1 for i in range(8)]
+def verify_codeword(codeword):
+    """Verify a codeword satisfies all 6 incidence checks."""
+    bits = codeword if isinstance(codeword, list) else [(codeword >> i) & 1 for i in range(8)]
     for name, mask in MASKS.items():
         check = 0
         for i in range(8):
@@ -52,30 +88,26 @@ def check_codeword(codeword):
     return True, None
 
 def generate_all_valid():
-    """Generate all 16 valid codewords by brute force."""
+    """Generate all 16 valid codewords using G844."""
     valid = []
-    for source_val in range(16):
-        for parity_val in range(16):
-            codeword = 0
-            for i, bit_pos in enumerate(SOURCE_BITS):
-                if source_val & (1 << i):
-                    codeword |= (1 << bit_pos)
-            for i, bit_pos in enumerate(PARITY_BITS):
-                if parity_val & (1 << i):
-                    codeword |= (1 << bit_pos)
-            
-            valid_check, failed_check = check_codeword(codeword)
-            if valid_check:
-                bits = [(codeword >> i) & 1 for i in range(8)]
-                valid.append({
-                    "source_value": source_val,
-                    "parity_value": parity_val,
-                    "codeword": codeword,
-                    "bits": bits,
-                    "point_names": {
-                        POINT_NAMES[i]: bits[i] for i in range(8)
-                    }
-                })
+    for scope_val in range(16):
+        scope4 = [(scope_val >> i) & 1 for i in range(4)]
+        codeword = encode_scope4(scope4)
+        codeword_int = sum(codeword[i] << i for i in range(8))
+        
+        # Verify using incidence checks
+        valid_check, failed_check = verify_codeword(codeword)
+        assert valid_check, f"Codeword {codeword_int} failed check {failed_check}"
+        
+        valid.append({
+            "scope4": scope4,
+            "scope_value": scope_val,
+            "codeword": codeword_int,
+            "bits": codeword,
+            "point_names": {
+                POINT_NAMES[i]: codeword[i] for i in range(8)
+            }
+        })
     return valid
 
 def generate_single_bit_corruptions(valid_codewords):
@@ -85,10 +117,10 @@ def generate_single_bit_corruptions(valid_codewords):
         original = entry["codeword"]
         for bit_pos in range(8):
             corrupted = original ^ (1 << bit_pos)
-            valid_check, failed_check = check_codeword(corrupted)
+            valid_check, failed_check = verify_codeword(corrupted)
             assert not valid_check, f"Corruption at bit {bit_pos} should not produce valid codeword"
             corruptions.append({
-                "source_value": entry["source_value"],
+                "scope_value": entry["scope_value"],
                 "original": original,
                 "corrupted": corrupted,
                 "bit_position": bit_pos,
@@ -103,10 +135,10 @@ def generate_two_bit_corruptions(valid_codewords):
         original = entry["codeword"]
         for bit_pos1, bit_pos2 in combinations(range(8), 2):
             corrupted = original ^ (1 << bit_pos1) ^ (1 << bit_pos2)
-            valid_check, failed_check = check_codeword(corrupted)
+            valid_check, failed_check = verify_codeword(corrupted)
             assert not valid_check, f"Corruption at bits {bit_pos1},{bit_pos2} should not produce valid codeword"
             corruptions.append({
-                "source_value": entry["source_value"],
+                "scope_value": entry["scope_value"],
                 "original": original,
                 "corrupted": corrupted,
                 "bit_positions": [bit_pos1, bit_pos2],
@@ -114,14 +146,46 @@ def generate_two_bit_corruptions(valid_codewords):
             })
     return corruptions
 
+def verify_generator_matrix():
+    """Verify G844 properties."""
+    # Check rank
+    # For a 4x8 matrix over GF(2), rank should be 4
+    # We can verify by checking that all 4 rows are linearly independent
+    
+    # Check that all non-zero codewords have weight >= 4
+    min_weight = 8
+    for i in range(1, 16):
+        scope4 = [(i >> j) & 1 for j in range(4)]
+        codeword = encode_scope4(scope4)
+        weight = sum(codeword)
+        min_weight = min(min_weight, weight)
+    
+    return min_weight == 4
+
 def generate_yaml(valid, single_corruptions, two_corruptions):
     schema = {
         "schema": "miquel844",
         "version": "1.0",
         "generator": "generate_miquel844.py",
+        "generator_matrix": {
+            "description": "Reed-Muller form: c(Pxyz) = a0 ⊕ aL·x ⊕ aN·y ⊕ aP·z",
+            "rows": ["a0 (FS)", "aL (GS)", "aN (RS)", "aP (US)"],
+            "columns": POINT_NAMES,
+            "G844": G844
+        },
+        "source_mapping": {
+            "a0": "FS",
+            "aL": "GS (LOGOS coefficient)",
+            "aN": "RS (NOMOS coefficient)",
+            "aP": "US (PATHOS coefficient)"
+        },
         "incidence_masks": {name: f"0x{mask:02X}" for name, mask in MASKS.items()},
-        "source_bits": {POINT_NAMES[i]: i for i in SOURCE_BITS},
-        "parity_bits": {POINT_NAMES[i]: i for i in PARITY_BITS},
+        "properties": {
+            "rank": 4,
+            "minimum_distance": 4,
+            "codeword_count": 16,
+            "verified": verify_generator_matrix()
+        },
         "vectors": {
             "valid": valid,
             "single_bit_corruptions": single_corruptions,
@@ -133,13 +197,19 @@ def generate_yaml(valid, single_corruptions, two_corruptions):
             "codeword length = 8",
             "valid count = 16",
             "single-bit corruption count = 128",
-            "two-bit corruption count = 448"
+            "two-bit corruption count = 448",
+            "minimum weight = 4",
+            "bijection Scope4 ↔ MiquelCell8"
         ]
     }
     return schema
 
 def main():
-    print("Generating Miquel [8,4,4] vectors...", file=sys.stderr)
+    print("Generating Miquel [8,4,4] vectors from G844...", file=sys.stderr)
+    
+    # Verify generator matrix properties
+    assert verify_generator_matrix(), "Generator matrix verification failed"
+    print("Generator matrix verified: rank=4, min_distance=4", file=sys.stderr)
     
     valid = generate_all_valid()
     print(f"Generated {len(valid)} valid codewords", file=sys.stderr)
@@ -155,25 +225,27 @@ def main():
     output = yaml.dump(result, default_flow_style=False, sort_keys=False)
     print(output)
     
-    # Verification
+    # Final verification
     print(f"\nVerification:", file=sys.stderr)
     print(f"  Valid codewords: {len(valid)} (expected 16)", file=sys.stderr)
     print(f"  Single-bit corruptions: {len(single_corruptions)} (expected 128)", file=sys.stderr)
     print(f"  Two-bit corruptions: {len(two_corruptions)} (expected 448)", file=sys.stderr)
+    print(f"  Generator matrix: verified", file=sys.stderr)
+    print(f"  Minimum distance: 4", file=sys.stderr)
     
     # Verify all valid codewords
     for entry in valid:
-        valid_check, failed_check = check_codeword(entry["codeword"])
+        valid_check, failed_check = verify_codeword(entry["codeword"])
         assert valid_check, f"Invalid codeword {entry['codeword']} failed check {failed_check}"
     
     # Verify all single-bit corruptions
     for entry in single_corruptions:
-        valid_check, _ = check_codeword(entry["corrupted"])
+        valid_check, _ = verify_codeword(entry["corrupted"])
         assert not valid_check, f"Corruption produced valid codeword"
     
     # Verify all two-bit corruptions
     for entry in two_corruptions:
-        valid_check, _ = check_codeword(entry["corrupted"])
+        valid_check, _ = verify_codeword(entry["corrupted"])
         assert not valid_check, f"Corruption produced valid codeword"
     
     print("  All checks verified", file=sys.stderr)

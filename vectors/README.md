@@ -12,7 +12,7 @@ These vectors define expected behavior for:
 - Projection masks
 - Activation requests/results
 - COBS framing (parameterized NULL-ring)
-- Delta3 temporal coordinates
+- Delta3 temporal window
 
 ## Consumer Policy
 
@@ -61,7 +61,7 @@ actually satisfies it.
 | `miquel844.yaml` | Miquel [8,4,4] integrity vectors (generated) | omnicron-isa |
 | `projection.yaml` | All 16 projection masks with identity witnesses | omnicron-port, omnicron-lisp |
 | `activation.yaml` | Activation request/result vectors (split) | omnicron-lisp |
-| `delta3.yaml` | Delta3 temporal coordinate vectors | omnicron-lisp, omnicron-isa |
+| `delta3.yaml` | Delta3 temporal window vectors | omnicron-lisp, omnicron-isa |
 | `cobs-core.yaml` | COBS delimiter-independent vectors | omnicron-isa |
 | `cobs-null-00.yaml` | Standard octet COBS (0x00 delimiter) | omnicron-isa |
 | `cobs-omi-null-ring.yaml` | OMI NULL-ring profile (symbolic) | omnicron-isa |
@@ -93,7 +93,22 @@ All vectors are verified by:
 python3 verify/verify_vectors.py
 ```
 
-This script fails the build if any canonical vector is inconsistent.
+This script explicitly prints and validates every canonical profile:
+
+```text
+compact743: OK
+miquel844: OK
+scope4: OK
+projection: OK
+activation: OK
+delta3: OK
+cobs-core: OK
+cobs-null-00: OK
+cobs-omi-null-ring: OK
+cobs-gnomic-fdelta-ring: OK
+```
+
+The script fails the build if any canonical vector is inconsistent.
 
 ## Schema
 
@@ -119,11 +134,11 @@ Vectors are created in phases:
 
 - D1: Scope4 vectors
 - D2: Compact [7,4,3] vectors (generated)
-- D3: Miquel [8,4,4] vectors (generated)
+- D3: Miquel [8,4,4] vectors (generated from G844)
 - D4: Projection vectors (with identity witnesses)
 - D5: Activation vectors (request/result split)
 - D6: COBS vectors (parameterized NULL-ring)
-- D7: Delta3 temporal coordinate vectors
+- D7: Delta3 temporal window vectors
 
 ## Authority
 
