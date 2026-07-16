@@ -1,0 +1,161 @@
+# COBS Octet-NULL (0x00) Profile Vectors
+# Canonical source: omnicron-canon/vectors/cobs-null-00.yaml
+#
+# Standard COBS with 0x00 as delimiter.
+# Suffix-only framing: encoded_body + [0x00]
+#
+# RNULL = 0x00
+# delimiter_octets = [0x00]
+# framing: suffix only
+
+schema: cobs-null-00
+version: "1.0"
+profile: octet-null-00
+null_octet: 0x00
+delimiter_octets: [0x00]
+framing:
+  prefix: false
+  suffix: true
+
+vectors:
+  # ------------------------------------------------------------------
+  # Empty payload
+  # ------------------------------------------------------------------
+  - id: null00-empty
+    payload: []
+    encoded_body: [0x01]
+    framed: [0x01, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Single 0x00 byte
+  # ------------------------------------------------------------------
+  - id: null00-single-zero
+    payload: [0x00]
+    encoded_body: [0x02, 0x01]
+    framed: [0x02, 0x01, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Leading 0x00
+  # ------------------------------------------------------------------
+  - id: null00-leading-zero
+    payload: [0x00, 0x01, 0x02, 0x03]
+    encoded_body: [0x02, 0x01, 0x01, 0x01, 0x04]
+    framed: [0x02, 0x01, 0x01, 0x01, 0x04, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Trailing 0x00
+  # ------------------------------------------------------------------
+  - id: null00-trailing-zero
+    payload: [0x01, 0x02, 0x03, 0x00]
+    encoded_body: [0x04, 0x01, 0x02, 0x03, 0x01]
+    framed: [0x04, 0x01, 0x02, 0x03, 0x01, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Embedded 0x00 bytes
+  # ------------------------------------------------------------------
+  - id: null00-embedded-zeros
+    payload: [0x01, 0x00, 0x02, 0x00, 0x03]
+    encoded_body: [0x02, 0x01, 0x02, 0x02, 0x02, 0x03]
+    framed: [0x02, 0x01, 0x02, 0x02, 0x02, 0x03, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Single nonzero byte
+  # ------------------------------------------------------------------
+  - id: null00-single-nonzero
+    payload: [0x42]
+    encoded_body: [0x02, 0x42]
+    framed: [0x02, 0x42, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # All 0x00 bytes
+  # ------------------------------------------------------------------
+  - id: null00-all-zeros
+    payload: [0x00, 0x00, 0x00]
+    encoded_body: [0x02, 0x02, 0x02, 0x01]
+    framed: [0x02, 0x02, 0x02, 0x01, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # 254 nonzero bytes
+  # ------------------------------------------------------------------
+  - id: null00-254-nonzero
+    description: "254 nonzero bytes require 0xFF code byte"
+    input_pattern: "nonzero-254"
+    input_length: 254
+    encoded_pattern: "0xFF + 254 bytes"
+    encoded_length: 255
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # 255 nonzero bytes
+  # ------------------------------------------------------------------
+  - id: null00-255-nonzero
+    description: "255 nonzero bytes: 0xFF + 254 bytes + 0x02 + 1 byte"
+    input_pattern: "nonzero-255"
+    input_length: 255
+    encoded_pattern: "0xFF + 254 bytes + 0x02 + 1 byte"
+    encoded_length: 257
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Invalid zero code byte
+  # ------------------------------------------------------------------
+  - id: null00-invalid-zero-code
+    description: "0x00 as code byte is invalid"
+    encoded_body: [0x00]
+    framed: [0x00]
+    expected: { valid: false, error: "zero code byte" }
+
+  # ------------------------------------------------------------------
+  # Truncated block
+  # ------------------------------------------------------------------
+  - id: null00-truncated-block
+    description: "Code byte claims more bytes than available"
+    encoded_body: [0x05, 0x01, 0x02]
+    framed: [0x05, 0x01, 0x02]
+    expected: { valid: false, error: "truncated block" }
+
+  # ------------------------------------------------------------------
+  # Missing external delimiter
+  # ------------------------------------------------------------------
+  - id: null00-missing-delimiter
+    description: "Frame without terminating 0x00"
+    encoded_body: [0x03, 0x01, 0x02, 0x03]
+    framed: [0x03, 0x01, 0x02, 0x03]
+    expected: { valid: true, frame_valid: false, error: "missing delimiter" }
+
+  # ------------------------------------------------------------------
+  # Boundary values
+  # ------------------------------------------------------------------
+  - id: null00-byte-0x01
+    payload: [0x01]
+    encoded_body: [0x02, 0x01]
+    framed: [0x02, 0x01, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  - id: null00-byte-0xFE
+    payload: [0xFE]
+    encoded_body: [0x02, 0xFE]
+    framed: [0x02, 0xFE, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+  - id: null00-byte-0xFF
+    payload: [0xFF]
+    encoded_body: [0x02, 0xFF]
+    framed: [0x02, 0xFF, 0x00]
+    expected: { valid: true, roundtrip: true }
+
+invariants:
+  - "0x00 ∉ encoded_body"
+  - "decode(encode(payload)) = payload"
+  - "code byte ∈ 0x01..0xFF"
+  - "0xFF code byte means 254-byte run"
+  - "frame termination is external 0x00"
+  - "truncation detected and rejected"
+  - "missing delimiter detected and rejected"

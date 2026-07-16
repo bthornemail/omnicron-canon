@@ -1,0 +1,117 @@
+# COBS OMI NULL-Ring Profile Vectors
+# Canonical source: omnicron-canon/vectors/cobs-omi-null-ring.yaml
+#
+# OMI NULL-ring profile with OMI_NULL as delimiter.
+# Encoding status: unresolved - tests symbolic structure only.
+#
+# The concrete carrier projection of OMI_NULL is not yet frozen.
+# These vectors define expected symbolic behavior.
+#
+# RNULL = OMI_NULL
+# delimiter_octets: unresolved
+# framing: profile-dependent
+
+schema: cobs-omi-null-ring
+version: "1.0"
+profile: omi-null-ring
+delimiter_symbol: OMI_NULL
+delimiter_octets: null
+encoding_status: unresolved
+
+vectors:
+  # ------------------------------------------------------------------
+  # Symbolic empty payload
+  # ------------------------------------------------------------------
+  - id: omi-empty
+    description: "Empty payload with OMI_NULL ring"
+    payload: []
+    encoded_body: [CODE_1]
+    framed_symbols: [OMI_NULL, CODE_1, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic single OMI_NULL
+  # ------------------------------------------------------------------
+  - id: omi-single-omi-null
+    description: "Single OMI_NULL byte requires stuffing"
+    payload: [OMI_NULL]
+    encoded_body: [CODE_2, OMI_NULL_STUFFED]
+    framed_symbols: [OMI_NULL, CODE_2, OMI_NULL_STUFFED, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic leading OMI_NULL
+  # ------------------------------------------------------------------
+  - id: omi-leading-omi-null
+    description: "OMI_NULL at start requires stuffing"
+    payload: [OMI_NULL, A, B, C]
+    encoded_body: [CODE_2, OMI_NULL_STUFFED, CODE_1, A, B, C]
+    framed_symbols: [OMI_NULL, CODE_2, OMI_NULL_STUFFED, CODE_1, A, B, C, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic trailing OMI_NULL
+  # ------------------------------------------------------------------
+  - id: omi-trailing-omi-null
+    description: "OMI_NULL at end requires stuffing"
+    payload: [A, B, C, OMI_NULL]
+    encoded_body: [CODE_4, A, B, C, CODE_1]
+    framed_symbols: [OMI_NULL, CODE_4, A, B, C, CODE_1, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic embedded OMI_NULL bytes
+  # ------------------------------------------------------------------
+  - id: omi-embedded-omi-nulls
+    description: "Multiple OMI_NULL bytes require multiple stuffings"
+    payload: [A, OMI_NULL, B, OMI_NULL, C]
+    encoded_body: [CODE_2, A, CODE_2, B, CODE_2, C]
+    framed_symbols: [OMI_NULL, CODE_2, A, CODE_2, B, CODE_2, C, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic long run
+  # ------------------------------------------------------------------
+  - id: omi-long-run
+    description: "254-byte nonzero run uses CODE_FF"
+    payload: NONZERO_254
+    encoded_body: [CODE_FF, NONZERO_254_BYTES]
+    framed_symbols: [OMI_NULL, CODE_FF, NONZERO_254_BYTES, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic all OMI_NULL
+  # ------------------------------------------------------------------
+  - id: omi-all-omi-null
+    description: "All-OMI_NULL payload requires stuffing for each"
+    payload: [OMI_NULL, OMI_NULL, OMI_NULL]
+    encoded_body: [CODE_2, OMI_NULL_STUFFED, CODE_2, OMI_NULL_STUFFED, CODE_1]
+    framed_symbols: [OMI_NULL, CODE_2, OMI_NULL_STUFFED, CODE_2, OMI_NULL_STUFFED, CODE_1, OMI_NULL]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Invalid OMI_NULL in body
+  # ------------------------------------------------------------------
+  - id: omi-invalid-omi-null-in-body
+    description: "OMI_NULL appearing in encoded body violates invariant"
+    encoded_body: [CODE_2, OMI_NULL]
+    framed_symbols: [OMI_NULL, CODE_2, OMI_NULL, OMI_NULL]
+    expected: { valid: false, error: "OMI_NULL in encoded body" }
+
+  # ------------------------------------------------------------------
+  # Missing ring delimiter
+  # ------------------------------------------------------------------
+  - id: omi-missing-ring-delimiter
+    description: "Frame without OMI_NULL ring delimiters"
+    encoded_body: [CODE_3, A, B, C]
+    framed_symbols: [CODE_3, A, B, C]
+    expected: { valid: true, frame_valid: false, error: "missing ring delimiter" }
+
+invariants:
+  - "OMI_NULL ∉ encoded_body"
+  - "decode(encode(payload, OMI_NULL), OMI_NULL) = payload"
+  - "code units are symbolic (CODE_1..CODE_FF)"
+  - "ring surrounds transported relation"
+  - "ring does not validate or accept relation"
+  - "truncation detected and rejected"
+  - "missing ring delimiter detected and rejected"

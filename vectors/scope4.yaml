@@ -1,0 +1,168 @@
+# Scope4 Conformance Vectors
+# Canonical source: omnicron-canon/vectors/scope4.yaml
+# Consumed by: omnicron-isa
+#
+# Four-bit scope encoding: [FS, GS, RS, US]
+# Each bit must be 0 or 1
+# Binary: FS=2^3, GS=2^2, RS=2^1, US=2^0
+#
+# Required invariant:
+#   decode(encode(scope)) = scope
+
+schema: scope4
+version: "1.0"
+
+vectors:
+  valid:
+    - id: scope-0000
+      decimal: 0
+      bits: [0, 0, 0, 0]
+      fs: 0
+      gs: 0
+      rs: 0
+      us: 0
+
+    - id: scope-0001
+      decimal: 1
+      bits: [0, 0, 0, 1]
+      fs: 0
+      gs: 0
+      rs: 0
+      us: 1
+
+    - id: scope-0010
+      decimal: 2
+      bits: [0, 0, 1, 0]
+      fs: 0
+      gs: 0
+      rs: 1
+      us: 0
+
+    - id: scope-0011
+      decimal: 3
+      bits: [0, 0, 1, 1]
+      fs: 0
+      gs: 0
+      rs: 1
+      us: 1
+
+    - id: scope-0100
+      decimal: 4
+      bits: [0, 1, 0, 0]
+      fs: 0
+      gs: 1
+      rs: 0
+      us: 0
+
+    - id: scope-0101
+      decimal: 5
+      bits: [0, 1, 0, 1]
+      fs: 0
+      gs: 1
+      rs: 0
+      us: 1
+
+    - id: scope-0110
+      decimal: 6
+      bits: [0, 1, 1, 0]
+      fs: 0
+      gs: 1
+      rs: 1
+      us: 0
+
+    - id: scope-0111
+      decimal: 7
+      bits: [0, 1, 1, 1]
+      fs: 0
+      gs: 1
+      rs: 1
+      us: 1
+
+    - id: scope-1000
+      decimal: 8
+      bits: [1, 0, 0, 0]
+      fs: 1
+      gs: 0
+      rs: 0
+      us: 0
+
+    - id: scope-1001
+      decimal: 9
+      bits: [1, 0, 0, 1]
+      fs: 1
+      gs: 0
+      rs: 0
+      us: 1
+
+    - id: scope-1010
+      decimal: 10
+      bits: [1, 0, 1, 0]
+      fs: 1
+      gs: 0
+      rs: 1
+      us: 0
+
+    - id: scope-1011
+      decimal: 11
+      bits: [1, 0, 1, 1]
+      fs: 1
+      gs: 0
+      rs: 1
+      us: 1
+
+    - id: scope-1100
+      decimal: 12
+      bits: [1, 1, 0, 0]
+      fs: 1
+      gs: 1
+      rs: 0
+      us: 0
+
+    - id: scope-1101
+      decimal: 13
+      bits: [1, 1, 0, 1]
+      fs: 1
+      gs: 1
+      rs: 0
+      us: 1
+
+    - id: scope-1110
+      decimal: 14
+      bits: [1, 1, 1, 0]
+      fs: 1
+      gs: 1
+      rs: 1
+      us: 0
+
+    - id: scope-1111
+      decimal: 15
+      bits: [1, 1, 1, 1]
+      fs: 1
+      gs: 1
+      rs: 1
+      us: 1
+
+  invalid:
+    - id: scope-invalid-2bits
+      description: "More than one bit set"
+      bits: [1, 1, 0, 0]
+      valid: false
+      error: "multiple bits set"
+
+    - id: scope-invalid-3bits
+      description: "Three bits set"
+      bits: [1, 1, 1, 0]
+      valid: false
+      error: "multiple bits set"
+
+    - id: scope-invalid-4bits
+      description: "All bits set"
+      bits: [1, 1, 1, 1]
+      valid: false
+      error: "multiple bits set"
+
+invariants:
+  - "decode(encode(scope)) = scope"
+  - "each bit is 0 or 1"
+  - "valid count = 16"
+  - "binary weight of valid vectors = 1"

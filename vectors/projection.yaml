@@ -1,0 +1,165 @@
+# Projection Conformance Vectors
+# Canonical source: omnicron-canon/vectors/projection.yaml
+# Consumed by: omnicron-port, omnicron-lisp
+#
+# 16 projection masks (0x0000..0xFFFF)
+# Projection changes visibility, not identity.
+#
+# Required invariant:
+#   identity is preserved across projection
+
+schema: projection
+version: "1.0"
+
+vectors:
+  masks:
+    - id: mask-0000
+      mask: 0x0000
+      identity:
+        address: "test-address-000"
+        relation: "test-relation-000"
+      expected:
+        visibility: 0
+        identity_preserved: true
+
+    - id: mask-0001
+      mask: 0x0001
+      identity:
+        address: "test-address-001"
+        relation: "test-relation-001"
+      expected:
+        visibility: 1
+        identity_preserved: true
+
+    - id: mask-0010
+      mask: 0x0002
+      identity:
+        address: "test-address-002"
+        relation: "test-relation-002"
+      expected:
+        visibility: 1
+        identity_preserved: true
+
+    - id: mask-0011
+      mask: 0x0003
+      identity:
+        address: "test-address-003"
+        relation: "test-relation-003"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-0100
+      mask: 0x0004
+      identity:
+        address: "test-address-004"
+        relation: "test-relation-004"
+      expected:
+        visibility: 1
+        identity_preserved: true
+
+    - id: mask-0101
+      mask: 0x0005
+      identity:
+        address: "test-address-005"
+        relation: "test-relation-005"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-0110
+      mask: 0x0006
+      identity:
+        address: "test-address-006"
+        relation: "test-relation-006"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-0111
+      mask: 0x0007
+      identity:
+        address: "test-address-007"
+        relation: "test-relation-007"
+      expected:
+        visibility: 3
+        identity_preserved: true
+
+    - id: mask-1000
+      mask: 0x0008
+      identity:
+        address: "test-address-008"
+        relation: "test-relation-008"
+      expected:
+        visibility: 1
+        identity_preserved: true
+
+    - id: mask-1001
+      mask: 0x0009
+      identity:
+        address: "test-address-009"
+        relation: "test-relation-009"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-1010
+      mask: 0x000A
+      identity:
+        address: "test-address-010"
+        relation: "test-relation-010"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-1011
+      mask: 0x000B
+      identity:
+        address: "test-address-011"
+        relation: "test-relation-011"
+      expected:
+        visibility: 3
+        identity_preserved: true
+
+    - id: mask-1100
+      mask: 0x000C
+      identity:
+        address: "test-address-012"
+        relation: "test-relation-012"
+      expected:
+        visibility: 2
+        identity_preserved: true
+
+    - id: mask-1101
+      mask: 0x000D
+      identity:
+        address: "test-address-013"
+        relation: "test-relation-013"
+      expected:
+        visibility: 3
+        identity_preserved: true
+
+    - id: mask-1110
+      mask: 0x000E
+      identity:
+        address: "test-address-014"
+        relation: "test-relation-014"
+      expected:
+        visibility: 3
+        identity_preserved: true
+
+    - id: mask-1111
+      mask: 0x000F
+      identity:
+        address: "test-address-015"
+        relation: "test-relation-015"
+      expected:
+        visibility: 4
+        identity_preserved: true
+
+invariants:
+  - "projection changes visibility, not identity"
+  - "identity.address is preserved across projection"
+  - "identity.relation is preserved across projection"
+  - "visibility = popcount(mask)"
+  - "mask count = 16"

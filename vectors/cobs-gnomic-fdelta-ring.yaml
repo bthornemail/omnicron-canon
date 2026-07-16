@@ -1,0 +1,161 @@
+# COBS Gnomic Omicron FΔ Ring Profile Vectors
+# Canonical source: omnicron-canon/vectors/cobs-gnomic-fdelta-ring.yaml
+#
+# Gnomic Omicron gauge-ring delta profile with FΔ as delimiter.
+# Encoding status: unresolved - tests symbolic structure only.
+#
+# The concrete carrier projection of FΔ is not yet frozen.
+# These vectors define expected symbolic behavior.
+#
+# RNULL = FΔ
+# delimiter_octets: unresolved
+# framing: prefix and suffix (FΔ ... FΔ)
+#
+# FΔ is NOT a hexadecimal byte. It is a symbolic ring element.
+# When the carrier encoding is frozen, FΔ will map to:
+#   one byte
+#   two bytes
+#   an escape pair
+#   a gauge byte plus delta byte
+#   or a wider coded cell
+#
+# Until then, these vectors are symbolic.
+
+schema: cobs-gnomic-fdelta-ring
+version: "1.0"
+profile: gnomic-omicron-fdelta
+delimiter_symbol: "FΔ"
+delimiter_octets: null
+encoding_status: unresolved
+framing:
+  prefix: true
+  suffix: true
+
+vectors:
+  # ------------------------------------------------------------------
+  # Symbolic empty payload
+  # ------------------------------------------------------------------
+  - id: fdelta-empty
+    description: "Empty payload with FΔ ring"
+    payload: []
+    encoded_body: [CODE_1]
+    framed_symbols: ["FΔ", CODE_1, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic single FΔ
+  # ------------------------------------------------------------------
+  - id: fdelta-single-fdelta
+    description: "Single FΔ byte requires stuffing"
+    payload: [FΔ]
+    encoded_body: [CODE_2, FΔ_STUFFED]
+    framed_symbols: ["FΔ", CODE_2, FΔ_STUFFED, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic leading FΔ
+  # ------------------------------------------------------------------
+  - id: fdelta-leading-fdelta
+    description: "FΔ at start requires stuffing"
+    payload: [FΔ, A, B, C]
+    encoded_body: [CODE_2, FΔ_STUFFED, CODE_1, A, B, C]
+    framed_symbols: ["FΔ", CODE_2, FΔ_STUFFED, CODE_1, A, B, C, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic trailing FΔ
+  # ------------------------------------------------------------------
+  - id: fdelta-trailing-fdelta
+    description: "FΔ at end requires stuffing"
+    payload: [A, B, C, FΔ]
+    encoded_body: [CODE_4, A, B, C, CODE_1]
+    framed_symbols: ["FΔ", CODE_4, A, B, C, CODE_1, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic embedded FΔ bytes
+  # ------------------------------------------------------------------
+  - id: fdelta-embedded-fdeltas
+    description: "Multiple FΔ bytes require multiple stuffings"
+    payload: [A, FΔ, B, FΔ, C]
+    encoded_body: [CODE_2, A, CODE_2, B, CODE_2, C]
+    framed_symbols: ["FΔ", CODE_2, A, CODE_2, B, CODE_2, C, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic long run
+  # ------------------------------------------------------------------
+  - id: fdelta-long-run
+    description: "254-byte nonzero run uses CODE_FF"
+    payload: NONZERO_254
+    encoded_body: [CODE_FF, NONZERO_254_BYTES]
+    framed_symbols: ["FΔ", CODE_FF, NONZERO_254_BYTES, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Symbolic all FΔ
+  # ------------------------------------------------------------------
+  - id: fdelta-all-fdelta
+    description: "All-FΔ payload requires stuffing for each"
+    payload: [FΔ, FΔ, FΔ]
+    encoded_body: [CODE_2, FΔ_STUFFED, CODE_2, FΔ_STUFFED, CODE_1]
+    framed_symbols: ["FΔ", CODE_2, FΔ_STUFFED, CODE_2, FΔ_STUFFED, CODE_1, "FΔ"]
+    expected: { valid: true, roundtrip: true }
+
+  # ------------------------------------------------------------------
+  # Invalid FΔ in body
+  # ------------------------------------------------------------------
+  - id: fdelta-invalid-fdelta-in-body
+    description: "FΔ appearing in encoded body violates invariant"
+    encoded_body: [CODE_2, FΔ]
+    framed_symbols: ["FΔ", CODE_2, FΔ, "FΔ"]
+    expected: { valid: false, error: "FΔ in encoded body" }
+
+  # ------------------------------------------------------------------
+  # Missing ring delimiter
+  # ------------------------------------------------------------------
+  - id: fdelta-missing-ring-delimiter
+    description: "Frame without FΔ ring delimiters"
+    encoded_body: [CODE_3, A, B, C]
+    framed_symbols: [CODE_3, A, B, C]
+    expected: { valid: true, frame_valid: false, error: "missing ring delimiter" }
+
+  # ------------------------------------------------------------------
+  # Single-sided ring (prefix only)
+  # ------------------------------------------------------------------
+  - id: fdelta-prefix-only
+    description: "Frame with prefix only (incomplete ring)"
+    payload: [A, B, C]
+    encoded_body: [CODE_3, A, B, C]
+    framed_symbols: ["FΔ", CODE_3, A, B, C]
+    expected: { valid: true, frame_valid: false, error: "incomplete ring" }
+
+  # ------------------------------------------------------------------
+  # Single-sided ring (suffix only)
+  # ------------------------------------------------------------------
+  - id: fdelta-suffix-only
+    description: "Frame with suffix only (incomplete ring)"
+    payload: [A, B, C]
+    encoded_body: [CODE_3, A, B, C]
+    framed_symbols: [CODE_3, A, B, C, "FΔ"]
+    expected: { valid: true, frame_valid: false, error: "incomplete ring" }
+
+  # ------------------------------------------------------------------
+  # Nested ring (ring within ring)
+  # ------------------------------------------------------------------
+  - id: fdelta-nested-ring
+    description: "Nested ring structure"
+    payload: [A, B, C]
+    encoded_body: [CODE_3, A, B, C]
+    framed_symbols: ["FΔ", "FΔ", CODE_3, A, B, C, "FΔ", "FΔ"]
+    expected: { valid: true, frame_valid: false, error: "nested ring" }
+
+invariants:
+  - "FΔ ∉ encoded_body"
+  - "decode(encode(payload, FΔ), FΔ) = payload"
+  - "code units are symbolic (CODE_1..CODE_FF)"
+  - "ring surrounds transported relation"
+  - "ring does not validate or accept relation"
+  - "ring must be complete (prefix + suffix)"
+  - "truncation detected and rejected"
+  - "missing ring delimiter detected and rejected"

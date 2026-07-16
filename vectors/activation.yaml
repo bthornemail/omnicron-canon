@@ -1,0 +1,104 @@
+# Activation Conformance Vectors
+# Canonical source: omnicron-canon/vectors/activation.yaml
+# Consumed by: omnicron-lisp (requests only)
+#
+# Activation vectors are split into:
+#   requests: consumed by omnicron-lisp
+#   results: consumed by future validation/receipt implementation
+#
+# The distinction is critical:
+#   - requests are declarations that can be evaluated
+#   - results require validation + receipt
+#   - omnicron-lisp can execute requests
+#   - omnicron-lisp cannot emit results
+
+schema: activation
+version: "1.0"
+
+vectors:
+  requests:
+    - id: request-invalid
+      description: "Invalid activation request (cannot be validated)"
+      value: -1
+      expected:
+        valid: false
+        evaluable: true
+        receipt_emitted: false
+
+    - id: request-unresolved
+      description: "Unresolved activation request (needs more information)"
+      value: 0
+      expected:
+        valid: false
+        evaluable: true
+        receipt_emitted: false
+
+    - id: request-positive
+      description: "Positive activation request (can be validated)"
+      value: 1
+      expected:
+        valid: true
+        evaluable: true
+        receipt_emitted: false
+
+    - id: request-neutral
+      description: "Neutral activation request (no activation needed)"
+      value: 0
+      expected:
+        valid: true
+        evaluable: true
+        receipt_emitted: false
+
+    - id: request-ambiguous
+      description: "Ambiguous activation request (multiple interpretations)"
+      value: 2
+      expected:
+        valid: false
+        evaluable: true
+        receipt_emitted: false
+
+  results:
+    - id: result-accepted
+      description: "Accepted activation result (validated + receipted)"
+      validation:
+        passed: true
+      receipt:
+        emitted: true
+      expected:
+        valid: true
+        accepted: 1
+        validated: 1
+        receipted: 1
+
+    - id: result-rejected
+      description: "Rejected activation result (validation failed)"
+      validation:
+        passed: false
+      receipt:
+        emitted: false
+      expected:
+        valid: false
+        accepted: 0
+        validated: 0
+        receipted: 0
+
+    - id: result-pending
+      description: "Pending activation result (validation in progress)"
+      validation:
+        passed: null
+      receipt:
+        emitted: false
+      expected:
+        valid: null
+        accepted: 0
+        validated: 0
+        receipted: 0
+
+invariants:
+  - "requests are declarations that can be evaluated"
+  - "results require validation + receipt"
+  - "omnicron-lisp can execute requests"
+  - "omnicron-lisp cannot emit results"
+  - "requests do not imply acceptance"
+  - "results do imply prior validation"
+  - "receipts do imply prior acceptance"

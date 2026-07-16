@@ -1,0 +1,2010 @@
+Generating Compact [7,4,3] vectors...
+Generated 16 valid codewords
+Generated 112 single-bit corruption cases
+schema: compact743
+version: '1.0'
+generator: generate_compact743.py
+layout:
+  description: 'Codeword layout: [LOGOS, NOMOS, PATHOS, FS, GS, RS, US]'
+  bit_positions:
+    '6': LOGOS
+    '5': NOMOS
+    '4': PATHOS
+    '3': FS
+    '2': GS
+    '1': RS
+    '0': US
+equations:
+  logos: "FS \u2295 GS \u2295 US"
+  nomos: "FS \u2295 RS \u2295 US"
+  pathos: "GS \u2295 RS \u2295 US"
+parity_check_matrix:
+- - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+- - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+- - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+vectors:
+  valid:
+  - scope: &id001
+      fs: 0
+      gs: 0
+      rs: 0
+      us: 0
+    codeword: &id002
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id003
+      fs: 0
+      gs: 0
+      rs: 0
+      us: 1
+    codeword: &id004
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id005
+      fs: 0
+      gs: 0
+      rs: 1
+      us: 0
+    codeword: &id006
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id007
+      fs: 0
+      gs: 0
+      rs: 1
+      us: 1
+    codeword: &id008
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id009
+      fs: 0
+      gs: 1
+      rs: 0
+      us: 0
+    codeword: &id010
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id011
+      fs: 0
+      gs: 1
+      rs: 0
+      us: 1
+    codeword: &id012
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id013
+      fs: 0
+      gs: 1
+      rs: 1
+      us: 0
+    codeword: &id014
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id015
+      fs: 0
+      gs: 1
+      rs: 1
+      us: 1
+    codeword: &id016
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id017
+      fs: 1
+      gs: 0
+      rs: 0
+      us: 0
+    codeword: &id018
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id019
+      fs: 1
+      gs: 0
+      rs: 0
+      us: 1
+    codeword: &id020
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id021
+      fs: 1
+      gs: 0
+      rs: 1
+      us: 0
+    codeword: &id022
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id023
+      fs: 1
+      gs: 0
+      rs: 1
+      us: 1
+    codeword: &id024
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id025
+      fs: 1
+      gs: 1
+      rs: 0
+      us: 0
+    codeword: &id026
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id027
+      fs: 1
+      gs: 1
+      rs: 0
+      us: 1
+    codeword: &id028
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id029
+      fs: 1
+      gs: 1
+      rs: 1
+      us: 0
+    codeword: &id030
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    syndrome:
+    - 0
+    - 0
+    - 0
+  - scope: &id031
+      fs: 1
+      gs: 1
+      rs: 1
+      us: 1
+    codeword: &id032
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    syndrome:
+    - 0
+    - 0
+    - 0
+  single_bit_corruptions:
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id001
+    original: *id002
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id003
+    original: *id004
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id005
+    original: *id006
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id007
+    original: *id008
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id009
+    original: *id010
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id011
+    original: *id012
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id013
+    original: *id014
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id015
+    original: *id016
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id017
+    original: *id018
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id019
+    original: *id020
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id021
+    original: *id022
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id023
+    original: *id024
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id025
+    original: *id026
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id027
+    original: *id028
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id029
+    original: *id030
+    corrupted:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 0
+    syndrome:
+    - 1
+    - 0
+    - 0
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 1
+    syndrome:
+    - 0
+    - 1
+    - 0
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    bit_position: 2
+    syndrome:
+    - 0
+    - 0
+    - 1
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    - 1
+    bit_position: 3
+    syndrome:
+    - 1
+    - 1
+    - 0
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 1
+    bit_position: 4
+    syndrome:
+    - 1
+    - 0
+    - 1
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    bit_position: 5
+    syndrome:
+    - 0
+    - 1
+    - 1
+  - scope: *id031
+    original: *id032
+    corrupted:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    bit_position: 6
+    syndrome:
+    - 1
+    - 1
+    - 1
+invariants:
+- syndrome = H * codeword^T = [0,0,0] for all valid codewords
+- syndrome != [0,0,0] for all single-bit corruptions
+- each single-bit corruption flips exactly one syndrome bit
+- codeword length = 7
+- valid count = 16
+- single-bit corruption count = 112
+
+Verification:
+  Valid codewords: 16 (expected 16)
+  Single-bit corruptions: 112 (expected 112)
+  All syndromes verified
+

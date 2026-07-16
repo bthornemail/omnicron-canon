@@ -1,0 +1,114 @@
+# COBS Core Vectors (Delimiter-Independent)
+# Canonical source: omnicron-canon/vectors/cobs-core.yaml
+#
+# These vectors test delimiter-independent COBS behavior.
+# The NULL symbol (RNULL) is abstract - not bound to any specific byte value.
+#
+# COBS_R(payload, RNULL):
+#   COBS parameterized by the selected NULL-ring element
+#
+# Invariants:
+#   RNULL ∉ encoded_body
+#   decode(encode(payload, RNULL), RNULL) = payload
+#   code units are interpreted relative to the selected alphabet
+
+schema: cobs-core
+version: "1.0"
+null_symbol: RNULL
+
+vectors:
+  # ------------------------------------------------------------------
+  # Empty payload
+  # ------------------------------------------------------------------
+  - id: core-empty
+    description: "Empty payload produces single code byte"
+    payload: []
+    encoded_body: [CODE_1]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Single RNULL byte
+  # ------------------------------------------------------------------
+  - id: core-single-rnull
+    description: "Single RNULL byte requires stuffing"
+    payload: [RNULL]
+    encoded_body: [CODE_2, RNULL_STUFFED]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Leading RNULL
+  # ------------------------------------------------------------------
+  - id: core-leading-rnull
+    description: "RNULL at start requires stuffing"
+    payload: [RNULL, A, B, C]
+    encoded_body: [CODE_2, RNULL_STUFFED, CODE_1, A, B, C]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Trailing RNULL
+  # ------------------------------------------------------------------
+  - id: core-trailing-rnull
+    description: "RNULL at end requires stuffing"
+    payload: [A, B, C, RNULL]
+    encoded_body: [CODE_4, A, B, C, CODE_1]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Embedded RNULL bytes
+  # ------------------------------------------------------------------
+  - id: core-embedded-rnulls
+    description: "Multiple RNULL bytes require multiple stuffings"
+    payload: [A, RNULL, B, RNULL, C]
+    encoded_body: [CODE_2, A, CODE_2, B, CODE_2, C]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Long nonzero run (254 bytes)
+  # ------------------------------------------------------------------
+  - id: core-long-run
+    description: "254-byte nonzero run uses CODE_FF"
+    payload: NONZERO_254
+    encoded_body: [CODE_FF, NONZERO_254_BYTES]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # Overflow run (255 bytes)
+  # ------------------------------------------------------------------
+  - id: core-overflow-run
+    description: "255-byte nonzero run splits into CODE_FF + CODE_2"
+    payload: NONZERO_255
+    encoded_body: [CODE_FF, NONZERO_254_BYTES, CODE_2, LAST_BYTE]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+  # ------------------------------------------------------------------
+  # All RNULL bytes
+  # ------------------------------------------------------------------
+  - id: core-all-rnull
+    description: "All-RNULL payload requires stuffing for each"
+    payload: [RNULL, RNULL, RNULL]
+    encoded_body: [CODE_2, RNULL_STUFFED, CODE_2, RNULL_STUFFED, CODE_1]
+    invariants:
+      - "RNULL ∉ encoded_body"
+      - "roundtrip holds"
+
+invariants:
+  - "RNULL ∉ encoded_body for all valid payloads"
+  - "decode(encode(payload, RNULL), RNULL) = payload"
+  - "code byte ∈ {CODE_1 .. CODE_FF}"
+  - "CODE_FF denotes 254-byte run without inserted delimiter"
+  - "truncation detected and rejected"
+  - "missing delimiter detected and rejected"

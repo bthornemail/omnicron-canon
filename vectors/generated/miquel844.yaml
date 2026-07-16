@@ -1,0 +1,12 @@
+Generating Miquel [8,4,4] vectors...
+Generated 16 valid codewords
+Traceback (most recent call last):
+  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 182, in <module>
+    main()
+  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 147, in main
+    single_corruptions = generate_single_bit_corruptions(valid)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 89, in generate_single_bit_corruptions
+    assert not valid_check, f"Corruption at bit {bit_pos} should not produce valid codeword"
+           ^^^^^^^^^^^^^^^
+AssertionError: Corruption at bit 6 should not produce valid codeword
