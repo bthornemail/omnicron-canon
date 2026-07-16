@@ -1,0 +1,2748 @@
+
+Row 0: Unary, Character 
+Row 1: Morse / Yin-Yang
+Row 2: 6-Dot / Trigrams
+Row 3: 8-Dot
+Row 4: Hexagrams
+Row 5: Tap Code....
+
+Idk
+Row 6: King Wen Sequencing - sexagenary cycle,
+Row 7: IChing 
+
+
+I don't kkow what below is but its like the same thing we are doing witht he 7-bit clock and the 240-bit clock at a step sequence of the 60
+---
+
+From Wikipedia, the free encyclopedia
+(Redirected from Ganzhi)
+"Xinwei" redirects here. For the town in China, see Xinwei, Meizhou.
+Sexagenary cycle
+Chinese name
+Chinese	六十干支
+Literal meaning	sixty stem branch
+Transcriptions
+ 
+Alternative Chinese name
+Chinese	干支
+Literal meaning	stem branch
+Transcriptions
+ 
+Vietnamese name
+Vietnamese	Can Chi
+Thiên Can Địa Chi
+Thập Can Thập Nhị Chi
+Chữ Hán	干支
+天干地支
+十干十二支
+The sexagenary cycle, also known as the gānzhī (干支) or stems-and-branches, is a cycle of sixty terms used to designate successive years, historically used for recording time in China and the rest of the East Asian cultural sphere, as well as in Southeast Asia.[1][2]
+
+Sexagenary cycle
+01
+Wood Rat	02
+Wood Ox	03
+Fire Tiger	04
+Fire Rabbit	05
+Earth Dragon	06
+Earth Snake
+07
+Metal Horse	08
+Metal Goat	09
+Water Monkey	10
+Water Rooster	11
+Wood Dog	12
+Wood Pig
+13
+Fire Rat	14
+Fire Ox	15
+Earth Tiger	16
+Earth Rabbit	17
+Metal Dragon	18
+Metal Snake
+19
+Water Horse	20
+Water Goat	21
+Wood Monkey	22
+Wood Rooster	23
+Fire Dog	24
+Fire Pig
+25
+Earth Rat	26
+Earth Ox	27
+Metal Tiger	28
+Metal Rabbit	29
+Water Dragon	30
+Water Snake
+31
+Wood Horse	32
+Wood Goat	33
+Fire Monkey	34
+Fire Rooster	35
+Earth Dog	36
+Earth Pig
+37
+Metal Rat	38
+Metal Ox	39
+Water Tiger	40
+Water Rabbit	41
+Wood Dragon	42
+Wood Snake
+43
+Fire Horse	44
+Fire Goat	45
+Earth Monkey	46
+Earth Rooster	47
+Metal Dog	48
+Metal Pig
+49
+Water Rat	50
+Water Ox	51
+Wood Tiger	52
+Wood Rabbit	53
+Fire Dragon	54
+Fire Snake
+55
+Earth Horse	56
+Earth Goat	57
+Metal Monkey	58
+Metal Rooster	59
+Water Dog	60
+Water Pig
+Heavenly Stems ・ Earthly Branches
+
+Statues of Tai Sui deities responsible for individual years of the sexagenary cycle
+Each term in the sexagenary cycle consists of two Chinese characters, the first being one of the ten Heavenly Stems of the Shang-era week and the second being one of the twelve Earthly Branches representing the years of Jupiter's duodecennial orbital cycle. The first term jiǎzǐ (甲子) combines the first heavenly stem with the first earthly branch. The second term yǐchǒu (乙丑) combines the second stem with the second branch. This pattern continues until both cycles conclude simultaneously with guǐhài (癸亥), after which it begins again at jiǎzǐ. This termination at ten and twelve's least common multiple leaves half of the combinations—such as jiǎchǒu (甲丑)—unused; this is traditionally explained by reference to pairing the stems and branches according to their yin and yang properties.
+
+It appeared as a means of recording days in the first Chinese written texts, the oracle bones of the late second millennium BC Shang dynasty. Its use to record years began around the middle of the 3rd century BC.[3] The cycle and its variations have been an important part of the traditional calendrical systems in Chinese-influenced Asian states and territories, particularly those of Japan, Korea, and Vietnam, with the old Chinese system still in use in Taiwan, and in Mainland China.[4] In India, the Ahom people (descendants of the Dai people of Yunnan who migrated to Assam in the 13th century) also used the sexagenary cycle known as Lak-Ni.[5][6]
+
+This traditional method of numbering days and years no longer has any significant role in modern Chinese time-keeping or the official calendar. However, the sexagenary cycle is used in the names of many historical events, such as the Chinese Xinhai Revolution, the Japanese Boshin War, the Korean Imjin War and the Vietnamese Famine of Ất Dậu, Tết Mậu Thân. It also continues to have a role in contemporary Chinese astrology and fortune telling. There are some parallels in this with Tamil calendar.
+
+This combination of two sub-cycles to generate a larger cycle and its use to record time have parallels in other calendrical systems, notably the Akan calendar.[7]
+
+History
+
+Bone inscribed with a table of the sexagenary cycle, dated to the early 11th century BC
+The sexagenary cycle is attested as a method of recording days from the earliest written records in China, records of divination on oracle bones, beginning c. 1100 BC.[8] Almost every oracle bone inscription includes a date in this format. This use of the cycle for days is attested throughout the Zhou dynasty and remained common into the Han period for all documentary purposes that required dates specified to the day.
+
+Almost all the dates in the Spring and Autumn Annals, a chronological list of events from 722 to 481 BC, use this system in combination with regnal years and months (lunations) to record dates. Eclipses recorded in the Annals demonstrate that continuity in the sexagenary day-count was unbroken from that period onwards. It is likely that this unbroken continuity went back still further to the first appearance of the sexagenary cycle during the Shang period.[9]
+
+The use of the sexagenary cycle for recording years is much more recent. The earliest discovered documents showing this usage are among the silk manuscripts recovered from Mawangdui tomb 3, sealed in 168 BC. In one of these documents, a sexagenary grid diagram is annotated in three places to mark notable events. For example, the first year of the reign of Qin Shi Huang (秦始皇), 246 BC, is noted on the diagram next to the position of the 60-cycle term yǐmǎo (乙卯, 52 of 60), corresponding to that year.[10][11] Use of the cycle to record years became widespread for administrative time-keeping during the Western Han dynasty (202 BC – 8 AD). The count of years has continued uninterrupted ever since:[12] the year 1984 began the present cycle (a 甲子—jiǎzǐ year), and 2044 will begin another. Note that in China the new year, when the sexagenary count increments, is not January 1, but rather the lunar new year of the traditional Chinese calendar. For example, the jichou 己丑 year (coinciding roughly with 2009) began on January 26, 2009. (However, for astrology, the year begins with the first solar term Lìchūn (立春), which occurs near February 4.)
+
+In Japan, according to Nihon shoki, the calendar was transmitted to Japan in 553. But it was not until the Suiko era that the calendar was used for politics. The year 604, when the Japanese officially adopted the Chinese calendar, was the first year of the cycle.[13]
+
+The Korean (환갑; 還甲; hwangap) and Japanese tradition (還暦 kanreki) of celebrating the 60th birthday (literally 'return of calendar') reflects the influence of the sexagenary cycle as a count of years.[14]
+
+The Tibetan calendar also counts years using a 60-year cycle based on 12 animals and 5 elements, but while the first year of the Chinese cycle is always jiǎzǐ (the year of the Wood Rat), the first year of the Tibetan cycle is dīngmǎo (丁卯; year 4 on the Chinese cycle, year of the Fire Rabbit).[15]
+
+Heavenly Stems
+Main article: Heavenly Stems
+No.	Heavenly Stem	Ahom Name	Chinese name	Japanese name	Korean name	Vietnamese name	Yin Yang	Wu Xing
+Mandarin
+(Pinyin)	Cantonese
+(Jyutping)	Middle Chinese
+(Baxter)	Old Chinese
+(Baxter–Sagart)	Onyomi	Kunyomi with
+corresponding kanji	Romanized	Hangul
+1	甲	kap	jiǎ	gaap3	kæp	*[k]ˤr[a]p	kō (こう)	kinoe (木の兄)	gap	갑	giáp	yang	wood
+2	乙	dap	yǐ	jyut3	ʔit	*qrət	otsu (おつ)	kinoto (木の弟)	eul	을	ất	yin
+3	丙	rai	bǐng	bing2	pjængX	*praŋʔ	hei (へい)	hinoe (火の兄)	byeong	병	bính	yang	fire
+4	丁	Mueang	dīng	ding1	teng	*tˤeŋ	tei (てい)	hinoto (火の弟)	jeong	정	đinh	yin
+5	戊	plaek	wù	mou6	muwH	*m(r)uʔ-s (~ *m(r)uʔ)	bo (ぼ)	tsuchinoe (土の兄)	mu	무	mậu	yang	earth
+6	己	kat	jǐ	gei2	kiX	*k(r)əʔ	ki (き)	tsuchinoto (土の弟)	gi	기	kỷ	yin
+7	庚	khut	gēng	gang1	kæng	*kˤraŋ	kō (こう)	kanoe (金の兄)	gyeong	경	canh	yang	metal
+8	辛	rung	xīn	san1	sin	*si[n]	shin (しん)	kanoto (金の弟)	sin	신	tân	yin
+9	壬	tao	rén	jam4	nyim	*n[ə]m	jin (じん)	mizunoe (水の兄)	im	임	nhâm	yang	water
+10	癸	ka	guǐ	gwai3	kjwijX	*kʷijʔ	ki (き)	mizunoto (水の弟)	gye	계	quý	yin
+Earthly Branches
+Main article: Earthly Branches
+No.	Earthly Branch	Chinese name	Japanese name	Korean name	Vietnamese
+name	Vietnamese
+zodiac	Chinese
+zodiac	Corresponding
+hours
+Mandarin
+(Pinyin)	Cantonese
+(Jyutping)	Middle Chinese
+(Baxter)	Old Chinese
+(Baxter–Sagart)	Onyomi	Kunyomi	Romanized	Hangul
+1	子	zǐ	zi2	tsiX	*[ts]əʔ	shi (し)	ne (ね)	ja	자	tý	Rat (chuột 𤝞)	Rat (鼠)	23:00–01:00
+2	丑	chǒu	cau2	trhjuwX	*[n̥]ruʔ	chū (ちゅう)	ushi (うし)	chuk	축	sửu	Water buffalo (trâu 𤛠)	Ox (牛)	01:00–03:00
+3	寅	yín	jan4	yij	*[ɢ](r)ər	in (いん)	tora (とら)	in	인	dần	Tiger (hổ 虎/cọp 𧲫)	Tiger (虎)	03:00–05:00
+4	卯	mǎo	maau5	mæwX	*mˤruʔ	bō (ぼう)	u (う)	myo	묘	mão/mẹo	Cat (mèo 猫)	Rabbit (兔)	05:00–07:00
+5	辰	chén	san4	dzyin	*[d]ər	shin (しん)	tatsu (たつ)	jin	진	thìn	Dragon (rồng 龍)	Dragon (龍)	07:00–09:00
+6	巳	sì	zi6	ziX	*s-[ɢ]əʔ	shi (し)	mi (み)	sa	사	tỵ	Snake (rắn 𧋻)	Snake (蛇)	09:00–11:00
+7	午	wǔ	ng5	nguX	*[m].qʰˤaʔ	go (ご)	uma (うま)	o	오	ngọ	Horse (ngựa 馭)	Horse (馬)	11:00–13:00
+8	未	wèi	mei6	mjɨjH	*m[ə]t-s	mi (み) or bi (び)	hitsuji (ひつじ)	mi	미	mùi	Goat (dê 羝)	Goat (羊)	13:00–15:00
+9	申	shēn	san1	syin	*l̥i[n]	shin (しん)	saru (さる)	sin	신	thân	Monkey (khỉ 𤠳)	Monkey (猴)	15:00–17:00
+10	酉	yǒu	jau5	yuwX	*N-ruʔ	yū (ゆう)	tori (とり)	yu	유	dậu	Rooster (gà 𪂮)	Rooster (雞)	17:00–19:00
+11	戌	xū	seot1	swit	*s.mi[t]	jutsu (じゅつ)	inu (いぬ)	sul	술	tuất	Dog (chó 㹥)	Dog (狗)	19:00–21:00
+12	亥	hài	hoi6	hojX	*[g]ˤəʔ	gai (がい)	i (い)	hae	해	hợi	Pig (lợn 𤞼/heo 㺧)	Pig (豬)	21:00–23:00
+*The names of several animals can be translated into English in several different ways. The Vietnamese Earthly Branches use cat instead of Rabbit.
+
+Sexagenary years
+No.	Stem-Branch	Mandarin Chinese Pinyin	Japanese	Korean	Vietnamese	Associations	BC	AD	Current Cycle
+1	甲子	jiǎzǐ	
+kōshi
+kasshi
+kinoe-ne
+gapja 갑자	Giáp Tý	Yang Wood Rat	57	4	1984
+2	乙丑	yǐchǒu	
+itchū
+kinoto-ushi
+eulchuk 을축	Ất Sửu	Yin Wood Ox	56	5	1985
+3	丙寅	bǐngyín	
+heiin
+hinoe-tora
+byeongin 병인	Bính Dần	Yang Fire Tiger	55	6	1986
+4	丁卯	dīngmǎo	
+teibō
+hinoto-u
+jeongmyo 정묘	Đinh Mão	Yin Fire Rabbit	54	7	1987
+5	戊辰	wùchén	
+boshin
+tsuchinoe-tatsu
+mujin 무진	Mậu Thìn	Yang Earth Dragon	53	8	1988
+6	己巳	jǐsì	
+kishi
+tsuchinoto-mi
+gisa 기사	Kỷ Tỵ	Yin Earth Snake	52	9	1989
+7	庚午	gēngwǔ	
+kōgo
+kanoe-uma
+gyeongo 경오	Canh Ngọ	Yang Metal Horse	51	10	1990
+8	辛未	xīnwèi	
+shinbi
+kanoto-hitsuji
+sinmi 신미	Tân Mùi	Yin Metal Goat	50	11	1991
+9	壬申	rénshēn	
+jinshin
+mizunoe-saru
+imsin 임신	Nhâm Thân	Yang Water Monkey	49	12	1992
+10	癸酉	guǐyǒu	
+kiyū
+mizunoto-tori
+gyeyu 계유	Quý Dậu	Yin Water Rooster	48	13	1993
+11	甲戌	jiǎxū	
+kōjutsu
+kinoe-inu
+gapsul 갑술	Giáp Tuất	Yang Wood Dog	47	14	1994
+12	乙亥	yǐhài	
+itsugai
+kinoto-i
+eulhae 을해	Ât Hợi	Yin Wood Pig	46	15	1995
+13	丙子	bǐngzǐ	
+heishi
+hinoe-ne
+byeongja 병자	Bính Tý	Yang Fire Rat	45	16	1996
+14	丁丑	dīngchǒu	
+teichū
+hinoto-ushi
+jeongchuk 정축	Đinh Sửu	Yin Fire Ox	44	17	1997
+15	戊寅	wùyín	
+boin
+tsuchinoe-tora
+muin 무인	Mậu Dần	Yang Earth Tiger	43	18	1998
+16	己卯	jǐmǎo	
+kibō
+tsuchinoto-u
+gimyo 기묘	Kỷ Mão	Yin Earth Rabbit	42	19	1999
+17	庚辰	gēngchén	
+kōshin
+kanoe-tatsu
+gyeongjin 경진	Canh Thìn	Yang Metal Dragon	41	20	2000
+18	辛巳	xīnsì	
+shinshi
+kanoto-mi
+sinsa 신사	Tân Tỵ	Yin Metal Snake	40	21	2001
+19	壬午	rénwǔ	
+jingo
+mizunoe-uma
+imo 임오	Nhâm Ngọ	Yang Water Horse	39	22	2002
+20	癸未	guǐwèi	
+kibi
+mizunoto-hitsuji
+gyemi 계미	Quý Mùi	Yin Water Goat	38	23	2003
+21	甲申	jiǎshēn	
+kōshin
+kinoe-saru
+gapsin 갑신	Giáp Thân	Yang Wood Monkey	37	24	2004
+22	乙酉	yǐyǒu	
+itsuyū
+kinoto-tori
+euryu 을유	Ất Dậu	Yin Wood Rooster	36	25	2005
+23	丙戌	bǐngxū	
+heijutsu
+hinoe-inu
+byeongsul 병술	Bính Tuất	Yang Fire Dog	35	26	2006
+24	丁亥	dīnghài	
+teigai
+hinoto-i
+jeonghae 정해	Đinh Hợi	Yin Fire Pig	34	27	2007
+25	戊子	wùzǐ	
+boshi
+tsuchinoe-ne
+muja 무자	Mậu Tý	Yang Earth Rat	33	28	2008
+26	己丑	jǐchǒu	
+kichū
+tsuchinoto-ushi
+gichuk 기축	Kỷ Sửu	Yin Earth Ox	32	29	2009
+27	庚寅	gēngyín	
+kōin
+kanoe-tora
+gyeongin 경인	Canh Dần	Yang Metal Tiger	31	30	2010
+28	辛卯	xīnmǎo	
+shinbō
+kanoto-u
+sinmyo 신묘	Tân Mão	Yin Metal Rabbit	30	31	2011
+29	壬辰	rénchén	
+jinshin
+mizunoe-tatsu
+imjin 임진	Nhâm Thìn	Yang Water Dragon	29	32	2012
+30	癸巳	guǐsì	
+kishi
+mizunoto-mi
+gyesa 계사	Quý Tỵ	Yin Water Snake	28	33	2013
+31	甲午	jiǎwǔ	
+kōgo
+kinoe-uma
+gabo 갑오	Giáp Ngọ	Yang Wood Horse	27	34	2014
+32	乙未	yǐwèi	
+itsubi
+kinoto-hitsuji
+eulmi 을미	Ất Mùi	Yin Wood Goat	26	35	2015
+33	丙申	bǐngshēn	
+heishin
+hinoe-saru
+byeongsin 병신	Bính Thân	Yang Fire Monkey	25	36	2016
+34	丁酉	dīngyǒu	
+teiyū
+hinoto-tori
+jeongyu 정유	Đinh Dậu	Yin Fire Rooster	24	37	2017
+35	戊戌	wùxū	
+bojutsu
+tsuchinoe-inu
+musul 무술	Mậu Tuất	Yang Earth Dog	23	38	2018
+36	己亥	jǐhài	
+kigai
+tsuchinoto-i
+gihae 기해	Kỷ Hợi	Yin Earth Pig	22	39	2019
+37	庚子	gēngzǐ	
+kōshi
+kanoe-ne
+gyeongja 경자	Canh Tý	Yang Metal Rat	21	40	2020
+38	辛丑	xīnchǒu	
+shinchū
+kanoto-ushi
+sinchuk 신축	Tân Sửu	Yin Metal Ox	20	41	2021
+39	壬寅	rényín	
+jin'in
+mizunoe-tora
+imin 임인	Nhâm Dần	Yang Water Tiger	19	42	2022
+40	癸卯	guǐmǎo	
+kibō
+mizunoto-u
+gyemyo 계묘	Quý Mão	Yin Water Rabbit	18	43	2023
+41	甲辰	jiǎchén	
+kōshin
+kinoe-tatsu
+gapjin 갑진	Giáp Thìn	Yang Wood Dragon	17	44	2024
+42	乙巳	yǐsì	
+itsushi
+kinoto-mi
+eulsa 을사	Ất Tỵ	Yin Wood Snake	16	45	2025
+43	丙午	bǐngwǔ	
+heigo
+hinoe-uma
+byeongo 병오	Bính Ngọ	Yang Fire Horse	15	46	2026
+44	丁未	dīngwèi	
+teibi
+hinoto-hitsuji
+jeongmi 정미	Đinh Mùi	Yin Fire Goat	14	47	2027
+45	戊申	wùshēn	
+boshin
+tsuchinoe-saru
+musin 무신	Mậu Thân	Yang Earth Monkey	13	48	2028
+46	己酉	jǐyǒu	
+kiyū
+tsuchinoto-tori
+giyu 기유	Kỷ Dậu	Yin Earth Rooster	12	49	2029
+47	庚戌	gēngxū	
+kōjutsu
+kanoe-inu
+gyeongsul 경술	Canh Tuất	Yang Metal Dog	11	50	2030
+48	辛亥	xīnhài	
+shingai
+kanoto-i
+sinhae 신해	Tân Hợi	Yin Metal Pig	10	51	2031
+49	壬子	rénzǐ	
+jinshi
+mizunoe-ne
+imja 임자	Nhâm Tý	Yang Water Rat	9	52	2032
+50	癸丑	guǐchǒu	
+kichū
+mizunoto-ushi
+gyechuk 계축	Quý Sửu	Yin Water Ox	8	53	2033
+51	甲寅	jiǎyín	
+kōin
+kinoe-tora
+gabin 갑인	Giáp Dần	Yang Wood Tiger	7	54	2034
+52	乙卯	yǐmǎo	
+itsubō
+kinoto-u
+eulmyo 을묘	Ất Mão	Yin Wood Rabbit	6	55	2035
+53	丙辰	bǐngchén	
+heishin
+hinoe-tatsu
+byeongjin 병진	Bính Thìn	Yang Fire Dragon	5	56	2036
+54	丁巳	dīngsì	
+teishi
+hinoto-mi
+jeongsa 정사	Đinh Tỵ	Yin Fire Snake	4	57	2037
+55	戊午	wùwǔ	
+bogo
+tsuchinoe-uma
+muo 무오	Mậu Ngọ	Yang Earth Horse	3	58	2038
+56	己未	jǐwèi	
+kibi
+tsuchinoto-hitsuji
+gimi 기미	Kỷ Mùi	Yin Earth Goat	2	59	2039
+57	庚申	gēngshēn	
+kōshin
+kanoe-saru
+gyeongsin 경신	Canh Thân	Yang Metal Monkey	1	60	2040
+58	辛酉	xīnyǒu	
+shin'yū
+kanoto-tori
+sinyu 신유	Tân Dậu	Yin Metal Rooster	60	1	2041
+59	壬戌	rénxū	
+jinjutsu
+mizunoe-inu
+imsul 임술	Nhâm Tuất	Yang Water Dog	59	2	2042
+60	癸亥	guǐhài	
+kigai
+mizunoto-i
+gyehae 계해	Quý Hợi	Yin Water Pig	58	3	2043
+
+24 cardinal directions
+Conversion between cyclic years and Western years
+
+Relationship between sexagenary cycle and recent Common Era years
+As mentioned above, the cycle first started to be used for indicating years during the Han dynasty, but it also can be used to indicate earlier years retroactively. Since it repeats, by itself it cannot specify a year without some other information, but it is frequently used with the Chinese era name (年号, 年號; niánhào) to specify a year.[16] The year starts with the new year of whoever is using the calendar. In China, the cyclic year normally changes on the Chinese Lunar New Year. In Japan until recently it was the Japanese lunar new year, which was sometimes different from the Chinese; now it is January 1. So when calculating the cyclic year of a date in the Gregorian year, one has to consider what their "new year" is. Hence, the following calculation deals with the Chinese dates after the Lunar New Year in that Gregorian year; to find the corresponding sexagenary year in the dates before the Lunar New Year would require the Gregorian year to be decreased by 1.
+
+As for example, the year 2697 BC (or −2696, using the astronomical year numbering), traditionally the first year of the reign of the legendary Yellow Emperor, was the first year (甲子; jiǎzǐ) of a cycle. 2700 years later in 4 AD, the duration equivalent to 45 60-year cycles, was also the starting year of a 60-year cycle. Similarly 1980 years later, 1984 was the start of a new cycle.
+
+Thus, to find out the Gregorian year's equivalent in the sexagenary cycle use the appropriate method below.
+
+For any year number greater than 4 AD, the equivalent sexagenary year can be found by subtracting 3 from the Gregorian year, dividing by 60 and taking the remainder. See example below.
+For any year before 1 AD, the equivalent sexagenary year can be found by adding 2 to the Gregorian year number (in BC), dividing it by 60, and subtracting the remainder from 60.
+1 AD, 2 AD and 3 AD correspond respectively to the 58th, 59th and 60th years of the sexagenary cycle.
+The formula for years AD is (year – 3) mod 60 and for years BC is 60 − [(year + 2) mod 60].
+The result will produce a number between 0 and 59, corresponding to the year order in the cycle; if the remainder is 0, it corresponds to the 60th year of a cycle. Thus, using the first method, the equivalent sexagenary year for 2012 AD is the 29th year (壬辰; rénchén), as (2012–3) mod 60 = 29 (i.e., the remainder of (2012–3) divided by 60 is 29). Using the second, the equivalent sexagenary year for 221 BC is the 17th year (庚辰; gēngchén), as 60 − [(221+2) mod 60] = 17 (i.e., 60 minus the remainder of (221+2) divided by 60 is 17).
+
+Examples
+Step-by-step example to determine the sign for 1967:
+
+1967 – 3 = 1964 ("subtracting 3 from the Gregorian year")
+⌊1964 ÷ 60⌋ = 32 ("divide by 60 and discard any fraction")
+1964 – (60 × 32) = 44 ("taking the remainder")
+Show one of the Sexagenary Cycle tables (the following section), look for 44 in the first column (No) and obtain Fire Goat (丁未; dīngwèi).
+Step-by-step example to determine the cyclic year of first year of the reign of Qin Shi Huang (246 BC):
+
+246 + 2 = 248 ("adding 2 to the Gregorian year number (in BC)")
+⌊248 ÷ 60⌋ = 4 ("divide by 60 and discard any fraction")
+248 – (60 × 4) = 8 ("taking the remainder")
+60 – 8 = 52 ("subtract the remainder from 60")
+Show one of the Sexagenary Cycle table (the following section), look for 52 in the first column (No) and obtain Wood Rabbit (乙卯; yǐmǎo).
+Equivalent lookup method
+Start from the AD year (1967), take directly the remainder mod 60, and look into column AD of the table "Sexagenary years" (just above).
+
+1967 = 60 × 32 + 47.
+Remainder is therefore 47 and the AD column says 'Fire Goat' as it should be.
+For a BC year: take the remainder of the year mod 60 and look into column BC. Applied to year 246 BC, this gives:
+
+246 = 60 × 4 + 6.
+Remainder is therefore 6 and the BC column of table "Sexagenary years" (just above) gives 'Wood Rabbit'.
+When doing these conversions, year 246 BC may be treated as −245 AD as in astronomical year numbering, but never as −246 AD, due to the lack of a year 0 in the Gregorian AD/BC system.
+
+Recent cycles
+Recent years (in the Gregorian calendar) and their corresponding years in the cycles 
+Sexagenary months
+The branches are used marginally to indicate months. Despite there being twelve branches and twelve months in a year, the earliest use of branches to indicate a twelve-fold division of a year was in the 2nd century BC. They were coordinated with the orientations of the Big Dipper, (建子月: jiànzǐyuè, 建丑月: jiànchǒuyuè, etc.).[17][18] There are two systems of placing these months, the lunar one and the solar one.
+
+One system follows the ordinary Chinese lunar calendar and connects the names of the months directly to the central solar term (中氣; zhōngqì). The jiànzǐyuè ((建)子月) is the month containing the winter solstice (i.e. the 冬至 Dōngzhì) zhōngqì. The jiànchǒuyuè ((建)丑月) is the month of the following zhōngqì, which is Dàhán (大寒), while the jiànyínyuè ((建)寅月) is that of the Yǔshuǐ (雨水) zhōngqì, etc. Intercalary months have the same branch as the preceding month.[19]
+
+In the other system (節月; jiéyuè) the "month" lasts for the period of two solar terms (two 氣策 qìcì). The zǐyuè (子月) is the period starting with Dàxuě (大雪), i.e. the solar term before the winter solstice. The chǒuyuè (丑月) starts with Xiǎohán (小寒), the term before Dàhán (大寒), while the yínyuè (寅月) starts with Lìchūn (立春), the term before Yǔshuǐ (雨水), etc. Thus in the solar system a month starts anywhere from about 15 days before to 15 days after its lunar counterpart.
+
+The branch names are not usual month names; the main use of the branches for months is astrological. However, the names are sometimes used to indicate historically which (lunar) month was the first month of the year in ancient times. For example, since the Han dynasty, the first month has been jiànyínyuè, but earlier the first month was jiànzǐyuè (during the Zhou dynasty) or jiànchǒuyuè (traditionally during the Shang dynasty) as well.[20]
+
+For astrological purposes stems are also necessary, and the months are named using the sexagenary cycle following a five-year cycle starting in a jiǎ (甲; 1st) or jǐ (己; 6th) year. The first month of the jiǎ or jǐ year is a bǐngyín (丙寅; 3rd) month, the next one is a dīngmǎo (丁卯; 4th) month, etc., and the last month of the year is a dīngchǒu (丁丑, 14th) month. The next year will start with a wùyín (戊寅; 15th) month, etc. following the cycle. The 5th year will end with a yǐchǒu (乙丑; 2nd) month. The following month, the start of a jǐ or jiǎ year, will hence again be a bǐngyín (3rd) month again. The beginning and end of the (solar) months in the table below are the approximate dates of current solar terms; they vary slightly from year to year depending on the leap days of the Gregorian calendar.
+
+Earthly Branches of the certain months	Solar term	Zhongqi (the Middle solar term)	Starts at	Ends at	Names in year of Jia or Ji (甲/己年)	Names in year of Yi or Geng (乙/庚年)	Names in year of Bing or Xin (丙/辛年)	Names in year of Ding or Ren (丁/壬年)	Names in year of Wu or Gui (戊/癸年)
+Month of Yin (寅月)	Lichun – Jingzhe	Yushui / 雨水	February 4	March 6	Bingyin / 丙寅月	Wuyin / 戊寅月	Gengyin / 庚寅月	Renyin / 壬寅月	Jiayin / 甲寅月
+Month of Mao (卯月)	Jingzhe – Qingming	Chunfen / 春分	March 6	April 5	Dingmao / 丁卯月	Jimao / 己卯月	Xinmao / 辛卯月	Guimao / 癸卯月	Yimao / 乙卯月
+Month of Chen (辰月)	Qingming – Lixia	Guyu / 谷雨	April 5	May 6	Wuchen / 戊辰月	Gengchen / 庚辰月	Renchen / 壬辰月	Jiachen / 甲辰月	Bingchen / 丙辰月
+Month of Si (巳月)	Lixia – Mangzhong	Xiaoman / 小满	May 6	June 6	Jisi / 己巳月	Xinsi / 辛巳月	Guisi / 癸巳月	Yisi / 乙巳月	Dingsi / 丁巳月
+Month of Wu (午月)	Mangzhong – Xiaoshu	Xiazhi / 夏至	June 6	July 7	Gengwu / 庚午月	Renwu / 壬午月	Jiawu / 甲午月	Bingwu / 丙午月	Wuwu / 戊午月
+Month of Wei (未月)	Xiaoshu – Liqiu	Dashu / 大暑	July 7	August 8	Xinwei / 辛未月	Guiwei / 癸未月	Yiwei / 乙未月	Dingwei / 丁未月	Jiwei / 己未月
+Month of Shen (申月)	Liqiu – Bailu	Chushu / 处暑	August 8	September 8	Renshen / 壬申月	Jiashen / 甲申月	Bingshen / 丙申月	Wushen / 戊申月	Gengshen / 庚申月
+Month of You (酉月)	Bailu – Hanlu	Qiufen / 秋分	September 8	October 8	Guiyou / 癸酉月	Yiyou / 乙酉月	Dingyou / 丁酉月	Jiyou / 己酉月	Xinyou / 辛酉月
+Month of Xu (戌月)	Hanlu – Lidong	Shuangjiang / 霜降	October 8	November 7	Jiaxu / 甲戌月	Bingxu / 丙戌月	Wuxu / 戊戌月	Gengxu / 庚戌月	Renxu / 壬戌月
+Month of Hai (亥月)	Lidong – Daxue	Xiaoxue / 小雪	November 7	December 7	Yihai / 乙亥月	Dinghai / 丁亥月	Jihai / 己亥月	Xinhai / 辛亥月	Guihai / 癸亥月
+Month of Zi (子月)	Daxue – Xiaohan	Dongzhi / 冬至	December 7	January 6	Bingzi / 丙子月	Wuzi / 戊子月	Gengzi / 庚子月	Renzi / 壬子月	Jiazi / 甲子月
+Month of Chou (丑月)	Xiaohan – Lichun	Dahan / 大寒	January 6	February 4	Dingchou / 丁丑月	Jichou / 己丑月	Xinchou / 辛丑月	Guichou / 癸丑月	Yichou / 乙丑月
+Sexagenary days
+Table for sexagenary days 
+Day
+(stem)	Month
+(stem)	2-digit year
+mod 40
+(stem)	Century
+(stem)	N	Century
+(branch)	2-digit year
+mod 16
+(branch)	Month
+(branch)	Day
+(branch)
+Julian
+mod 2
+Gregorian	Julian
+mod 4	Gregorian
+00	10	20	30	Aug		00	02	21	23	00	16		00	00		00		07			Nov	00	12	24
+01	11	21	31	Sep	Oct		04	06	25	27			21		01				14		01	13	25
+02	12	22		Nov	Dec		08	10	29	31			19		02		16	19			05		Feb	Apr		02	14	26
+03	13	23			12	14	33	35			03	03		22			03		12		Feb	Jun		03	15	27
+04	14	24			16	18	37	39		17		24	04				10			Aug		04	16	28
+05	15	25			01	03	20	22	01		22	15	05		15		01			Oct	05	17	29
+06	16	26			05	07	24	26			06	02		18			08		15		Dec	06	18	30
+07	17	27			Mar		Jan	09	11	28	30			20		07			21			06		Jan	Mar		07	19	31
+08	18	28		Jan	Apr	May	Feb	13	15	32	34		18		08			24		13		Jan	May		08	20	
+09	19	29		Feb	Jun	Jul		17	19	36	38			23		09	01			04		11			Jul		09	21
+Dates with yellow background indicate they are for this year.	10		17		02			10	22
+11			20	23		09			Sep		11	23
+N for the year: (5y + [y/4]) mod 10, y = 0–39 (stem); (5y + [y/4]) mod 12, y = 0–15 (branch)
+N for the Gregorian century: (4c + [c/4] + 2) mod 10 (stem); (8c + [c/4] + 2) mod 12 (branch), c ≥ 15
+N for the Julian century: 5c mod 10, c = 0–1 (stem); 9c mod 12, c = 0–3 (branch)
+The table above allows one to find the stem & branch for any given date. For both the stem and the branch, find the N for the row for the century, year, month, and day, then add them together. If the sum for the stems' N is above 10, subtract 10 until the result is between 1 and 10. If the sum for the branches' N is above 12, subtract 12 until the result is between 1 and 12.
+
+For any date before October 15, 1582, use the Julian century column to find the row for that century's N. For dates after October 15, 1582, use the Gregorian century column to find the century's N. When looking at dates in January and February of leap years, use the bold & italic Feb and Jan.
+
+Examples
+Step-by-step example to determine the stem-branch for October 1, 1949.
+Stem
+(day stem N + month stem N + year stem N + century stem N) = number of stem. If over 10, subtract 10 until within 1 – 10.
+Day 1: N = 1,
+Month of October: N = 1,
+Year 49: N = 7,
+49 isn't on the table, so we'll have to mod 49 by 40. This gives us year 9, which we can follow to find the N for that row.
+Century 19: N = 2.
+(1 + 1 + 7 + 2) = 11. This is more than 10, so we'll subtract 10 to bring it between 1 and 10.
+11 – 10 = 1,
+Stem = 1, 甲.
+Branch
+(day branch N + month branch N + year branch N + century branch N)= number of branch. If over 12, subtract 12 until within 1 – 12.
+Day 1: N = 1,
+Month of October: N = 5,
+Year 49: N = 5,
+Again, 49 is not in the table for year. Modding 49 by 16 gives us 1, which we can look up to find the N of that row.
+Century 19: N = 2.
+(1 + 5 + 5 + 2) = 13. Since 13 is more than 12, we'll subtract 12 to bring it between 1 and 12.
+13 – 12 = 1,
+Branch = 1, 子.
+Stem-branch = 1, 1 (甲子, 1 in sexagenary cycle = 32 – 5 + 33 + 1 – 60).
+More detailed examples
+Look up table for sexagenary days
+Gregorian		17
+24	15
+22		
+20	18
+
+
+23
+16
+
+
+21
+19
+
+Centuries
+Julian			01					00		
+Dates	Mar
+Jan
+
+
+Nov
+Dec
+
+
+Sep
+Oct
+
+
+Aug
+
+
+
+Feb
+Jun
+Jul
+
+Jan
+Apr
+May
+Feb	Years of the century
+01
+11
+21
+31	02
+12
+22
+
+03
+13
+23
+
+04
+14
+24
+
+05
+15
+25
+
+06
+16
+26
+
+07
+17
+27
+
+08
+18
+28
+
+09
+19
+29
+
+10
+20
+30
+
+天干	甲	乙	丙	丁	戊	己	庚	辛	壬	癸
+Heavenly stems	A	B	C	D	E	F	G	H	I	J	00	02	21	23	40	42	61	63	80	82
+B	C	D	E	F	G	H	I	J	A	04	06	25	27	44	46	65	67	84	86
+C	D	E	F	G	H	I	J	A	B	08	10	29	31	48	50	69	71	88	90
+D	E	F	G	H	I	J	A	B	C	12	14	33	35	52	54	73	75	92	94
+E	F	G	H	I	J	A	B	C	D	16	18	37	39	56	58	77	79	96	98
+F	G	H	I	J	A	B	C	D	E	01	03	20	22	41	43	60	62	81	83
+G	H	I	J	A	B	C	D	E	F	05	07	24	26	45	47	64	66	85	87
+H	I	J	A	B	C	D	E	F	G	09	11	28	30	49	51	68	70	89	91
+I	J	A	B	C	D	E	F	G	H	13	15	32	34	53	55	72	74	93	95
+J	A	B	C	D	E	F	G	H	I	17	19	36	38	57	59	76	78	97	99
+地支	子	丑	寅	卯	辰	巳	午	未	申	酉	戌	亥	干支纪日速查表
+Earthly branches	A	B	C	D	E	F	G	H	I	J	K	L	00	07	16	23	32	39	48	55	64	71	80	87	96
+B	C	D	E	F	G	H	I	J	K	L	A		14		30		46		62		78		94	
+C	D	E	F	G	H	I	J	K	L	A	B	05		21		37		53		69		85		
+D	E	F	G	H	I	J	K	L	A	B	C	03	12	19	28	35	44	51	60	67	76	83	92	99
+E	F	G	H	I	J	K	L	A	B	C	D		10		26		42		58		74		90	
+F	G	H	I	J	K	L	A	B	C	D	E	01		17		33		49		65		81		97
+G	H	I	J	K	L	A	B	C	D	E	F	08	15	24	31	40	47	56	63	72	79	88	95	
+H	I	J	K	L	A	B	C	D	E	F	G	06		22		38		54		70		86		
+I	J	K	L	A	B	C	D	E	F	G	H		13		29		45		61		77		93	
+J	K	L	A	B	C	D	E	F	G	H	I	04	11	20	27	36	43	52	59	68	75	84	91	
+K	L	A	B	C	D	E	F	G	H	I	J	02		18		34		50		66		82		98
+L	A	B	C	D	E	F	G	H	I	J	K		09		25		41		57		73		89	
+Dates	01
+13
+25	02
+14
+26	03
+15
+27	04
+16
+28	05
+17
+29	06
+18
+30	07
+19
+31	08
+20
+
+09
+21
+
+10
+22
+
+11
+23
+
+12
+24
+
+Years of the century
+Mar
+Jan	
+Dec	
+Oct	
+Aug	Feb
+Jun	Apr
+Feb		
+Nov	
+Sep		
+Jul	Jan
+May
+Gregorian		15
+18
+
+
+
+21	
+
+24		17
+
+
+
+20
+23			16
+19
+
+
+
+22		Centuries
+Julian		02			01			00			03	
+Sexagenary hours
+Table for sexagenary hours (5-day cycle)
+Stem of the day	Zǐ hour
+子时
+23:00–1:00	Chǒu hour
+丑时
+1:00–3:00	Yín hour
+寅时
+3:00–5:00	Mǎo hour
+卯时
+5:00–7:00	Chén hour
+辰时
+7:00–9:00	Sì hour
+巳时
+9:00–11:00	Wǔ hour
+午时
+11:00–13:00	Wèi hour
+未时
+13:00–15:00	Shēn hour
+申时
+15:00–17:00	Yǒu hour
+酉时
+17:00–19:00	Xū hour
+戌时
+19:00–21:00	Hài hour
+亥时
+21:00–23:00
+Jia or Ji day
+(甲/己)	1 甲子	2乙丑	3 丙寅	4 丁卯	5 戊辰	6 己巳	7 庚午	8 辛未	9 壬申	10 癸酉	11 甲戌	12 乙亥
+Yi or Geng day
+(乙/庚)	13 丙子	14 丁丑	15 戊寅	16 己卯	17 庚辰	18 辛巳	19 壬午	20 癸未	21 甲申	22 乙酉	23 丙戌	24 丁亥
+Bing or Xin day
+(丙/辛)	25 戊子	26 己丑	27 庚寅	28 辛卯	29 壬辰	30 癸巳	31 甲午	32 乙未	33 丙申	34 丁酉	35 戊戌	36 己亥
+Ding or Ren day
+(丁/壬)	37 庚子	38 辛丑	39 壬寅	40 癸卯	41 甲辰	42 乙巳	43 丙午	44 丁未	45 戊申	46 己酉	47 庚戌	48 辛亥
+Wu or Gui day
+(戊/癸)	49 壬子	50 癸丑	51 甲寅	52 乙卯	53 丙辰	54 丁巳	55 戊午	56 己未	57 庚申	58 辛酉	59 壬戌	60 癸亥
+
+---
+
+From Wikipedia, the free encyclopedia
+1
+1
+1
+1
+2
+1
+1
+3
+3
+1
+1
+4
+6
+4
+1
+1
+5
+10
+10
+5
+1
+1
+6
+15
+20
+15
+6
+1
+1
+7
+21
+35
+35
+21
+7
+1
+{\displaystyle {\begin{array}{c}1\\1\quad 1\\1\quad 2\quad 1\\1\quad 3\quad 3\quad 1\\1\quad 4\quad 6\quad 4\quad 1\\1\quad 5\quad 10\quad 10\quad 5\quad 1\\1\quad 6\quad 15\quad 20\quad 15\quad 6\quad 1\\1\quad 7\quad 21\quad 35\quad 35\quad 21\quad 7\quad 1\end{array}}}
+A diagram showing the first eight rows of Pascal's triangle.
+In mathematics, Pascal's triangle is an infinite triangular array of the binomial coefficients which play a crucial role in probability theory, combinatorics, and algebra. In much of the Western world, it is named after the French mathematician Blaise Pascal, although other mathematicians studied it centuries before him in Persia,[1] India,[2] China, Germany, and Italy.[3]
+
+The rows of Pascal's triangle are conventionally enumerated starting with row 
+n
+=
+0
+{\displaystyle n=0} at the top (the 0th row). The entries in each row are numbered from the left beginning with 
+k
+=
+0
+{\displaystyle k=0} and are usually staggered relative to the numbers in the adjacent rows. The triangle may be constructed in the following manner: In row 0 (the topmost row), there is a unique nonzero entry 1. Each entry of each subsequent row is constructed by adding the number above and to the left with the number above and to the right, treating blank entries as 0. For example, the initial number of row 1 (or any other row) is 1 (the sum of 0 and 1), whereas the numbers 1 and 3 in row 3 are added to produce the number 4 in row 4.
+
+Formula
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+In the 
+n
+{\displaystyle n}th row of Pascal's triangle, the 
+k
+{\displaystyle k}th entry is denoted 
+(
+n
+k
+)
+{\displaystyle {\tbinom {n}{k}}}, pronounced "n choose k". For example, the topmost entry is 
+(
+0
+0
+)
+=
+1
+{\displaystyle {\tbinom {0}{0}}=1}. With this notation, the construction of the previous paragraph may be written as
+
+(
+n
+k
+)
+=
+(
+n
+−
+1
+k
+−
+1
+)
++
+(
+n
+−
+1
+k
+)
+{\displaystyle {n \choose k}={n-1 \choose k-1}+{n-1 \choose k}}for any positive integer 
+n
+{\displaystyle n} and any integer 
+0
+≤
+k
+≤
+n
+{\displaystyle 0\leq k\leq n}.[4] This recurrence for the binomial coefficients is known as Pascal's rule.
+
+History
+
+Yang Hui's triangle, as depicted by the Chinese using rod numerals, appears in Jade Mirror of the Four Unknowns, a mathematical work by Zhu Shijie, dated 1303.
+
+Pascal's version of the triangle
+The pattern of numbers that forms Pascal's triangle was known well before Pascal's time. The Persian mathematician Al-Karaji (953–1029) wrote a now-lost book which contained the first description of Pascal's triangle.[5][6][7] In India, the Chandaḥśāstra by the Indian poet and mathematician Piṅgala (3rd or 2nd century BC) describes a method of arranging two types of syllables to form metres of various lengths and counting them; as interpreted and elaborated by Piṅgala's 10th-century commentator Halāyudha his "method of pyramidal expansion" (meru-prastāra) for counting metres is equivalent to Pascal's triangle.[8] It was later repeated by Omar Khayyám (1048–1131), another Persian mathematician; thus the triangle is also referred to as Khayyam's triangle (مثلث خیام) in Iran.[9] Several theorems related to the triangle were known, including the binomial theorem. Khayyam used a method of finding nth roots based on the binomial expansion, and therefore on the binomial coefficients.[1]
+
+Pascal's triangle was known in China during the 11th century through the work of the Chinese mathematician Jia Xian (1010–1070). During the 13th century, Yang Hui (1238–1298) defined the triangle, and it is known as Yang Hui's triangle (杨辉三角; 楊輝三角) in China.[10]
+
+In Europe, Pascal's triangle appeared for the first time in the Arithmetic of Jordanus de Nemore (13th century).[11] The binomial coefficients were calculated by Gersonides during the early 14th century, using the multiplicative formula for them.[12] Petrus Apianus (1495–1552) published the full triangle on the frontispiece of his book on business calculations in 1527.[13] Michael Stifel published a portion of the triangle (from the second to the middle column in each row) in 1544, describing it as a table of figurate numbers.[12] In Italy, Pascal's triangle is referred to as Tartaglia's triangle, named for the Italian algebraist Tartaglia (1500–1577), who published six rows of the triangle in 1556.[12] Gerolamo Cardano also published the triangle as well as the additive and multiplicative rules for constructing it in 1570.[12]
+
+Pascal's Traité du triangle arithmétique (Treatise on Arithmetical Triangle) was published posthumously in 1665.[14] In this, Pascal collected several results then known about the triangle, and employed them to solve problems in probability theory. The triangle was later named for Pascal by Pierre Raymond de Montmort (1708) who called it table de M. Pascal pour les combinaisons (French: Mr. Pascal's table for combinations) and Abraham de Moivre (1730) who called it Triangulum Arithmeticum PASCALIANUM (Latin: Pascal's Arithmetic Triangle), which became the basis of the modern Western name.[15]
+
+Binomial expansions
+
+Visualisation of binomial expansion up to the 4th power
+Pascal's triangle determines the coefficients which arise in binomial expansions. For example, in the expansion
+(
+x
++
+y
+)
+2
+=
+x
+2
++
+2
+x
+y
++
+y
+2
+=
+1
+x
+2
+y
+0
++
+2
+x
+1
+y
+1
++
+1
+x
+0
+y
+2
+,
+{\displaystyle (x+y)^{2}=x^{2}+2xy+y^{2}=\mathbf {1} x^{2}y^{0}+\mathbf {2} x^{1}y^{1}+\mathbf {1} x^{0}y^{2},}the coefficients are the entries in the second row of Pascal's triangle: 
+(
+2
+0
+)
+=
+1
+{\displaystyle {\tbinom {2}{0}}=1}, 
+(
+2
+1
+)
+=
+2
+{\displaystyle {\tbinom {2}{1}}=2}, 
+(
+2
+2
+)
+=
+1
+{\displaystyle {\tbinom {2}{2}}=1}.
+
+In general, the binomial theorem states that when a binomial like 
+x
++
+y
+{\displaystyle x+y} is raised to a positive integer power 
+n
+{\displaystyle n}, the expression expands as
+(
+x
++
+y
+)
+n
+=
+∑
+k
+=
+0
+n
+a
+k
+x
+n
+−
+k
+y
+k
+=
+a
+0
+x
+n
++
+a
+1
+x
+n
+−
+1
+y
++
+a
+2
+x
+n
+−
+2
+y
+2
++
+…
++
+a
+n
+−
+1
+x
+y
+n
+−
+1
++
+a
+n
+y
+n
+,
+{\displaystyle (x+y)^{n}=\sum _{k=0}^{n}a_{k}x^{n-k}y^{k}=a_{0}x^{n}+a_{1}x^{n-1}y+a_{2}x^{n-2}y^{2}+\ldots +a_{n-1}xy^{n-1}+a_{n}y^{n},}where the coefficients 
+a
+k
+{\displaystyle a_{k}} are precisely the numbers in row 
+n
+{\displaystyle n} of Pascal's triangle:
+a
+k
+=
+(
+n
+k
+)
+.
+{\displaystyle a_{k}={n \choose k}.}
+
+The entire left diagonal of Pascal's triangle corresponds to the coefficient of 
+x
+n
+{\displaystyle x^{n}} in these binomial expansions, while the next left diagonal corresponds to the coefficient of 
+x
+n
+−
+1
+y
+{\displaystyle x^{n-1}y}, and so on.
+
+To see how the binomial theorem relates to the simple construction of Pascal's triangle, consider the problem of calculating the coefficients of the expansion of 
+(
+x
++
+y
+)
+n
++
+1
+{\displaystyle (x+y)^{n+1}} in terms of the corresponding coefficients of 
+(
+x
++
+1
+)
+n
+{\displaystyle (x+1)^{n}}, where we set 
+y
+=
+1
+{\displaystyle y=1} for simplicity. Suppose then that
+(
+x
++
+1
+)
+n
+=
+∑
+k
+=
+0
+n
+a
+k
+x
+k
+.
+{\displaystyle (x+1)^{n}=\sum _{k=0}^{n}a_{k}x^{k}.}Now
+(
+x
++
+1
+)
+n
++
+1
+=
+(
+x
++
+1
+)
+(
+x
++
+1
+)
+n
+=
+x
+(
+x
++
+1
+)
+n
++
+(
+x
++
+1
+)
+n
+=
+∑
+i
+=
+0
+n
+a
+i
+x
+i
++
+1
++
+∑
+k
+=
+0
+n
+a
+k
+x
+k
+.
+{\displaystyle (x+1)^{n+1}=(x+1)(x+1)^{n}=x(x+1)^{n}+(x+1)^{n}=\sum _{i=0}^{n}a_{i}x^{i+1}+\sum _{k=0}^{n}a_{k}x^{k}.}
+
+(
+0
+0
+)
+(
+1
+0
+)
+(
+1
+1
+)
+(
+2
+0
+)
+(
+2
+1
+)
+(
+2
+2
+)
+(
+3
+0
+)
+(
+3
+1
+)
+(
+3
+2
+)
+(
+3
+3
+)
+(
+4
+0
+)
+(
+4
+1
+)
+(
+4
+2
+)
+(
+4
+3
+)
+(
+4
+4
+)
+(
+5
+0
+)
+(
+5
+1
+)
+(
+5
+2
+)
+(
+5
+3
+)
+(
+5
+4
+)
+(
+5
+5
+)
+{\displaystyle {\begin{array}{c}{\dbinom {0}{0}}\\{\dbinom {1}{0}}\quad {\dbinom {1}{1}}\\{\dbinom {2}{0}}\quad {\dbinom {2}{1}}\quad {\dbinom {2}{2}}\\{\dbinom {3}{0}}\quad {\dbinom {3}{1}}\quad {\dbinom {3}{2}}\quad {\dbinom {3}{3}}\\{\dbinom {4}{0}}\quad {\dbinom {4}{1}}\quad {\dbinom {4}{2}}\quad {\dbinom {4}{3}}\quad {\dbinom {4}{4}}\\{\dbinom {5}{0}}\quad {\dbinom {5}{1}}\quad {\dbinom {5}{2}}\quad {\dbinom {5}{3}}\quad {\dbinom {5}{4}}\quad {\dbinom {5}{5}}\end{array}}}
+The first six rows of Pascal's triangle as binomial coefficients
+The two summations can be reindexed with 
+k
+=
+i
++
+1
+{\displaystyle k=i+1} and combined to yield
+∑
+i
+=
+0
+n
+a
+i
+x
+i
++
+1
++
+∑
+k
+=
+0
+n
+a
+k
+x
+k
+=
+∑
+k
+=
+1
+n
++
+1
+a
+k
+−
+1
+x
+k
++
+∑
+k
+=
+0
+n
+a
+k
+x
+k
+=
+∑
+k
+=
+1
+n
+a
+k
+−
+1
+x
+k
++
+a
+n
+x
+n
++
+1
++
+a
+0
+x
+0
++
+∑
+k
+=
+1
+n
+a
+k
+x
+k
+=
+a
+0
+x
+0
++
+∑
+k
+=
+1
+n
+(
+a
+k
+−
+1
++
+a
+k
+)
+x
+k
++
+a
+n
+x
+n
++
+1
+=
+x
+0
++
+∑
+k
+=
+1
+n
+(
+a
+k
+−
+1
++
+a
+k
+)
+x
+k
++
+x
+n
++
+1
+.
+{\displaystyle {\begin{aligned}\sum _{i=0}^{n}a_{i}x^{i+1}+\sum _{k=0}^{n}a_{k}x^{k}&=\sum _{k=1}^{n+1}a_{k-1}x^{k}+\sum _{k=0}^{n}a_{k}x^{k}\\[4pt]&=\sum _{k=1}^{n}a_{k-1}x^{k}+a_{n}x^{n+1}+a_{0}x^{0}+\sum _{k=1}^{n}a_{k}x^{k}\\[4pt]&=a_{0}x^{0}+\sum _{k=1}^{n}(a_{k-1}+a_{k})x^{k}+a_{n}x^{n+1}\\[4pt]&=x^{0}+\sum _{k=1}^{n}(a_{k-1}+a_{k})x^{k}+x^{n+1}.\end{aligned}}}
+
+Thus the extreme left and right coefficients remain as 1, and for any given 
+0
+<
+k
+<
+n
++
+1
+{\displaystyle 0<k<n+1}, the coefficient of the 
+x
+k
+{\displaystyle x^{k}} term in the polynomial 
+(
+x
++
+1
+)
+n
++
+1
+{\displaystyle (x+1)^{n+1}} is equal to 
+a
+k
+−
+1
++
+a
+k
+{\displaystyle a_{k-1}+a_{k}}, the sum of the 
+x
+k
+−
+1
+{\displaystyle x^{k-1}} and 
+x
+k
+{\displaystyle x^{k}} coefficients in the previous power 
+(
+x
++
+1
+)
+n
+{\displaystyle (x+1)^{n}}. This is indeed the downward-addition rule for constructing Pascal's triangle.
+
+It is not difficult to turn this argument into a proof (by mathematical induction) of the binomial theorem.
+
+Since 
+(
+a
++
+b
+)
+n
+=
+b
+n
+(
+a
+b
++
+1
+)
+n
+{\displaystyle (a+b)^{n}=b^{n}({\tfrac {a}{b}}+1)^{n}}, the coefficients are identical in the expansion of the general case.
+
+An interesting consequence of the binomial theorem is obtained by setting both variables 
+x
+=
+y
+=
+1
+{\displaystyle x=y=1}, so that
+∑
+k
+=
+0
+n
+(
+n
+k
+)
+=
+(
+n
+0
+)
++
+(
+n
+1
+)
++
+⋯
++
+(
+n
+n
+−
+1
+)
++
+(
+n
+n
+)
+=
+(
+1
++
+1
+)
+n
+=
+2
+n
+.
+{\displaystyle \sum _{k=0}^{n}{n \choose k}={n \choose 0}+{n \choose 1}+\cdots +{n \choose n-1}+{n \choose n}=(1+1)^{n}=2^{n}.}
+
+In other words, the sum of the entries in the 
+n
+{\displaystyle n}th row of Pascal's triangle is the 
+n
+{\displaystyle n}th power of 2. This is equivalent to the statement that the number of subsets of an 
+n
+{\displaystyle n}-element set is 
+2
+n
+{\displaystyle 2^{n}}, as can be seen by observing that each of the 
+n
+{\displaystyle n} elements may be independently included or excluded from a given subset.
+
+Combinations
+A second useful application of Pascal's triangle is in the calculation of combinations. The number of combinations of 
+n
+{\displaystyle n} items taken 
+k
+{\displaystyle k} at a time, i.e. the number of subsets of 
+k
+{\displaystyle k} elements from among 
+n
+{\displaystyle n} elements, can be found by the equation
+
+C
+(
+n
+,
+k
+)
+=
+C
+k
+n
+=
+n
+C
+k
+=
+(
+n
+k
+)
+=
+n
+!
+k
+!
+(
+n
+−
+k
+)
+!
+{\displaystyle \mathbf {C} (n,k)=\mathbf {C} _{k}^{n}={{}_{n}C_{k}}={n \choose k}={\frac {n!}{k!(n-k)!}}}.
+This is equal to entry 
+k
+{\displaystyle k} in row 
+n
+{\displaystyle n} of Pascal's triangle. Rather than performing the multiplicative calculation, one can simply look up the appropriate entry in the triangle (constructed by additions). For example, suppose 3 workers need to be hired from among 7 candidates; then the number of possible hiring choices is 7 choose 3, the entry 3 in row 7 of the above table (taking into consideration the first row is the 0th row), which is 
+(
+7
+3
+)
+=
+35
+{\displaystyle {\tbinom {7}{3}}=35}.[16]
+
+Relation to binomial distribution and convolutions
+When divided by 
+2
+n
+{\displaystyle 2^{n}}, the 
+n
+{\displaystyle n}th row of Pascal's triangle becomes the binomial distribution in the symmetric case where 
+p
+=
+1
+2
+{\displaystyle p={\tfrac {1}{2}}}. By the central limit theorem, this distribution approaches the normal distribution as 
+n
+{\displaystyle n} increases. This can also be seen by applying Stirling's formula to the factorials involved in the formula for combinations.
+
+This is related to the operation of discrete convolution in two ways. First, polynomial multiplication corresponds exactly to discrete convolution, so that repeatedly convolving the sequence 
+{
+…
+,
+0
+,
+0
+,
+1
+,
+1
+,
+0
+,
+0
+,
+…
+}
+{\displaystyle \{\ldots ,0,0,1,1,0,0,\ldots \}} with itself corresponds to taking powers of 
+x
++
+1
+{\displaystyle x+1}, and hence to generating the rows of the triangle. Second, repeatedly convolving the distribution function for a random variable with itself corresponds to calculating the distribution function for a sum of n independent copies of that variable; this is exactly the situation to which the central limit theorem applies, and hence results in the normal distribution in the limit. (The operation of repeatedly taking a convolution of something with itself is called the convolution power.)
+
+Patterns and properties
+Pascal's triangle has many properties and contains many patterns of numbers.
+
+
+Each frame represents a row in Pascal's triangle. Each column of pixels is a number in binary with the least significant bit at the bottom. Light pixels represent 1 and dark pixels 0.
+
+The numbers of compositions of n+1 into k+1 ordered partitions form Pascal's triangle.
+Rows
+The sum of the elements of a single row is twice the sum of the row preceding it. For example, row 0 (the topmost row) has a value of 1, row 1 has a value of 2, row 2 has a value of 4, and so forth. This is because every item in a row produces two items in the next row: one left and one right. The sum of the elements of row 
+n
+{\displaystyle n} equals to 
+2
+n
+{\displaystyle 2^{n}}.
+Taking the product of the elements in each row, the sequence of products (sequence A001142 in the OEIS) is related to the base of the natural logarithm, e.[17][18] Specifically, define the sequence 
+s
+n
+{\displaystyle s_{n}} for all 
+n
+≥
+0
+{\displaystyle n\geq 0} as follows: 
+s
+n
+=
+∏
+k
+=
+0
+n
+(
+n
+k
+)
+=
+∏
+k
+=
+0
+n
+n
+!
+k
+!
+(
+n
+−
+k
+)
+!
+{\displaystyle s_{n}=\prod _{k=0}^{n}{n \choose k}=\prod _{k=0}^{n}{\frac {n!}{k!(n-k)!}}}
+Then, the ratio of successive row products is
+s
+n
++
+1
+s
+n
+=
+(
+n
++
+1
+)
+!
+n
++
+2
+∏
+k
+=
+0
+n
++
+1
+1
+k
+!
+2
+n
+!
+n
++
+1
+∏
+k
+=
+0
+n
+1
+k
+!
+2
+=
+(
+n
++
+1
+)
+n
+n
+!
+{\displaystyle {\frac {s_{n+1}}{s_{n}}}={\frac {\displaystyle (n+1)!^{n+2}\prod _{k=0}^{n+1}{\frac {1}{k!^{2}}}}{\displaystyle n!^{n+1}\prod _{k=0}^{n}{\frac {1}{k!^{2}}}}}={\frac {(n+1)^{n}}{n!}}}and the ratio of these ratios is
+s
+n
++
+1
+⋅
+s
+n
+−
+1
+s
+n
+2
+=
+(
+n
++
+1
+n
+)
+n
+,
+ 
+n
+≥
+1.
+{\displaystyle {\frac {s_{n+1}\cdot s_{n-1}}{s_{n}^{2}}}=\left({\frac {n+1}{n}}\right)^{n},~n\geq 1.}The right-hand side of the above equation takes the form of the limit definition of 
+e
+{\displaystyle e}
+e
+=
+lim
+n
+→
+∞
+(
+1
++
+1
+n
+)
+n
+.
+{\displaystyle e=\lim _{n\to \infty }\left(1+{\frac {1}{n}}\right)^{n}.}
+π
+{\displaystyle \pi } can be found in Pascal's triangle by use of the Nilakantha infinite series.[19]
+π
+=
+3
++
+∑
+n
+=
+1
+∞
+(
+−
+1
+)
+n
++
+1
+(
+2
+n
++
+1
+1
+)
+(
+2
+n
++
+1
+2
+)
+(
+2
+n
++
+2
+2
+)
+{\displaystyle \pi =3+\sum _{n=1}^{\infty }(-1)^{n+1}{\frac {2n+1 \choose 1}{{2n+1 \choose 2}{2n+2 \choose 2}}}}
+Some of the numbers in Pascal's triangle correlate to numbers in Lozanić's triangle.
+The sum of the squares of the elements of row n equals the middle element of row 2n. For example, 12 + 42 + 62 + 42 + 12 = 70. In general form,
+∑
+k
+=
+0
+n
+(
+n
+k
+)
+2
+=
+(
+2
+n
+n
+)
+.
+{\displaystyle \sum _{k=0}^{n}{n \choose k}^{2}={2n \choose n}.}
+In any even row 
+n
+=
+2
+m
+{\displaystyle n=2m}, the middle term minus the term two spots to the left equals a Catalan number, specifically 
+C
+m
+−
+1
+=
+(
+2
+m
+m
+)
+−
+(
+2
+m
+m
+−
+2
+)
+{\displaystyle C_{m-1}={\tbinom {2m}{m}}-{\tbinom {2m}{m-2}}}. For example, in row 4, which is 1, 4, 6, 4, 1, we get the 3rd Catalan number 
+C
+3
+=
+6
+−
+1
+=
+5
+{\displaystyle C_{3}=6-1=5}.
+In a row p, where p is a prime number, all the terms in that row except the 1s are divisible by p. This can be proven easily, from the multiplicative formula 
+(
+p
+k
+)
+=
+p
+!
+k
+!
+(
+p
+−
+k
+)
+!
+{\displaystyle {\tbinom {p}{k}}={\tfrac {p!}{k!(p-k)!}}}. Since the denominator 
+k
+!
+(
+p
+−
+k
+)
+!
+{\displaystyle k!(p-k)!} can have no prime factors equal to p, so p remains in the numerator after integer division, making the entire entry a multiple of p.
+Parity: To count odd terms in row n, convert n to binary. Let x be the number of 1s in the binary representation. Then the number of odd terms will be 2x. These numbers are the values in Gould's sequence.[20]
+Every entry in row 2n − 1, n ≥ 0, is odd.[21]
+Polarity: When the elements of a row of Pascal's triangle are alternately added and subtracted together, the result is 0. For example, row 6 is 1, 6, 15, 20, 15, 6, 1, so the formula is 1 − 6 + 15 − 20 + 15 − 6 + 1 = 0.
+Diagonals
+
+Derivation of simplex numbers from a left-justified Pascal's triangle
+The diagonals of Pascal's triangle contain the figurate numbers of simplices:
+
+The diagonals going along the left and right edges contain only 1's.
+The diagonals next to the edge diagonals contain the natural numbers in order. The 1-dimensional simplex numbers increment by 1 as the line segments extend to the next whole number along the number line.
+Moving inwards, the next pair of diagonals contain the triangular numbers in order.
+The next pair of diagonals contain the tetrahedral numbers in order, and the next pair give pentatope numbers.
+P
+0
+(
+n
+)
+=
+P
+d
+(
+0
+)
+=
+1
+,
+P
+d
+(
+n
+)
+=
+P
+d
+(
+n
+−
+1
+)
++
+P
+d
+−
+1
+(
+n
+)
+=
+∑
+i
+=
+0
+n
+P
+d
+−
+1
+(
+i
+)
+=
+∑
+i
+=
+0
+d
+P
+i
+(
+n
+−
+1
+)
+.
+{\displaystyle {\begin{aligned}P_{0}(n)&=P_{d}(0)=1,\\P_{d}(n)&=P_{d}(n-1)+P_{d-1}(n)\\&=\sum _{i=0}^{n}P_{d-1}(i)=\sum _{i=0}^{d}P_{i}(n-1).\end{aligned}}}
+The symmetry of the triangle implies that the nth d-dimensional number is equal to the dth n-dimensional number.
+
+An alternative formula that does not involve recursion is
+P
+d
+(
+n
+)
+=
+1
+d
+!
+∏
+k
+=
+0
+d
+−
+1
+(
+n
++
+k
+)
+=
+n
+(
+d
+)
+d
+!
+=
+(
+n
++
+d
+−
+1
+d
+)
+,
+{\displaystyle P_{d}(n)={\frac {1}{d!}}\prod _{k=0}^{d-1}(n+k)={n^{(d)} \over d!}={\binom {n+d-1}{d}},}where n(d) is the rising factorial.
+
+The geometric meaning of a function Pd is: Pd(1) = 1 for all d. Construct a d-dimensional triangle (a 3-dimensional triangle is a tetrahedron) by placing additional dots below an initial dot, corresponding to Pd(1) = 1. Place these dots in a manner analogous to the placement of numbers in Pascal's triangle. To find Pd(x), have a total of x dots composing the target shape. Pd(x) then equals the total number of dots in the shape. A 0-dimensional triangle is a point and a 1-dimensional triangle is simply a line, and therefore P0(x) = 1 and P1(x) = x, which is the sequence of natural numbers. The number of dots in each layer corresponds to Pd − 1(x).
+
+Calculating a row or diagonal by itself
+There are simple algorithms to compute all the elements in a row or diagonal without computing other elements or factorials.
+
+To compute row 
+n
+{\displaystyle n} with the elements 
+(
+n
+0
+)
+,
+(
+n
+1
+)
+,
+…
+,
+(
+n
+n
+)
+{\displaystyle {\tbinom {n}{0}},{\tbinom {n}{1}},\ldots ,{\tbinom {n}{n}}}, begin with 
+(
+n
+0
+)
+=
+1
+{\displaystyle {\tbinom {n}{0}}=1}. For each subsequent element, the value is determined by multiplying the previous value by a fraction with slowly changing numerator and denominator:
+
+(
+n
+k
+)
+=
+(
+n
+k
+−
+1
+)
+×
+n
++
+1
+−
+k
+k
+.
+{\displaystyle {n \choose k}={n \choose k-1}\times {\frac {n+1-k}{k}}.}
+For example, to calculate row 5, the fractions are  
+5
+1
+{\displaystyle {\tfrac {5}{1}}},  
+4
+2
+{\displaystyle {\tfrac {4}{2}}},  
+3
+3
+{\displaystyle {\tfrac {3}{3}}},  
+2
+4
+{\displaystyle {\tfrac {2}{4}}} and 
+1
+5
+{\displaystyle {\tfrac {1}{5}}}, and hence the elements are  
+(
+5
+0
+)
+=
+1
+{\displaystyle {\tbinom {5}{0}}=1},   
+(
+5
+1
+)
+=
+1
+×
+5
+1
+=
+5
+{\displaystyle {\tbinom {5}{1}}=1\times {\tfrac {5}{1}}=5},   
+(
+5
+2
+)
+=
+5
+×
+4
+2
+=
+10
+{\displaystyle {\tbinom {5}{2}}=5\times {\tfrac {4}{2}}=10}, etc. (The remaining elements are most easily obtained by symmetry.)
+
+To compute the diagonal containing the elements 
+(
+n
+0
+)
+,
+(
+n
++
+1
+1
+)
+,
+(
+n
++
+2
+2
+)
+,
+…
+,
+{\displaystyle {\tbinom {n}{0}},{\tbinom {n+1}{1}},{\tbinom {n+2}{2}},\ldots ,} begin again with 
+(
+n
+0
+)
+=
+1
+{\displaystyle {\tbinom {n}{0}}=1} and obtain subsequent elements by multiplication by certain fractions:
+
+(
+n
++
+k
+k
+)
+=
+(
+n
++
+k
+−
+1
+k
+−
+1
+)
+×
+n
++
+k
+k
+.
+{\displaystyle {n+k \choose k}={n+k-1 \choose k-1}\times {\frac {n+k}{k}}.}
+For example, to calculate the diagonal beginning at 
+(
+5
+0
+)
+{\displaystyle {\tbinom {5}{0}}}, the fractions are  
+6
+1
+,
+7
+2
+,
+8
+3
+,
+…
+{\displaystyle {\tfrac {6}{1}},{\tfrac {7}{2}},{\tfrac {8}{3}},\ldots }, and the elements are 
+(
+5
+0
+)
+=
+1
+,
+(
+6
+1
+)
+=
+1
+×
+6
+1
+=
+6
+,
+(
+7
+2
+)
+=
+6
+×
+7
+2
+=
+21
+{\displaystyle {\tbinom {5}{0}}=1,{\tbinom {6}{1}}=1\times {\tfrac {6}{1}}=6,{\tbinom {7}{2}}=6\times {\tfrac {7}{2}}=21}, etc. By symmetry, these elements are equal to 
+(
+5
+5
+)
+,
+(
+6
+5
+)
+,
+(
+7
+5
+)
+{\displaystyle {\tbinom {5}{5}},{\tbinom {6}{5}},{\tbinom {7}{5}}}, etc.
+
+
+Fibonacci sequence in Pascal's triangle
+Overall patterns and properties
+
+A level-4 approximation to a Sierpiński triangle obtained by shading the first 32 rows of a Pascal triangle white if the binomial coefficient is even and black if it is odd.
+The pattern obtained by coloring only the odd numbers in Pascal's triangle closely resembles the fractal known as the Sierpiński triangle. This resemblance becomes increasingly accurate as more rows are considered; in the limit, as the number of rows approaches infinity, the resulting pattern is the Sierpiński triangle, assuming a fixed perimeter. More generally, numbers could be colored differently according to whether or not they are multiples of 3, 4, etc.; this results in other similar patterns.
+As the proportion of black numbers tends to zero with increasing n, a corollary is that the proportion of odd binomial coefficients tends to zero as n tends to infinity.[22]
+a4 white rook	b4 one	c4 one	d4 one
+a3 one	b3 two	c3 three	d3 four
+a2 one	b2 three	c2 six	10
+a1 one	b1 four	10	20
+Pascal's triangle overlaid on a grid gives the number of distinct paths to each square, assuming only rightward and downward steps to an adjacent square are considered.
+
+In a triangular portion of a grid (as in the images below), the number of shortest grid paths from a given node to the top node of the triangle is the corresponding entry in Pascal's triangle. On a Plinko game board shaped like a triangle, this distribution should give the probabilities of winning the various prizes.
+
+If the rows of Pascal's triangle are left-justified, the diagonal bands (colour-coded below) sum to the Fibonacci numbers.
+1
+1	1
+1	2	1
+1	3	3	1
+1	4	6	4	1
+1	5	10	10	5	1
+1	6	15	20	15	6	1
+1	7	21	35	35	21	7	1
+Construction as matrix exponential
+exp
+⁡
+(
+.
+.
+.
+.
+.
+1
+.
+.
+.
+.
+.
+2
+.
+.
+.
+.
+.
+3
+.
+.
+.
+.
+.
+4
+.
+)
+=
+(
+1
+.
+.
+.
+.
+1
+1
+.
+.
+.
+1
+2
+1
+.
+.
+1
+3
+3
+1
+.
+1
+4
+6
+4
+1
+)
+e
+counting
+=
+binomial
+{\displaystyle {\begin{aligned}\exp {\begin{pmatrix}.&.&.&.&.\\1&.&.&.&.\\.&2&.&.&.\\.&.&3&.&.\\.&.&.&4&.\end{pmatrix}}&={\begin{pmatrix}1&.&.&.&.\\1&1&.&.&.\\1&2&1&.&.\\1&3&3&1&.\\1&4&6&4&1\end{pmatrix}}\\e^{\text{counting}}&={\text{binomial}}\end{aligned}}}
+Binomial matrix as matrix exponential. All the dots represent 0.
+See also: Pascal matrix
+Due to its simple construction by factorials, a very basic representation of Pascal's triangle in terms of the matrix exponential can be given: Pascal's triangle is the exponential of the matrix which has the sequence 1, 2, 3, 4, ... on its sub-diagonal and zero everywhere else.
+
+Construction of Clifford algebra using simplices
+Labelling the elements of each n-simplex matches the basis elements of Clifford algebra used as forms in Geometric Algebra rather than matrices. Recognising the geometric operations, such as rotations, allows the algebra operations to be discovered. Just as each row, n, starting at 0, of Pascal's triangle corresponds to an (n-1)-simplex, as described below, it also defines the number of named basis forms in n dimensional Geometric algebra. The binomial theorem can be used to prove the geometric relationship provided by Pascal's triangle.[23] This same proof could be applied to simplices except that the first column of all 1's must be ignored whereas in the algebra these correspond to the real numbers, 
+R
+{\displaystyle \mathbb {R} }, with basis 1.
+
+Relation to geometry of polytopes
+icon
+This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed. (February 2025) (Learn how and when to remove this message)
+Each row of Pascal's triangle gives the number of elements (such as edges and corners) of each dimension in a corresponding simplex (such as a triangle or tetrahedron). In particular, for k > 0, the kth entry in the nth row is the number of (k − 1)-dimensional elements in a (n − 1)-dimensional simplex. For example, a triangle (the 2-dimensional simplex) one 2-dimensional element (itself), three 1-dimensional elements (lines, or edges), and three 0-dimensional elements (vertices, or corners); this corresponds to the third row 1, 3, 3, 1 of Pascal's triangle. This fact can be explained by combining Pascal's rule for generating the triangle with the geometric construction of simplices: each simplex is formed from a simplex of one lower dimension by the addition of a new vertex, outside the space in which the lower-dimensional simplex lies. Then each d-dimensional element in the smaller simplex remains a d-dimensional element of the higher simplex, and each (d − 1)-dimensional element when joined to the new vertex forms a new d-dimensional element of the higher simplex.[24]
+
+A similar pattern is observed relating to squares, as opposed to triangles. To find the pattern, one must construct an analog to Pascal's triangle, whose entries are the coefficients of (x + 2)row number, instead of (x + 1)row number. There are a couple ways to do this. The simpler is to begin with row 0 = 1 and row 1 = 1, 2. Proceed to construct the analog triangles according to the following rule:
+
+(
+n
+k
+)
+=
+2
+×
+(
+n
+−
+1
+k
+−
+1
+)
++
+(
+n
+−
+1
+k
+)
+.
+{\displaystyle {n \choose k}=2\times {n-1 \choose k-1}+{n-1 \choose k}.}
+That is, choose a pair of numbers according to the rules of Pascal's triangle, but double the one on the left before adding. This results in:
+
+ 1
+ 1
+ 2
+ 1
+ 4
+ 4
+ 1
+ 6
+ 12
+ 8
+ 1
+ 8
+ 24
+ 32
+ 16
+ 1
+ 10
+ 40
+ 80
+ 80
+ 32
+ 1
+ 12
+ 60
+160
+240
+192
+ 64
+ 1
+ 14
+ 84
+280
+560
+672
+448
+128
+{\displaystyle {\begin{matrix}{\text{  1}}\\{\text{  1}}\quad {\text{  2}}\\{\text{  1}}\quad {\text{  4}}\quad {\text{  4}}\\{\text{  1}}\quad {\text{  6}}\quad {\text{ 12}}\quad {\text{  8}}\\{\text{  1}}\quad {\text{  8}}\quad {\text{ 24}}\quad {\text{ 32}}\quad {\text{ 16}}\\{\text{  1}}\quad {\text{ 10}}\quad {\text{ 40}}\quad {\text{ 80}}\quad {\text{ 80}}\quad {\text{ 32}}\\{\text{  1}}\quad {\text{ 12}}\quad {\text{ 60}}\quad 160\quad 240\quad 192\quad {\text{ 64}}\\{\text{  1}}\quad {\text{ 14}}\quad {\text{ 84}}\quad 280\quad 560\quad 672\quad 448\quad 128\end{matrix}}}
+The other way of producing this triangle is to start with Pascal's triangle and multiply each entry by 2k, where k is the position in the row of the given number. For example, the 2nd value in row 4 of Pascal's triangle is 6 (the slope of 1s corresponds to the zeroth entry in each row). To get the value that resides in the corresponding position in the analog triangle, multiply 6 by 2position number = 6 × 22 = 6 × 4 = 24. Now that the analog triangle has been constructed, the number of elements of any dimension that compose an arbitrarily dimensioned cube (called a hypercube) can be read from the table in a way analogous to Pascal's triangle. For example, the number of 2-dimensional elements in a 2-dimensional cube (a square) is one, the number of 1-dimensional elements (sides, or lines) is 4, and the number of 0-dimensional elements (points, or vertices) is 4. This matches the 2nd row of the table (1, 4, 4). A cube has 1 cube, 6 faces, 12 edges, and 8 vertices, which corresponds to the next line of the analog triangle (1, 6, 12, 8). This pattern continues indefinitely.
+
+To understand why this pattern exists, first recognize that the construction of an n-cube from an (n − 1)-cube is done by simply duplicating the original figure and displacing it some distance (for a regular n-cube, the edge length) orthogonal to the space of the original figure, then connecting each vertex of the new figure to its corresponding vertex of the original. This initial duplication process is the reason why, to enumerate the dimensional elements of an n-cube, one must double the first of a pair of numbers in a row of this analog of Pascal's triangle before summing to yield the number below. The initial doubling thus yields the number of "original" elements to be found in the next higher n-cube and, as before, new elements are built upon those of one fewer dimension (edges upon vertices, faces upon edges, etc.). Again, the last number of a row represents the number of new vertices to be added to generate the next higher n-cube.
+
+In this triangle, the sum of the elements of row m is equal to 3m. Again, to use the elements of row 4 as an example: 1 + 8 + 24 + 32 + 16 = 81, which is equal to 
+3
+4
+=
+81
+{\displaystyle 3^{4}=81}.
+
+Counting vertices in a cube by distance
+Each row of Pascal's triangle gives the number of vertices at each distance from a fixed vertex in an n-dimensional cube. For example, in three dimensions, the third row (1 3 3 1) corresponds to the usual three-dimensional cube: fixing a vertex V, there is one vertex at distance 0 from V (that is, V itself), three vertices at distance 1, three vertices at distance √2 and one vertex at distance √3 (the vertex opposite V). The second row corresponds to a square, while larger-numbered rows correspond to hypercubes in each dimension.
+
+Fourier transform of sin(x)n+1/x
+As stated previously, the coefficients of (x + 1)n are the nth row of the triangle. Now the coefficients of (x − 1)n are the same, except that the sign alternates from +1 to −1 and back again. After suitable normalization, the same pattern of numbers occurs in the Fourier transform of sin(x)n+1/x. More precisely: if n is even, take the real part of the transform, and if n is odd, take the imaginary part. Then the result is a step function, whose values (suitably normalized) are given by the nth row of the triangle with alternating signs.[25] For example, the values of the step function that results from:
+
+R
+e
+(
+Fourier
+[
+sin
+⁡
+(
+x
+)
+5
+x
+]
+)
+{\displaystyle {\mathfrak {Re}}\left({\text{Fourier}}\left[{\frac {\sin(x)^{5}}{x}}\right]\right)}
+compose the 4th row of the triangle, with alternating signs. This is a generalization of the following basic result (often used in electrical engineering):
+
+R
+e
+(
+Fourier
+[
+sin
+⁡
+(
+x
+)
+1
+x
+]
+)
+{\displaystyle {\mathfrak {Re}}\left({\text{Fourier}}\left[{\frac {\sin(x)^{1}}{x}}\right]\right)}
+is the boxcar function.[26] The corresponding row of the triangle is row 0, which consists of just the number 1.
+
+If n is congruent to 2 or to 3 mod 4, then the signs start with −1. In fact, the sequence of the (normalized) first terms corresponds to the powers of i, which cycle around the intersection of the axes with the unit circle in the complex plane:
++
+i
+,
+−
+1
+,
+−
+i
+,
++
+1
+,
++
+i
+,
+…
+{\displaystyle +i,-1,-i,+1,+i,\ldots }
+
+Extensions
+Upwards
+Pascal's triangle may be extended upwards, above the 1 at the apex, preserving the additive property, but there is more than one way to do so.[27]
+
+To higher dimensions
+Pascal's triangle has higher dimensional generalizations. The three-dimensional version is known as Pascal's pyramid or Pascal's tetrahedron, while the general versions are known as Pascal's simplices.
+
+To complex numbers
+When the factorial function is defined as 
+z
+!
+=
+Γ
+(
+z
++
+1
+)
+{\displaystyle z!=\Gamma (z+1)}, Pascal's triangle can be extended beyond the integers to 
+C
+{\displaystyle \mathbb {C} }, since 
+Γ
+(
+z
++
+1
+)
+{\displaystyle \Gamma (z+1)} is meromorphic to the entire complex plane.[28]
+
+To arbitrary bases
+Isaac Newton once observed that the first five rows of Pascal's triangle, when read as the digits of an integer, are the corresponding powers of eleven. He claimed without proof that subsequent rows also generate powers of eleven.[29] In 1964, Robert L. Morton presented the more generalized argument that each row 
+n
+{\displaystyle n} can be read as a radix 
+a
+{\displaystyle a} numeral, where 
+lim
+n
+→
+∞
+11
+a
+n
+{\displaystyle \lim _{n\to \infty }11_{a}^{n}} is the hypothetical terminal row, or limit, of the triangle, and the rows are its partial products.[30] He proved the entries of row 
+n
+{\displaystyle n}, when interpreted directly as a place-value numeral, correspond to the binomial expansion of 
+(
+a
++
+1
+)
+n
+=
+11
+a
+n
+{\displaystyle (a+1)^{n}=11_{a}^{n}}. More rigorous proofs have since been developed.[31][32] To better understand the principle behind this interpretation, here are some things to recall about binomials:
+
+A radix 
+a
+{\displaystyle a} numeral in positional notation (e.g. 
+14641
+a
+{\displaystyle 14641_{a}}) is a univariate polynomial in the variable 
+a
+{\displaystyle a}, where the degree of the variable of the 
+i
+{\displaystyle i}th term (starting with 
+i
+=
+0
+{\displaystyle i=0}) is 
+i
+{\displaystyle i}. For example, 
+14641
+a
+=
+1
+⋅
+a
+4
++
+4
+⋅
+a
+3
++
+6
+⋅
+a
+2
++
+4
+⋅
+a
+1
++
+1
+⋅
+a
+0
+{\displaystyle 14641_{a}=1\cdot a^{4}+4\cdot a^{3}+6\cdot a^{2}+4\cdot a^{1}+1\cdot a^{0}}.
+A row corresponds to the binomial expansion of 
+(
+a
++
+b
+)
+n
+{\displaystyle (a+b)^{n}}. The variable 
+b
+{\displaystyle b} can be eliminated from the expansion by setting 
+b
+=
+1
+{\displaystyle b=1}. The expansion now typifies the expanded form of a radix 
+a
+{\displaystyle a} numeral,[33][34] as demonstrated above. Thus, when the entries of the row are concatenated and read in radix 
+a
+{\displaystyle a} they form the numerical equivalent of 
+(
+a
++
+1
+)
+n
+=
+11
+a
+n
+{\displaystyle (a+1)^{n}=11_{a}^{n}}. If 
+c
+=
+a
++
+1
+{\displaystyle c=a+1} for 
+c
+<
+0
+{\displaystyle c<0}, then the theorem holds for 
+a
+mod
+2
+c
+{\displaystyle a{\bmod {2}}c}, with 
+a
+{\displaystyle a} congruent to 
+{
+c
+−
+1
+,
+−
+(
+c
++
+1
+)
+}
+{\displaystyle \{c-1,-(c+1)\}}, and with odd values of 
+n
+{\displaystyle n} yielding negative row products.[35][36][37]
+By setting the row's radix (the variable 
+a
+{\displaystyle a}) equal to one and ten, row 
+n
+{\displaystyle n} becomes the product 
+11
+1
+n
+=
+2
+n
+{\displaystyle 11_{1}^{n}=2^{n}} and 
+11
+10
+n
+=
+11
+n
+{\displaystyle 11_{10}^{n}=11^{n}}, respectively. To illustrate, consider 
+a
+=
+n
+{\displaystyle a=n}, which yields the row product 
+n
+n
+(
+1
++
+1
+n
+)
+n
+=
+11
+n
+n
+{\displaystyle \textstyle n^{n}\left(1+{\frac {1}{n}}\right)^{n}=11_{n}^{n}}. The numeric representation of 
+11
+n
+n
+{\displaystyle 11_{n}^{n}} is formed by concatenating the entries of row 
+n
+{\displaystyle n}. The twelfth row denotes the product:
+
+11
+12
+12
+=
+1
+:
+10
+:
+56
+:
+164
+:
+353
+:
+560
+:
+650
+:
+560
+:
+353
+:
+164
+:
+56
+:
+10
+:
+1
+12
+=
+27433
+a
+9699701
+12
+{\displaystyle 11_{12}^{12}=1:10:56:164:353:560:650:560:353:164:56:10:1_{12}=27433a9699701_{12}}
+with compound digits (delimited by ":") in radix twelve. The digits from 
+k
+=
+n
+−
+1
+{\displaystyle k=n-1} through 
+k
+=
+1
+{\displaystyle k=1} are compound because these row entries compute to values greater than or equal to twelve. To normalize[38] the numeral, simply carry the first compound entry's prefix, that is, remove the prefix of the coefficient 
+(
+n
+n
+−
+1
+)
+{\displaystyle \textstyle {n \choose n-1}} from its leftmost digit up to, but excluding, its rightmost digit, and use radix-twelve arithmetic to sum the removed prefix with the entry on its immediate left, then repeat this process, proceeding leftward, until the leftmost entry is reached. In this particular example, the normalized string ends with 
+01
+{\displaystyle 01} for all 
+n
+{\displaystyle n}. The leftmost digit is 
+2
+{\displaystyle 2} for 
+n
+>
+2
+{\displaystyle n>2}, which is obtained by carrying the 
+1
+{\displaystyle 1} of 
+10
+n
+{\displaystyle 10_{n}} at entry 
+k
+=
+1
+{\displaystyle k=1}. It follows that the length of the normalized value of 
+11
+n
+n
+{\displaystyle 11_{n}^{n}} is equal to the row length, 
+n
++
+1
+{\displaystyle n+1}. The integral part of 
+1.1
+n
+n
+{\displaystyle 1.1_{n}^{n}} contains exactly one digit because 
+n
+{\displaystyle n} (the number of places to the left the decimal has moved) is one less than the row length. Below is the normalized value of 
+1.1
+1234
+1234
+{\displaystyle 1.1_{1234}^{1234}}. Compound digits remain in the value because they are radix 
+1234
+{\displaystyle 1234} residues represented in radix ten:
+
+1.1
+1234
+1234
+=
+2.885
+:
+2
+:
+35
+:
+977
+:
+696
+:
+…
+⏞
+1227 digits
+:
+0
+:
+1
+1234
+=
+2.717181235
+…
+10
+{\displaystyle 1.1_{1234}^{1234}=2.885:2:35:977:696:\overbrace {\ldots } ^{\text{1227 digits}}:0:1_{1234}=2.717181235\ldots _{10}}
+
