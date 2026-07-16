@@ -1,0 +1,115 @@
+# Delta3 Conformance Vectors
+# Canonical source: omnicron-canon/vectors/delta3.yaml
+# Consumed by: omnicron-lisp, omnicron-isa
+#
+# Three temporal delta coordinates:
+#   LL = previous delta (evaluated through LOGOS)
+#   MM = present delta (evaluated through NOMOS)
+#   NN = forward delta (evaluated through PATHOS)
+#
+# Delta position ≠ activation state
+# Delta position ≠ scope
+# Integrity axis ≠ authority
+# Forward projection ≠ accepted future state
+
+schema: delta3
+version: "1.0"
+
+vectors:
+  positions:
+    - id: delta-ll
+      symbol: LL
+      enum_value: 0
+      one_hot: [1, 0, 0]
+      temporal_role: previous
+      integrity_axis: LOGOS
+      description: "Previous delta - retained or inherited relation"
+
+    - id: delta-mm
+      symbol: MM
+      enum_value: 1
+      one_hot: [0, 1, 0]
+      temporal_role: present
+      integrity_axis: NOMOS
+      description: "Present delta - presently resolved candidate"
+
+    - id: delta-nn
+      symbol: NN
+      enum_value: 2
+      one_hot: [0, 0, 1]
+      temporal_role: forward
+      integrity_axis: PATHOS
+      description: "Forward delta - projected or continued relation"
+
+  transitions:
+    - id: delta-previous-to-present
+      source: LL
+      target: MM
+      transition: delta
+      governing_axes:
+        source: LOGOS
+        target: NOMOS
+      description: "Transition from previous to present delta"
+
+    - id: delta-present-to-forward
+      source: MM
+      target: NN
+      transition: delta
+      governing_axes:
+        source: NOMOS
+        target: PATHOS
+      description: "Transition from present to forward delta"
+
+  rings:
+    - id: delta-ring-cycle
+      sequence: [LL, MM, NN]
+      continuation: [MM, NN, LL]
+      expected:
+        closed_ring: true
+      description: "Delta ring cycle (temporal cycling)"
+
+    - id: delta-ring-linear
+      sequence: [LL, MM, NN]
+      continuation: [MM, NN, END]
+      expected:
+        closed_ring: false
+      description: "Delta ring linear (append-only timeline)"
+
+  combinations:
+    - id: delta-scope-combination
+      description: "Delta position with scope4"
+      delta: MM
+      scope: { fs: 1, gs: 0, rs: 1, us: 0 }
+      expected:
+        temporal_role: present
+        scope_active: [FS, RS]
+
+    - id: delta-activation-combination
+      description: "Delta position with activation state"
+      delta: NN
+      activation: 1
+      expected:
+        temporal_role: forward
+        activation_state: positive
+        note: "Forward projection does not imply accepted future state"
+
+    - id: delta-integrity-combination
+      description: "Delta position with integrity axis"
+      delta: LL
+      integrity: { logos: 1, nomos: 0, pathos: 0 }
+      expected:
+        temporal_role: previous
+        integrity_check: LOGOS
+
+invariants:
+  - "LL/MM/NN are canonical temporal-delta coordinates"
+  - "LL/MM/NN do not replace FS/GS/RS/US"
+  - "FS/GS/RS/US define epistemic scope"
+  - "LL/MM/NN define previous, present, and forward delta position"
+  - "LOGOS/NOMOS/PATHOS govern the corresponding delta axes"
+  - "FΔ identifies the Gnomic Omicron gauge-ring transition"
+  - "Temporal continuation, integrity, activation, validation, and receipt remain distinct operations"
+  - "Delta position ≠ activation state"
+  - "Delta position ≠ scope"
+  - "Integrity axis ≠ authority"
+  - "Forward projection ≠ accepted future state"

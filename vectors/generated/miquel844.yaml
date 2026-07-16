@@ -1,12 +1,5040 @@
-Generating Miquel [8,4,4] vectors...
-Generated 16 valid codewords
-Traceback (most recent call last):
-  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 182, in <module>
-    main()
-  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 147, in main
-    single_corruptions = generate_single_bit_corruptions(valid)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/main/omi/omnicron-canon/vectors/generators/generate_miquel844.py", line 89, in generate_single_bit_corruptions
-    assert not valid_check, f"Corruption at bit {bit_pos} should not produce valid codeword"
-           ^^^^^^^^^^^^^^^
-AssertionError: Corruption at bit 6 should not produce valid codeword
+schema: miquel844
+version: '1.0'
+generator: generate_miquel844.py
+incidence_masks:
+  logos_minus: '0x0F'
+  logos_plus: '0xF0'
+  nomos_minus: '0x33'
+  nomos_plus: '0xCC'
+  pathos_minus: '0x55'
+  pathos_plus: '0xAA'
+source_bits:
+  P000: 0
+  P001: 1
+  P010: 2
+  P011: 3
+parity_bits:
+  P100: 4
+  P101: 5
+  P110: 6
+  P111: 7
+vectors:
+  valid:
+  - source_value: 0
+    parity_value: 0
+    codeword: 0
+    bits:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    point_names:
+      P000: 0
+      P001: 0
+      P010: 0
+      P011: 0
+      P100: 0
+      P101: 0
+      P110: 0
+      P111: 0
+  - source_value: 0
+    parity_value: 15
+    codeword: 240
+    bits:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    point_names:
+      P000: 0
+      P001: 0
+      P010: 0
+      P011: 0
+      P100: 1
+      P101: 1
+      P110: 1
+      P111: 1
+  - source_value: 3
+    parity_value: 3
+    codeword: 51
+    bits:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    point_names:
+      P000: 1
+      P001: 1
+      P010: 0
+      P011: 0
+      P100: 1
+      P101: 1
+      P110: 0
+      P111: 0
+  - source_value: 3
+    parity_value: 12
+    codeword: 195
+    bits:
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    point_names:
+      P000: 1
+      P001: 1
+      P010: 0
+      P011: 0
+      P100: 0
+      P101: 0
+      P110: 1
+      P111: 1
+  - source_value: 5
+    parity_value: 5
+    codeword: 85
+    bits:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    point_names:
+      P000: 1
+      P001: 0
+      P010: 1
+      P011: 0
+      P100: 1
+      P101: 0
+      P110: 1
+      P111: 0
+  - source_value: 5
+    parity_value: 10
+    codeword: 165
+    bits:
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    point_names:
+      P000: 1
+      P001: 0
+      P010: 1
+      P011: 0
+      P100: 0
+      P101: 1
+      P110: 0
+      P111: 1
+  - source_value: 6
+    parity_value: 6
+    codeword: 102
+    bits:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    point_names:
+      P000: 0
+      P001: 1
+      P010: 1
+      P011: 0
+      P100: 0
+      P101: 1
+      P110: 1
+      P111: 0
+  - source_value: 6
+    parity_value: 9
+    codeword: 150
+    bits:
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    point_names:
+      P000: 0
+      P001: 1
+      P010: 1
+      P011: 0
+      P100: 1
+      P101: 0
+      P110: 0
+      P111: 1
+  - source_value: 9
+    parity_value: 6
+    codeword: 105
+    bits:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    point_names:
+      P000: 1
+      P001: 0
+      P010: 0
+      P011: 1
+      P100: 0
+      P101: 1
+      P110: 1
+      P111: 0
+  - source_value: 9
+    parity_value: 9
+    codeword: 153
+    bits:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    point_names:
+      P000: 1
+      P001: 0
+      P010: 0
+      P011: 1
+      P100: 1
+      P101: 0
+      P110: 0
+      P111: 1
+  - source_value: 10
+    parity_value: 5
+    codeword: 90
+    bits:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    point_names:
+      P000: 0
+      P001: 1
+      P010: 0
+      P011: 1
+      P100: 1
+      P101: 0
+      P110: 1
+      P111: 0
+  - source_value: 10
+    parity_value: 10
+    codeword: 170
+    bits:
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    point_names:
+      P000: 0
+      P001: 1
+      P010: 0
+      P011: 1
+      P100: 0
+      P101: 1
+      P110: 0
+      P111: 1
+  - source_value: 12
+    parity_value: 3
+    codeword: 60
+    bits:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    point_names:
+      P000: 0
+      P001: 0
+      P010: 1
+      P011: 1
+      P100: 1
+      P101: 1
+      P110: 0
+      P111: 0
+  - source_value: 12
+    parity_value: 12
+    codeword: 204
+    bits:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    point_names:
+      P000: 0
+      P001: 0
+      P010: 1
+      P011: 1
+      P100: 0
+      P101: 0
+      P110: 1
+      P111: 1
+  - source_value: 15
+    parity_value: 0
+    codeword: 15
+    bits:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    point_names:
+      P000: 1
+      P001: 1
+      P010: 1
+      P011: 1
+      P100: 0
+      P101: 0
+      P110: 0
+      P111: 0
+  - source_value: 15
+    parity_value: 15
+    codeword: 255
+    bits:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    point_names:
+      P000: 1
+      P001: 1
+      P010: 1
+      P011: 1
+      P100: 1
+      P101: 1
+      P110: 1
+      P111: 1
+  single_bit_corruptions:
+  - source_value: 0
+    original: 0
+    corrupted: 1
+    bit_position: 0
+    point_name: P000
+  - source_value: 0
+    original: 0
+    corrupted: 2
+    bit_position: 1
+    point_name: P001
+  - source_value: 0
+    original: 0
+    corrupted: 4
+    bit_position: 2
+    point_name: P010
+  - source_value: 0
+    original: 0
+    corrupted: 8
+    bit_position: 3
+    point_name: P011
+  - source_value: 0
+    original: 0
+    corrupted: 16
+    bit_position: 4
+    point_name: P100
+  - source_value: 0
+    original: 0
+    corrupted: 32
+    bit_position: 5
+    point_name: P101
+  - source_value: 0
+    original: 0
+    corrupted: 64
+    bit_position: 6
+    point_name: P110
+  - source_value: 0
+    original: 0
+    corrupted: 128
+    bit_position: 7
+    point_name: P111
+  - source_value: 0
+    original: 240
+    corrupted: 241
+    bit_position: 0
+    point_name: P000
+  - source_value: 0
+    original: 240
+    corrupted: 242
+    bit_position: 1
+    point_name: P001
+  - source_value: 0
+    original: 240
+    corrupted: 244
+    bit_position: 2
+    point_name: P010
+  - source_value: 0
+    original: 240
+    corrupted: 248
+    bit_position: 3
+    point_name: P011
+  - source_value: 0
+    original: 240
+    corrupted: 224
+    bit_position: 4
+    point_name: P100
+  - source_value: 0
+    original: 240
+    corrupted: 208
+    bit_position: 5
+    point_name: P101
+  - source_value: 0
+    original: 240
+    corrupted: 176
+    bit_position: 6
+    point_name: P110
+  - source_value: 0
+    original: 240
+    corrupted: 112
+    bit_position: 7
+    point_name: P111
+  - source_value: 3
+    original: 51
+    corrupted: 50
+    bit_position: 0
+    point_name: P000
+  - source_value: 3
+    original: 51
+    corrupted: 49
+    bit_position: 1
+    point_name: P001
+  - source_value: 3
+    original: 51
+    corrupted: 55
+    bit_position: 2
+    point_name: P010
+  - source_value: 3
+    original: 51
+    corrupted: 59
+    bit_position: 3
+    point_name: P011
+  - source_value: 3
+    original: 51
+    corrupted: 35
+    bit_position: 4
+    point_name: P100
+  - source_value: 3
+    original: 51
+    corrupted: 19
+    bit_position: 5
+    point_name: P101
+  - source_value: 3
+    original: 51
+    corrupted: 115
+    bit_position: 6
+    point_name: P110
+  - source_value: 3
+    original: 51
+    corrupted: 179
+    bit_position: 7
+    point_name: P111
+  - source_value: 3
+    original: 195
+    corrupted: 194
+    bit_position: 0
+    point_name: P000
+  - source_value: 3
+    original: 195
+    corrupted: 193
+    bit_position: 1
+    point_name: P001
+  - source_value: 3
+    original: 195
+    corrupted: 199
+    bit_position: 2
+    point_name: P010
+  - source_value: 3
+    original: 195
+    corrupted: 203
+    bit_position: 3
+    point_name: P011
+  - source_value: 3
+    original: 195
+    corrupted: 211
+    bit_position: 4
+    point_name: P100
+  - source_value: 3
+    original: 195
+    corrupted: 227
+    bit_position: 5
+    point_name: P101
+  - source_value: 3
+    original: 195
+    corrupted: 131
+    bit_position: 6
+    point_name: P110
+  - source_value: 3
+    original: 195
+    corrupted: 67
+    bit_position: 7
+    point_name: P111
+  - source_value: 5
+    original: 85
+    corrupted: 84
+    bit_position: 0
+    point_name: P000
+  - source_value: 5
+    original: 85
+    corrupted: 87
+    bit_position: 1
+    point_name: P001
+  - source_value: 5
+    original: 85
+    corrupted: 81
+    bit_position: 2
+    point_name: P010
+  - source_value: 5
+    original: 85
+    corrupted: 93
+    bit_position: 3
+    point_name: P011
+  - source_value: 5
+    original: 85
+    corrupted: 69
+    bit_position: 4
+    point_name: P100
+  - source_value: 5
+    original: 85
+    corrupted: 117
+    bit_position: 5
+    point_name: P101
+  - source_value: 5
+    original: 85
+    corrupted: 21
+    bit_position: 6
+    point_name: P110
+  - source_value: 5
+    original: 85
+    corrupted: 213
+    bit_position: 7
+    point_name: P111
+  - source_value: 5
+    original: 165
+    corrupted: 164
+    bit_position: 0
+    point_name: P000
+  - source_value: 5
+    original: 165
+    corrupted: 167
+    bit_position: 1
+    point_name: P001
+  - source_value: 5
+    original: 165
+    corrupted: 161
+    bit_position: 2
+    point_name: P010
+  - source_value: 5
+    original: 165
+    corrupted: 173
+    bit_position: 3
+    point_name: P011
+  - source_value: 5
+    original: 165
+    corrupted: 181
+    bit_position: 4
+    point_name: P100
+  - source_value: 5
+    original: 165
+    corrupted: 133
+    bit_position: 5
+    point_name: P101
+  - source_value: 5
+    original: 165
+    corrupted: 229
+    bit_position: 6
+    point_name: P110
+  - source_value: 5
+    original: 165
+    corrupted: 37
+    bit_position: 7
+    point_name: P111
+  - source_value: 6
+    original: 102
+    corrupted: 103
+    bit_position: 0
+    point_name: P000
+  - source_value: 6
+    original: 102
+    corrupted: 100
+    bit_position: 1
+    point_name: P001
+  - source_value: 6
+    original: 102
+    corrupted: 98
+    bit_position: 2
+    point_name: P010
+  - source_value: 6
+    original: 102
+    corrupted: 110
+    bit_position: 3
+    point_name: P011
+  - source_value: 6
+    original: 102
+    corrupted: 118
+    bit_position: 4
+    point_name: P100
+  - source_value: 6
+    original: 102
+    corrupted: 70
+    bit_position: 5
+    point_name: P101
+  - source_value: 6
+    original: 102
+    corrupted: 38
+    bit_position: 6
+    point_name: P110
+  - source_value: 6
+    original: 102
+    corrupted: 230
+    bit_position: 7
+    point_name: P111
+  - source_value: 6
+    original: 150
+    corrupted: 151
+    bit_position: 0
+    point_name: P000
+  - source_value: 6
+    original: 150
+    corrupted: 148
+    bit_position: 1
+    point_name: P001
+  - source_value: 6
+    original: 150
+    corrupted: 146
+    bit_position: 2
+    point_name: P010
+  - source_value: 6
+    original: 150
+    corrupted: 158
+    bit_position: 3
+    point_name: P011
+  - source_value: 6
+    original: 150
+    corrupted: 134
+    bit_position: 4
+    point_name: P100
+  - source_value: 6
+    original: 150
+    corrupted: 182
+    bit_position: 5
+    point_name: P101
+  - source_value: 6
+    original: 150
+    corrupted: 214
+    bit_position: 6
+    point_name: P110
+  - source_value: 6
+    original: 150
+    corrupted: 22
+    bit_position: 7
+    point_name: P111
+  - source_value: 9
+    original: 105
+    corrupted: 104
+    bit_position: 0
+    point_name: P000
+  - source_value: 9
+    original: 105
+    corrupted: 107
+    bit_position: 1
+    point_name: P001
+  - source_value: 9
+    original: 105
+    corrupted: 109
+    bit_position: 2
+    point_name: P010
+  - source_value: 9
+    original: 105
+    corrupted: 97
+    bit_position: 3
+    point_name: P011
+  - source_value: 9
+    original: 105
+    corrupted: 121
+    bit_position: 4
+    point_name: P100
+  - source_value: 9
+    original: 105
+    corrupted: 73
+    bit_position: 5
+    point_name: P101
+  - source_value: 9
+    original: 105
+    corrupted: 41
+    bit_position: 6
+    point_name: P110
+  - source_value: 9
+    original: 105
+    corrupted: 233
+    bit_position: 7
+    point_name: P111
+  - source_value: 9
+    original: 153
+    corrupted: 152
+    bit_position: 0
+    point_name: P000
+  - source_value: 9
+    original: 153
+    corrupted: 155
+    bit_position: 1
+    point_name: P001
+  - source_value: 9
+    original: 153
+    corrupted: 157
+    bit_position: 2
+    point_name: P010
+  - source_value: 9
+    original: 153
+    corrupted: 145
+    bit_position: 3
+    point_name: P011
+  - source_value: 9
+    original: 153
+    corrupted: 137
+    bit_position: 4
+    point_name: P100
+  - source_value: 9
+    original: 153
+    corrupted: 185
+    bit_position: 5
+    point_name: P101
+  - source_value: 9
+    original: 153
+    corrupted: 217
+    bit_position: 6
+    point_name: P110
+  - source_value: 9
+    original: 153
+    corrupted: 25
+    bit_position: 7
+    point_name: P111
+  - source_value: 10
+    original: 90
+    corrupted: 91
+    bit_position: 0
+    point_name: P000
+  - source_value: 10
+    original: 90
+    corrupted: 88
+    bit_position: 1
+    point_name: P001
+  - source_value: 10
+    original: 90
+    corrupted: 94
+    bit_position: 2
+    point_name: P010
+  - source_value: 10
+    original: 90
+    corrupted: 82
+    bit_position: 3
+    point_name: P011
+  - source_value: 10
+    original: 90
+    corrupted: 74
+    bit_position: 4
+    point_name: P100
+  - source_value: 10
+    original: 90
+    corrupted: 122
+    bit_position: 5
+    point_name: P101
+  - source_value: 10
+    original: 90
+    corrupted: 26
+    bit_position: 6
+    point_name: P110
+  - source_value: 10
+    original: 90
+    corrupted: 218
+    bit_position: 7
+    point_name: P111
+  - source_value: 10
+    original: 170
+    corrupted: 171
+    bit_position: 0
+    point_name: P000
+  - source_value: 10
+    original: 170
+    corrupted: 168
+    bit_position: 1
+    point_name: P001
+  - source_value: 10
+    original: 170
+    corrupted: 174
+    bit_position: 2
+    point_name: P010
+  - source_value: 10
+    original: 170
+    corrupted: 162
+    bit_position: 3
+    point_name: P011
+  - source_value: 10
+    original: 170
+    corrupted: 186
+    bit_position: 4
+    point_name: P100
+  - source_value: 10
+    original: 170
+    corrupted: 138
+    bit_position: 5
+    point_name: P101
+  - source_value: 10
+    original: 170
+    corrupted: 234
+    bit_position: 6
+    point_name: P110
+  - source_value: 10
+    original: 170
+    corrupted: 42
+    bit_position: 7
+    point_name: P111
+  - source_value: 12
+    original: 60
+    corrupted: 61
+    bit_position: 0
+    point_name: P000
+  - source_value: 12
+    original: 60
+    corrupted: 62
+    bit_position: 1
+    point_name: P001
+  - source_value: 12
+    original: 60
+    corrupted: 56
+    bit_position: 2
+    point_name: P010
+  - source_value: 12
+    original: 60
+    corrupted: 52
+    bit_position: 3
+    point_name: P011
+  - source_value: 12
+    original: 60
+    corrupted: 44
+    bit_position: 4
+    point_name: P100
+  - source_value: 12
+    original: 60
+    corrupted: 28
+    bit_position: 5
+    point_name: P101
+  - source_value: 12
+    original: 60
+    corrupted: 124
+    bit_position: 6
+    point_name: P110
+  - source_value: 12
+    original: 60
+    corrupted: 188
+    bit_position: 7
+    point_name: P111
+  - source_value: 12
+    original: 204
+    corrupted: 205
+    bit_position: 0
+    point_name: P000
+  - source_value: 12
+    original: 204
+    corrupted: 206
+    bit_position: 1
+    point_name: P001
+  - source_value: 12
+    original: 204
+    corrupted: 200
+    bit_position: 2
+    point_name: P010
+  - source_value: 12
+    original: 204
+    corrupted: 196
+    bit_position: 3
+    point_name: P011
+  - source_value: 12
+    original: 204
+    corrupted: 220
+    bit_position: 4
+    point_name: P100
+  - source_value: 12
+    original: 204
+    corrupted: 236
+    bit_position: 5
+    point_name: P101
+  - source_value: 12
+    original: 204
+    corrupted: 140
+    bit_position: 6
+    point_name: P110
+  - source_value: 12
+    original: 204
+    corrupted: 76
+    bit_position: 7
+    point_name: P111
+  - source_value: 15
+    original: 15
+    corrupted: 14
+    bit_position: 0
+    point_name: P000
+  - source_value: 15
+    original: 15
+    corrupted: 13
+    bit_position: 1
+    point_name: P001
+  - source_value: 15
+    original: 15
+    corrupted: 11
+    bit_position: 2
+    point_name: P010
+  - source_value: 15
+    original: 15
+    corrupted: 7
+    bit_position: 3
+    point_name: P011
+  - source_value: 15
+    original: 15
+    corrupted: 31
+    bit_position: 4
+    point_name: P100
+  - source_value: 15
+    original: 15
+    corrupted: 47
+    bit_position: 5
+    point_name: P101
+  - source_value: 15
+    original: 15
+    corrupted: 79
+    bit_position: 6
+    point_name: P110
+  - source_value: 15
+    original: 15
+    corrupted: 143
+    bit_position: 7
+    point_name: P111
+  - source_value: 15
+    original: 255
+    corrupted: 254
+    bit_position: 0
+    point_name: P000
+  - source_value: 15
+    original: 255
+    corrupted: 253
+    bit_position: 1
+    point_name: P001
+  - source_value: 15
+    original: 255
+    corrupted: 251
+    bit_position: 2
+    point_name: P010
+  - source_value: 15
+    original: 255
+    corrupted: 247
+    bit_position: 3
+    point_name: P011
+  - source_value: 15
+    original: 255
+    corrupted: 239
+    bit_position: 4
+    point_name: P100
+  - source_value: 15
+    original: 255
+    corrupted: 223
+    bit_position: 5
+    point_name: P101
+  - source_value: 15
+    original: 255
+    corrupted: 191
+    bit_position: 6
+    point_name: P110
+  - source_value: 15
+    original: 255
+    corrupted: 127
+    bit_position: 7
+    point_name: P111
+  two_bit_corruptions:
+  - source_value: 0
+    original: 0
+    corrupted: 3
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 0
+    original: 0
+    corrupted: 5
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 0
+    original: 0
+    corrupted: 9
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 0
+    original: 0
+    corrupted: 17
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 0
+    original: 0
+    corrupted: 33
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 0
+    original: 0
+    corrupted: 65
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 129
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 6
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 0
+    original: 0
+    corrupted: 10
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 0
+    original: 0
+    corrupted: 18
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 0
+    original: 0
+    corrupted: 34
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 0
+    original: 0
+    corrupted: 66
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 130
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 12
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 0
+    original: 0
+    corrupted: 20
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 0
+    original: 0
+    corrupted: 36
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 0
+    original: 0
+    corrupted: 68
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 132
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 24
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 0
+    original: 0
+    corrupted: 40
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 0
+    original: 0
+    corrupted: 72
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 136
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 48
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 0
+    original: 0
+    corrupted: 80
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 144
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 96
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 0
+    original: 0
+    corrupted: 160
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 0
+    original: 0
+    corrupted: 192
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 243
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 0
+    original: 240
+    corrupted: 245
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 0
+    original: 240
+    corrupted: 249
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 0
+    original: 240
+    corrupted: 225
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 0
+    original: 240
+    corrupted: 209
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 0
+    original: 240
+    corrupted: 177
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 113
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 246
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 0
+    original: 240
+    corrupted: 250
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 0
+    original: 240
+    corrupted: 226
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 0
+    original: 240
+    corrupted: 210
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 0
+    original: 240
+    corrupted: 178
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 114
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 252
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 0
+    original: 240
+    corrupted: 228
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 0
+    original: 240
+    corrupted: 212
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 0
+    original: 240
+    corrupted: 180
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 116
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 232
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 0
+    original: 240
+    corrupted: 216
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 0
+    original: 240
+    corrupted: 184
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 120
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 192
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 0
+    original: 240
+    corrupted: 160
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 96
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 144
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 0
+    original: 240
+    corrupted: 80
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 0
+    original: 240
+    corrupted: 48
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 48
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 3
+    original: 51
+    corrupted: 54
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 3
+    original: 51
+    corrupted: 58
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 3
+    original: 51
+    corrupted: 34
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 3
+    original: 51
+    corrupted: 18
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 3
+    original: 51
+    corrupted: 114
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 178
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 53
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 3
+    original: 51
+    corrupted: 57
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 3
+    original: 51
+    corrupted: 33
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 3
+    original: 51
+    corrupted: 17
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 3
+    original: 51
+    corrupted: 113
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 177
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 63
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 3
+    original: 51
+    corrupted: 39
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 3
+    original: 51
+    corrupted: 23
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 3
+    original: 51
+    corrupted: 119
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 183
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 43
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 3
+    original: 51
+    corrupted: 27
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 3
+    original: 51
+    corrupted: 123
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 187
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 3
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 3
+    original: 51
+    corrupted: 99
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 163
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 83
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 3
+    original: 51
+    corrupted: 147
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 3
+    original: 51
+    corrupted: 243
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 192
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 3
+    original: 195
+    corrupted: 198
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 3
+    original: 195
+    corrupted: 202
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 3
+    original: 195
+    corrupted: 210
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 3
+    original: 195
+    corrupted: 226
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 3
+    original: 195
+    corrupted: 130
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 66
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 197
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 3
+    original: 195
+    corrupted: 201
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 3
+    original: 195
+    corrupted: 209
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 3
+    original: 195
+    corrupted: 225
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 3
+    original: 195
+    corrupted: 129
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 65
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 207
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 3
+    original: 195
+    corrupted: 215
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 3
+    original: 195
+    corrupted: 231
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 3
+    original: 195
+    corrupted: 135
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 71
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 219
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 3
+    original: 195
+    corrupted: 235
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 3
+    original: 195
+    corrupted: 139
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 75
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 243
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 3
+    original: 195
+    corrupted: 147
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 83
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 163
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 3
+    original: 195
+    corrupted: 99
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 3
+    original: 195
+    corrupted: 3
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 86
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 5
+    original: 85
+    corrupted: 80
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 5
+    original: 85
+    corrupted: 92
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 5
+    original: 85
+    corrupted: 68
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 5
+    original: 85
+    corrupted: 116
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 5
+    original: 85
+    corrupted: 20
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 212
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 83
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 5
+    original: 85
+    corrupted: 95
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 5
+    original: 85
+    corrupted: 71
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 5
+    original: 85
+    corrupted: 119
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 5
+    original: 85
+    corrupted: 23
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 215
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 89
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 5
+    original: 85
+    corrupted: 65
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 5
+    original: 85
+    corrupted: 113
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 5
+    original: 85
+    corrupted: 17
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 209
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 77
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 5
+    original: 85
+    corrupted: 125
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 5
+    original: 85
+    corrupted: 29
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 221
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 101
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 5
+    original: 85
+    corrupted: 5
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 197
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 53
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 5
+    original: 85
+    corrupted: 245
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 5
+    original: 85
+    corrupted: 149
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 166
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 5
+    original: 165
+    corrupted: 160
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 5
+    original: 165
+    corrupted: 172
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 5
+    original: 165
+    corrupted: 180
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 5
+    original: 165
+    corrupted: 132
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 5
+    original: 165
+    corrupted: 228
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 36
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 163
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 5
+    original: 165
+    corrupted: 175
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 5
+    original: 165
+    corrupted: 183
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 5
+    original: 165
+    corrupted: 135
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 5
+    original: 165
+    corrupted: 231
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 39
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 169
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 5
+    original: 165
+    corrupted: 177
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 5
+    original: 165
+    corrupted: 129
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 5
+    original: 165
+    corrupted: 225
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 33
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 189
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 5
+    original: 165
+    corrupted: 141
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 5
+    original: 165
+    corrupted: 237
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 45
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 149
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 5
+    original: 165
+    corrupted: 245
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 53
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 197
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 5
+    original: 165
+    corrupted: 5
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 5
+    original: 165
+    corrupted: 101
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 101
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 6
+    original: 102
+    corrupted: 99
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 6
+    original: 102
+    corrupted: 111
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 6
+    original: 102
+    corrupted: 119
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 6
+    original: 102
+    corrupted: 71
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 6
+    original: 102
+    corrupted: 39
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 231
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 96
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 6
+    original: 102
+    corrupted: 108
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 6
+    original: 102
+    corrupted: 116
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 6
+    original: 102
+    corrupted: 68
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 6
+    original: 102
+    corrupted: 36
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 228
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 106
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 6
+    original: 102
+    corrupted: 114
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 6
+    original: 102
+    corrupted: 66
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 6
+    original: 102
+    corrupted: 34
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 226
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 126
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 6
+    original: 102
+    corrupted: 78
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 6
+    original: 102
+    corrupted: 46
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 238
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 86
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 6
+    original: 102
+    corrupted: 54
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 246
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 6
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 6
+    original: 102
+    corrupted: 198
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 6
+    original: 102
+    corrupted: 166
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 149
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 6
+    original: 150
+    corrupted: 147
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 6
+    original: 150
+    corrupted: 159
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 6
+    original: 150
+    corrupted: 135
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 6
+    original: 150
+    corrupted: 183
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 6
+    original: 150
+    corrupted: 215
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 23
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 144
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 6
+    original: 150
+    corrupted: 156
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 6
+    original: 150
+    corrupted: 132
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 6
+    original: 150
+    corrupted: 180
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 6
+    original: 150
+    corrupted: 212
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 20
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 154
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 6
+    original: 150
+    corrupted: 130
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 6
+    original: 150
+    corrupted: 178
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 6
+    original: 150
+    corrupted: 210
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 18
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 142
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 6
+    original: 150
+    corrupted: 190
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 6
+    original: 150
+    corrupted: 222
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 30
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 166
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 6
+    original: 150
+    corrupted: 198
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 6
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 246
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 6
+    original: 150
+    corrupted: 54
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 6
+    original: 150
+    corrupted: 86
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 106
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 9
+    original: 105
+    corrupted: 108
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 9
+    original: 105
+    corrupted: 96
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 9
+    original: 105
+    corrupted: 120
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 9
+    original: 105
+    corrupted: 72
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 9
+    original: 105
+    corrupted: 40
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 232
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 111
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 9
+    original: 105
+    corrupted: 99
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 9
+    original: 105
+    corrupted: 123
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 9
+    original: 105
+    corrupted: 75
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 9
+    original: 105
+    corrupted: 43
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 235
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 101
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 9
+    original: 105
+    corrupted: 125
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 9
+    original: 105
+    corrupted: 77
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 9
+    original: 105
+    corrupted: 45
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 237
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 113
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 9
+    original: 105
+    corrupted: 65
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 9
+    original: 105
+    corrupted: 33
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 225
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 89
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 9
+    original: 105
+    corrupted: 57
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 249
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 9
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 9
+    original: 105
+    corrupted: 201
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 9
+    original: 105
+    corrupted: 169
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 154
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 9
+    original: 153
+    corrupted: 156
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 9
+    original: 153
+    corrupted: 144
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 9
+    original: 153
+    corrupted: 136
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 9
+    original: 153
+    corrupted: 184
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 9
+    original: 153
+    corrupted: 216
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 24
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 159
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 9
+    original: 153
+    corrupted: 147
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 9
+    original: 153
+    corrupted: 139
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 9
+    original: 153
+    corrupted: 187
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 9
+    original: 153
+    corrupted: 219
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 27
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 149
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 9
+    original: 153
+    corrupted: 141
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 9
+    original: 153
+    corrupted: 189
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 9
+    original: 153
+    corrupted: 221
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 29
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 129
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 9
+    original: 153
+    corrupted: 177
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 9
+    original: 153
+    corrupted: 209
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 17
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 169
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 9
+    original: 153
+    corrupted: 201
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 9
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 249
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 9
+    original: 153
+    corrupted: 57
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 9
+    original: 153
+    corrupted: 89
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 89
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 10
+    original: 90
+    corrupted: 95
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 10
+    original: 90
+    corrupted: 83
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 10
+    original: 90
+    corrupted: 75
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 10
+    original: 90
+    corrupted: 123
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 10
+    original: 90
+    corrupted: 27
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 219
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 92
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 10
+    original: 90
+    corrupted: 80
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 10
+    original: 90
+    corrupted: 72
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 10
+    original: 90
+    corrupted: 120
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 10
+    original: 90
+    corrupted: 24
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 216
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 86
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 10
+    original: 90
+    corrupted: 78
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 10
+    original: 90
+    corrupted: 126
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 10
+    original: 90
+    corrupted: 30
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 222
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 66
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 10
+    original: 90
+    corrupted: 114
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 10
+    original: 90
+    corrupted: 18
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 210
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 106
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 10
+    original: 90
+    corrupted: 10
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 202
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 58
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 10
+    original: 90
+    corrupted: 250
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 10
+    original: 90
+    corrupted: 154
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 169
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 10
+    original: 170
+    corrupted: 175
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 10
+    original: 170
+    corrupted: 163
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 10
+    original: 170
+    corrupted: 187
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 10
+    original: 170
+    corrupted: 139
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 10
+    original: 170
+    corrupted: 235
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 43
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 172
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 10
+    original: 170
+    corrupted: 160
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 10
+    original: 170
+    corrupted: 184
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 10
+    original: 170
+    corrupted: 136
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 10
+    original: 170
+    corrupted: 232
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 40
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 166
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 10
+    original: 170
+    corrupted: 190
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 10
+    original: 170
+    corrupted: 142
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 10
+    original: 170
+    corrupted: 238
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 46
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 178
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 10
+    original: 170
+    corrupted: 130
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 10
+    original: 170
+    corrupted: 226
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 34
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 154
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 10
+    original: 170
+    corrupted: 250
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 58
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 202
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 10
+    original: 170
+    corrupted: 10
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 10
+    original: 170
+    corrupted: 106
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 63
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 12
+    original: 60
+    corrupted: 57
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 12
+    original: 60
+    corrupted: 53
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 12
+    original: 60
+    corrupted: 45
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 12
+    original: 60
+    corrupted: 29
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 12
+    original: 60
+    corrupted: 125
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 189
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 58
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 12
+    original: 60
+    corrupted: 54
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 12
+    original: 60
+    corrupted: 46
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 12
+    original: 60
+    corrupted: 30
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 12
+    original: 60
+    corrupted: 126
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 190
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 48
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 12
+    original: 60
+    corrupted: 40
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 12
+    original: 60
+    corrupted: 24
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 12
+    original: 60
+    corrupted: 120
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 184
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 36
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 12
+    original: 60
+    corrupted: 20
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 12
+    original: 60
+    corrupted: 116
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 180
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 12
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 12
+    original: 60
+    corrupted: 108
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 172
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 92
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 12
+    original: 60
+    corrupted: 156
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 12
+    original: 60
+    corrupted: 252
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 207
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 12
+    original: 204
+    corrupted: 201
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 12
+    original: 204
+    corrupted: 197
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 12
+    original: 204
+    corrupted: 221
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 12
+    original: 204
+    corrupted: 237
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 12
+    original: 204
+    corrupted: 141
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 77
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 202
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 12
+    original: 204
+    corrupted: 198
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 12
+    original: 204
+    corrupted: 222
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 12
+    original: 204
+    corrupted: 238
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 12
+    original: 204
+    corrupted: 142
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 78
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 192
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 12
+    original: 204
+    corrupted: 216
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 12
+    original: 204
+    corrupted: 232
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 12
+    original: 204
+    corrupted: 136
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 72
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 212
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 12
+    original: 204
+    corrupted: 228
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 12
+    original: 204
+    corrupted: 132
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 68
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 252
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 12
+    original: 204
+    corrupted: 156
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 92
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 172
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 12
+    original: 204
+    corrupted: 108
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 12
+    original: 204
+    corrupted: 12
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 12
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 15
+    original: 15
+    corrupted: 10
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 15
+    original: 15
+    corrupted: 6
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 15
+    original: 15
+    corrupted: 30
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 15
+    original: 15
+    corrupted: 46
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 15
+    original: 15
+    corrupted: 78
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 142
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 9
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 15
+    original: 15
+    corrupted: 5
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 15
+    original: 15
+    corrupted: 29
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 15
+    original: 15
+    corrupted: 45
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 15
+    original: 15
+    corrupted: 77
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 141
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 3
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 15
+    original: 15
+    corrupted: 27
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 15
+    original: 15
+    corrupted: 43
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 15
+    original: 15
+    corrupted: 75
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 139
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 23
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 15
+    original: 15
+    corrupted: 39
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 15
+    original: 15
+    corrupted: 71
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 135
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 63
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 15
+    original: 15
+    corrupted: 95
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 159
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 111
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 15
+    original: 15
+    corrupted: 175
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 15
+    original: 15
+    corrupted: 207
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 252
+    bit_positions:
+    - 0
+    - 1
+    point_names:
+    - P000
+    - P001
+  - source_value: 15
+    original: 255
+    corrupted: 250
+    bit_positions:
+    - 0
+    - 2
+    point_names:
+    - P000
+    - P010
+  - source_value: 15
+    original: 255
+    corrupted: 246
+    bit_positions:
+    - 0
+    - 3
+    point_names:
+    - P000
+    - P011
+  - source_value: 15
+    original: 255
+    corrupted: 238
+    bit_positions:
+    - 0
+    - 4
+    point_names:
+    - P000
+    - P100
+  - source_value: 15
+    original: 255
+    corrupted: 222
+    bit_positions:
+    - 0
+    - 5
+    point_names:
+    - P000
+    - P101
+  - source_value: 15
+    original: 255
+    corrupted: 190
+    bit_positions:
+    - 0
+    - 6
+    point_names:
+    - P000
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 126
+    bit_positions:
+    - 0
+    - 7
+    point_names:
+    - P000
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 249
+    bit_positions:
+    - 1
+    - 2
+    point_names:
+    - P001
+    - P010
+  - source_value: 15
+    original: 255
+    corrupted: 245
+    bit_positions:
+    - 1
+    - 3
+    point_names:
+    - P001
+    - P011
+  - source_value: 15
+    original: 255
+    corrupted: 237
+    bit_positions:
+    - 1
+    - 4
+    point_names:
+    - P001
+    - P100
+  - source_value: 15
+    original: 255
+    corrupted: 221
+    bit_positions:
+    - 1
+    - 5
+    point_names:
+    - P001
+    - P101
+  - source_value: 15
+    original: 255
+    corrupted: 189
+    bit_positions:
+    - 1
+    - 6
+    point_names:
+    - P001
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 125
+    bit_positions:
+    - 1
+    - 7
+    point_names:
+    - P001
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 243
+    bit_positions:
+    - 2
+    - 3
+    point_names:
+    - P010
+    - P011
+  - source_value: 15
+    original: 255
+    corrupted: 235
+    bit_positions:
+    - 2
+    - 4
+    point_names:
+    - P010
+    - P100
+  - source_value: 15
+    original: 255
+    corrupted: 219
+    bit_positions:
+    - 2
+    - 5
+    point_names:
+    - P010
+    - P101
+  - source_value: 15
+    original: 255
+    corrupted: 187
+    bit_positions:
+    - 2
+    - 6
+    point_names:
+    - P010
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 123
+    bit_positions:
+    - 2
+    - 7
+    point_names:
+    - P010
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 231
+    bit_positions:
+    - 3
+    - 4
+    point_names:
+    - P011
+    - P100
+  - source_value: 15
+    original: 255
+    corrupted: 215
+    bit_positions:
+    - 3
+    - 5
+    point_names:
+    - P011
+    - P101
+  - source_value: 15
+    original: 255
+    corrupted: 183
+    bit_positions:
+    - 3
+    - 6
+    point_names:
+    - P011
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 119
+    bit_positions:
+    - 3
+    - 7
+    point_names:
+    - P011
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 207
+    bit_positions:
+    - 4
+    - 5
+    point_names:
+    - P100
+    - P101
+  - source_value: 15
+    original: 255
+    corrupted: 175
+    bit_positions:
+    - 4
+    - 6
+    point_names:
+    - P100
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 111
+    bit_positions:
+    - 4
+    - 7
+    point_names:
+    - P100
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 159
+    bit_positions:
+    - 5
+    - 6
+    point_names:
+    - P101
+    - P110
+  - source_value: 15
+    original: 255
+    corrupted: 95
+    bit_positions:
+    - 5
+    - 7
+    point_names:
+    - P101
+    - P111
+  - source_value: 15
+    original: 255
+    corrupted: 63
+    bit_positions:
+    - 6
+    - 7
+    point_names:
+    - P110
+    - P111
+invariants:
+- all 6 checks equal 0 for valid codewords
+- all 6 checks do not all equal 0 for corrupted codewords
+- codeword length = 8
+- valid count = 16
+- single-bit corruption count = 128
+- two-bit corruption count = 448
+

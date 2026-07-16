@@ -69,12 +69,12 @@ def verify_miquel844(filepath):
     errors = []
     
     masks = {
-        "logos_plus":  0x07,
-        "logos_minus": 0x38,
-        "nomos_plus":  0x0B,
-        "nomos_minus": 0x34,
-        "pathos_plus": 0x0D,
-        "pathos_minus": 0x32,
+        "logos_minus": 0x0F,  # bits {0,1,2,3}
+        "logos_plus":  0xF0,  # bits {4,5,6,7}
+        "nomos_minus": 0x33,  # bits {0,1,4,5}
+        "nomos_plus":  0xCC,  # bits {2,3,6,7}
+        "pathos_minus": 0x55,  # bits {0,2,4,6}
+        "pathos_plus":  0xAA,  # bits {1,3,5,7}
     }
     
     # Check valid codewords

@@ -5,15 +5,15 @@ Miquel [8,4,4] Integrity Code Generator
 Generates all valid codewords and corruption cases from the frozen generator matrix.
 
 The Miquel [8,4,4] code uses 8 points on a projective plane with 6 incidence checks:
-  LOGOS+: bits {0,1,2} = 0x07
-  LOGOS-: bits {3,4,5} = 0x38
-  NOMOS+: bits {0,1,3} = 0x0B
-  NOMOS-: bits {2,4,5} = 0x34
-  PATHOS+: bits {0,2,3} = 0x0D
-  PATHOS-: bits {1,4,5} = 0x32
+  LOGOS− = bits {0,1,2,3} = 0x0F
+  LOGOS+ = bits {4,5,6,7} = 0xF0
+  NOMOS− = bits {0,1,4,5} = 0x33
+  NOMOS+ = bits {2,3,6,7} = 0xCC
+  PATHOS− = bits {0,2,4,6} = 0x55
+  PATHOS+ = bits {1,3,5,7} = 0xAA
 
-Source bits: {0, 1, 4, 5} = {P000, P001, P100, P101}
-Parity bits: {2, 3, 6, 7} = {P010, P011, P110, P111}
+Source bits: {0, 1, 2, 3} = {P000, P001, P010, P011}
+Parity bits: {4, 5, 6, 7} = {P100, P101, P110, P111}
 
 For a valid codeword, all 6 checks must equal 0.
 """
@@ -22,27 +22,27 @@ import sys
 import yaml
 from itertools import combinations
 
-# Frozen incidence masks
+# Frozen incidence masks (from 05-MIQUEL-INTEGRITY.md)
 MASKS = {
-    "logos_plus":  0x07,  # bits 0,1,2
-    "logos_minus": 0x38,  # bits 3,4,5
-    "nomos_plus":  0x0B,  # bits 0,1,3
-    "nomos_minus": 0x34,  # bits 2,4,5
-    "pathos_plus": 0x0D,  # bits 0,2,3
-    "pathos_minus": 0x32,  # bits 1,4,5
+    "logos_minus": 0x0F,  # bits {0,1,2,3}
+    "logos_plus":  0xF0,  # bits {4,5,6,7}
+    "nomos_minus": 0x33,  # bits {0,1,4,5}
+    "nomos_plus":  0xCC,  # bits {2,3,6,7}
+    "pathos_minus": 0x55,  # bits {0,2,4,6}
+    "pathos_plus":  0xAA,  # bits {1,3,5,7}
 }
 
 # Source and parity bit positions
-SOURCE_BITS = [0, 1, 4, 5]  # P000, P001, P100, P101
-PARITY_BITS = [2, 3, 6, 7]  # P010, P011, P110, P111
+SOURCE_BITS = [0, 1, 2, 3]  # P000, P001, P010, P011
+PARITY_BITS = [4, 5, 6, 7]  # P100, P101, P110, P111
 
 # Point names
 POINT_NAMES = ["P000", "P001", "P010", "P011", "P100", "P101", "P110", "P111"]
 
 def check_codeword(codeword):
     """Check if a codeword satisfies all 6 incidence checks."""
+    bits = [(codeword >> i) & 1 for i in range(8)]
     for name, mask in MASKS.items():
-        bits = [(codeword >> i) & 1 for i in range(8)]
         check = 0
         for i in range(8):
             if mask & (1 << i):

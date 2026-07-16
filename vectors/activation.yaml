@@ -85,11 +85,12 @@ vectors:
     - id: result-pending
       description: "Pending activation result (validation in progress)"
       validation:
-        passed: null
+        passed: false
+        pending: true
       receipt:
         emitted: false
       expected:
-        valid: null
+        valid: false
         accepted: 0
         validated: 0
         receipted: 0
