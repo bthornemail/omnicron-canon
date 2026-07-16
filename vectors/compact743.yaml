@@ -1,0 +1,166 @@
+# Compact [7,4,3] Conformance Vectors
+# Canonical source: omnicron-canon/vectors/compact743.yaml
+# Consumed by: omnicron-isa
+#
+# Bit arrangement:
+#   position 1 = LOGOS (check)
+#   position 2 = NOMOS (check)
+#   position 3 = FS (data)
+#   position 4 = PATHOS (check)
+#   position 5 = GS (data)
+#   position 6 = RS (data)
+#   position 7 = US (data)
+#
+# Check relations (even parity):
+#   LOGOS  = FS XOR GS XOR US
+#   NOMOS  = FS XOR RS XOR US
+#   PATHOS = GS XOR RS XOR US
+#
+# Syndrome:
+#   sLOGOS  = LOGOS XOR FS XOR GS XOR US
+#   sNOMOS  = NOMOS XOR FS XOR RS XOR US
+#   sPATHOS = PATHOS XOR GS XOR RS XOR US
+#   syndrome = sLOGOS + 2 × sNOMOS + 4 × sPATHOS
+#
+# Codeword: [LOGOS, NOMOS, FS, PATHOS, GS, RS, US]
+
+schema: compact743
+version: "1.0"
+
+vectors:
+  # ------------------------------------------------------------------
+  # Valid codewords: all 16 Scope4 values
+  # ------------------------------------------------------------------
+  - id: compact-0000
+    scope: { fs: 0, gs: 0, rs: 0, us: 0 }
+    codeword: [0, 0, 0, 0, 0, 0, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0001
+    scope: { fs: 0, gs: 0, rs: 0, us: 1 }
+    codeword: [1, 1, 0, 0, 0, 0, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0010
+    scope: { fs: 0, gs: 0, rs: 1, us: 0 }
+    codeword: [0, 1, 0, 1, 0, 1, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0011
+    scope: { fs: 0, gs: 0, rs: 1, us: 1 }
+    codeword: [1, 0, 0, 1, 0, 1, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0100
+    scope: { fs: 0, gs: 1, rs: 0, us: 0 }
+    codeword: [1, 0, 0, 1, 1, 0, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0101
+    scope: { fs: 0, gs: 1, rs: 0, us: 1 }
+    codeword: [0, 1, 0, 1, 1, 0, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0110
+    scope: { fs: 0, gs: 1, rs: 1, us: 0 }
+    codeword: [1, 1, 0, 0, 1, 1, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-0111
+    scope: { fs: 0, gs: 1, rs: 1, us: 1 }
+    codeword: [0, 0, 0, 0, 1, 1, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1000
+    scope: { fs: 1, gs: 0, rs: 0, us: 0 }
+    codeword: [0, 1, 1, 0, 0, 0, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1001
+    scope: { fs: 1, gs: 0, rs: 0, us: 1 }
+    codeword: [1, 0, 1, 1, 0, 0, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1010
+    scope: { fs: 1, gs: 0, rs: 1, us: 0 }
+    codeword: [0, 0, 1, 1, 0, 1, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1011
+    scope: { fs: 1, gs: 0, rs: 1, us: 1 }
+    codeword: [1, 1, 1, 0, 0, 1, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1100
+    scope: { fs: 1, gs: 1, rs: 0, us: 0 }
+    codeword: [1, 1, 1, 1, 1, 0, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1101
+    scope: { fs: 1, gs: 1, rs: 0, us: 1 }
+    codeword: [0, 0, 1, 0, 1, 0, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1110
+    scope: { fs: 1, gs: 1, rs: 1, us: 0 }
+    codeword: [1, 0, 1, 0, 1, 1, 0]
+    expected: { valid: true, syndrome: 0 }
+
+  - id: compact-1111
+    scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    codeword: [0, 1, 1, 1, 1, 1, 1]
+    expected: { valid: true, syndrome: 0 }
+
+  # ------------------------------------------------------------------
+  # Single-bit corruption cases (112 total: 16 codewords × 7 positions)
+  # ------------------------------------------------------------------
+  # Example for codeword 0000 (all zeros):
+  - id: compact-0000-corrupt-pos1
+    source: compact-0000
+    corrupted: [1, 0, 0, 0, 0, 0, 0]
+    corruption: { position: 1 }
+    expected: { syndrome: 1, correctable: true, error_pos: 1 }
+
+  - id: compact-0000-corrupt-pos2
+    source: compact-0000
+    corrupted: [0, 1, 0, 0, 0, 0, 0]
+    corruption: { position: 2 }
+    expected: { syndrome: 2, correctable: true, error_pos: 2 }
+
+  - id: compact-0000-corrupt-pos3
+    source: compact-0000
+    corrupted: [0, 0, 1, 0, 0, 0, 0]
+    corruption: { position: 3 }
+    expected: { syndrome: 3, correctable: true, error_pos: 3 }
+
+  - id: compact-0000-corrupt-pos4
+    source: compact-0000
+    corrupted: [0, 0, 0, 1, 0, 0, 0]
+    corruption: { position: 4 }
+    expected: { syndrome: 4, correctable: true, error_pos: 4 }
+
+  - id: compact-0000-corrupt-pos5
+    source: compact-0000
+    corrupted: [0, 0, 0, 0, 1, 0, 0]
+    corruption: { position: 5 }
+    expected: { syndrome: 5, correctable: true, error_pos: 5 }
+
+  - id: compact-0000-corrupt-pos6
+    source: compact-0000
+    corrupted: [0, 0, 0, 0, 0, 1, 0]
+    corruption: { position: 6 }
+    expected: { syndrome: 6, correctable: true, error_pos: 6 }
+
+  - id: compact-0000-corrupt-pos7
+    source: compact-0000
+    corrupted: [0, 0, 0, 0, 0, 0, 1]
+    corruption: { position: 7 }
+    expected: { syndrome: 7, correctable: true, error_pos: 7 }
+
+invariants:
+  - "decode(encode(x)) = x for all valid Scope4 values"
+  - "syndrome = 0 for all valid codewords"
+  - "single-bit error produces syndrome 1..7"
+  - "syndrome identifies error position"
+  - "correction flips bit at syndrome position"
+  - "multi-bit corruption requires frame-level detection"

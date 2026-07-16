@@ -1,0 +1,146 @@
+# Projection Conformance Vectors
+# Canonical source: omnicron-canon/vectors/projection.yaml
+# Consumed by: omnicron-port, omnicron-lisp
+#
+# Projection masks control visibility of scope fields.
+# Projection changes visibility, not identity, not authority.
+
+schema: projection
+version: "1.0"
+
+vectors:
+  - id: proj-0000
+    mask: { fs: 0, gs: 0, rs: 0, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: false, rs: false, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0001
+    mask: { fs: 0, gs: 0, rs: 0, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: false, rs: false, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0010
+    mask: { fs: 0, gs: 0, rs: 1, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: false, rs: true, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0011
+    mask: { fs: 0, gs: 0, rs: 1, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: false, rs: true, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0100
+    mask: { fs: 0, gs: 1, rs: 0, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: true, rs: false, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0101
+    mask: { fs: 0, gs: 1, rs: 0, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: true, rs: false, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0110
+    mask: { fs: 0, gs: 1, rs: 1, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: true, rs: true, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-0111
+    mask: { fs: 0, gs: 1, rs: 1, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: false, gs: true, rs: true, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1000
+    mask: { fs: 1, gs: 0, rs: 0, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: false, rs: false, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1001
+    mask: { fs: 1, gs: 0, rs: 0, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: false, rs: false, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1010
+    mask: { fs: 1, gs: 0, rs: 1, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: false, rs: true, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1011
+    mask: { fs: 1, gs: 0, rs: 1, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: false, rs: true, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1100
+    mask: { fs: 1, gs: 1, rs: 0, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: true, rs: false, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1101
+    mask: { fs: 1, gs: 1, rs: 0, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: true, rs: false, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1110
+    mask: { fs: 1, gs: 1, rs: 1, us: 0 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: true, rs: true, us: false }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+  - id: proj-1111
+    mask: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_scope: { fs: 1, gs: 1, rs: 1, us: 1 }
+    input_authority: { accepted: 0, validated: 0, receipted: 0 }
+    expected:
+      visible: { fs: true, gs: true, rs: true, us: true }
+      output_authority: { accepted: 0, validated: 0, receipted: 0 }
+
+invariants:
+  - "projection changes visibility, not identity"
+  - "projection does not change authority flags"
+  - "projection does not change accepted/validated/receipted"
+  - "projection does not create or destroy scope"
+  - "projection is not receipt"
+  - "projection is not authority"
