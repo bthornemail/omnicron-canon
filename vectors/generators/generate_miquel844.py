@@ -7,11 +7,13 @@ Generates all valid codewords and corruption cases from the frozen generator mat
 The Miquel [8,4,4] code uses the Reed-Muller form:
   c(Pxyz) = a0 ⊕ aL·x ⊕ aN·y ⊕ aP·z
 
-where the four input bits are:
-  a0  = FS coefficient
-  aL  = GS coefficient (LOGOS)
-  aN  = RS coefficient (NOMOS)
-  aP  = US coefficient (PATHOS)
+For the canonical Miquel encoding profile:
+  a0 = FS
+  aL = GS (LOGOS coefficient)
+  aN = RS (NOMOS coefficient)
+  aP = US (PATHOS coefficient)
+
+This is a frozen encoding choice, not a universal mathematical identity.
 
 Generator matrix G844:
   row 0 (a0): [1 1 1 1 1 1 1 1]
